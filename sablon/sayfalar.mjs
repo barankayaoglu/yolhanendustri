@@ -2,7 +2,7 @@
    Derleme aracı ve panel önizlemesi aynı fonksiyonları kullanır. */
 import {
   esc, br, satirlar, ikon, gorsel, telHref, waHref, haritaHref,
-  iskelet, sayfaGiris, bayiBandi, SITE,
+  iskelet, sayfaGiris, bayiBandi, yasalMetin, SITE,
 } from "./ortak.mjs";
 
 const grupMarkalari = (c, id) => (c.markalar || []).filter((m) => (m.gruplar || []).includes(id));
@@ -264,9 +264,46 @@ export function iletisim(c) {
   return iskelet(c, { dosya: "iletisim.html", baslik: i.seoBaslik, aciklama: i.seoAciklama, govde });
 }
 
+/* ---------- Yasal metinler (KVKK, gizlilik) ---------- */
+
+function yasalSayfa(c, anahtar, dosya) {
+  const y = (c.yasal || {})[anahtar] || { baslik: "", bolumler: [] };
+  const bolumler = y.bolumler || [];
+  const govde = `
+    <section class="yasal-giris" data-durak>
+      <div class="kap">
+        <h1 class="yasal-giris__baslik">${satirlar(y.baslik)}</h1>
+        ${y.aciklama ? `<p class="yasal-giris__aciklama">${br(y.aciklama)}</p>` : ""}
+        ${y.guncelleme ? `<p class="yasal-giris__tarih">Son güncelleme: ${esc(y.guncelleme)}</p>` : ""}
+      </div>
+    </section>
+
+    <section class="bolum yasal" data-durak>
+      <div class="kap yasal__izgara">
+        <nav class="yasal__icindekiler" aria-label="İçindekiler">
+          <h2>İçindekiler</h2>
+          <ol>${bolumler.map((b, i) => `<li><a href="#bolum-${i + 1}">${esc(b.baslik)}</a></li>`).join("")}</ol>
+        </nav>
+        <div class="yasal__metin">
+          ${bolumler.map((b, i) => `
+          <section id="bolum-${i + 1}">
+            <h2><span aria-hidden="true">${i + 1}.</span> ${esc(b.baslik)}</h2>
+            ${yasalMetin(b.metin, c)}
+          </section>`).join("")}
+        </div>
+      </div>
+    </section>`;
+  return iskelet(c, { dosya, baslik: y.seoBaslik || y.baslik, aciklama: y.seoAciklama || y.aciklama, govde });
+}
+
+export const kvkk = (c) => yasalSayfa(c, "kvkk", "kvkk-aydinlatma-metni.html");
+export const gizlilik = (c) => yasalSayfa(c, "gizlilik", "gizlilik-politikasi.html");
+
 export const SAYFALAR = [
   { dosya: "index.html", olustur: anaSayfa },
   { dosya: "hakkimizda.html", olustur: hakkimizda },
   { dosya: "urun-gruplari.html", olustur: urunGruplari },
   { dosya: "iletisim.html", olustur: iletisim },
+  { dosya: "kvkk-aydinlatma-metni.html", olustur: kvkk },
+  { dosya: "gizlilik-politikasi.html", olustur: gizlilik },
 ];

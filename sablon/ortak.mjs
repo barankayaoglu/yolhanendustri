@@ -92,7 +92,10 @@ function altBolum(c) {
           </ul>
         </div>
       </div>
-      <p class="alt__telif">© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)}</p>
+      <div class="alt__telif">
+        <p>© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)}</p>
+        <p class="alt__yasal"><a href="kvkk-aydinlatma-metni.html">${esc(m.kvkk || "KVKK Aydınlatma Metni")}</a><a href="gizlilik-politikasi.html">${esc(m.gizlilik || "Gizlilik Politikası")}</a></p>
+      </div>
     </div>
   </footer>
   <a class="wa" href="${waHref(f.whatsapp)}" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın">${ikon("chat")}</a>`;
@@ -119,9 +122,9 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "" }) {
   <meta property="og:image" content="${SITE}${esc((c.anaSayfa.giris.gorseller[0] || {}).src || "img/logo.png")}">
   <link rel="icon" type="image/png" href="img/isaret-512.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600..900&family=Manrope:wght@400..700&display=swap">
+  <link rel="preload" href="fonts/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fontlar.css">
   <link rel="stylesheet" href="css/site.css">
   <script>
     (function (d) {
@@ -144,6 +147,30 @@ ${govde}
 </body>
 </html>
 `;
+}
+
+/** Yasal metin biçimlendirme. Boş satır paragrafı ayırır, "- " ile başlayan satırlar
+    liste olur, [yazı](adres) bağlantı olur. {unvan} {telefon} {eposta} {merkezAdres}
+    {siteAdresi} firma bilgilerinden doldurulur. */
+export function yasalMetin(metin, c) {
+  const f = c.firma || {};
+  const degiskenler = {
+    unvan: f.unvan, telefon: f.telefon, eposta: f.eposta, siteAdresi: "yolhanendustri.com",
+    merkezAdres: String(((c.subeler || [])[0] || {}).adres || "").replace(/\n/g, ", "),
+  };
+  const doldur = (s) => s.replace(/\{(\w+)\}/g, (t, k) => (k in degiskenler ? degiskenler[k] : t));
+  const satirIci = (s) => esc(doldur(s)).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (t, yazi, adres) => {
+    const dis = /^https?:\/\//i.test(adres);
+    if (!dis && !/^[a-z0-9-]+\.html(#[\w-]*)?$|^#[\w-]+$/i.test(adres)) return yazi;
+    return `<a href="${adres}"${dis ? ' target="_blank" rel="noopener"' : ""}>${yazi}</a>`;
+  });
+  return String(metin ?? "").trim().split(/\n\s*\n/).map((blok) => {
+    const satirlar = blok.split("\n");
+    if (satirlar.every((s) => /^\s*-\s+/.test(s))) {
+      return `<ul>${satirlar.map((s) => `<li>${satirIci(s.replace(/^\s*-\s+/, ""))}</li>`).join("")}</ul>`;
+    }
+    return `<p>${satirlar.map(satirIci).join("<br>")}</p>`;
+  }).join("\n");
 }
 
 /** Sayfa üstü (alt sayfalar için fotoğraflı giriş) */

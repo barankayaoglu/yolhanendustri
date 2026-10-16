@@ -16,7 +16,9 @@
     "urunGruplari": "Ürün Grupları",
     "iletisim": "İletişim",
     "bayiOl": "Bayi olun",
-    "b2bGiris": "B2B Giriş"
+    "b2bGiris": "B2B Giriş",
+    "kvkk": "KVKK Aydınlatma Metni",
+    "gizlilik": "Gizlilik Politikası"
   },
   "anaSayfa": {
     "seoBaslik": "Yolhan Endüstri — İzmir'de hırdavat ve endüstriyel malzeme tedariki",
@@ -452,5 +454,89 @@
         "alt": "Gıda şube mağaza cephesi"
       }
     }
-  ]
+  ],
+  "yasal": {
+    "kvkk": {
+      "seoBaslik": "KVKK Aydınlatma Metni — Yolhan Endüstri",
+      "seoAciklama": "Yolhan Endüstri'nin kişisel verileri 6698 sayılı KVKK kapsamında hangi amaçlarla ve nasıl işlediğine ilişkin aydınlatma metni.",
+      "baslik": "KVKK Aydınlatma Metni",
+      "aciklama": "Kişisel verilerinizi 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında nasıl işlediğimizi açıklıyoruz.",
+      "guncelleme": "16 Ekim 2026",
+      "bolumler": [
+        {
+          "baslik": "Veri sorumlusu",
+          "metin": "6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca kişisel verileriniz, veri sorumlusu sıfatıyla {unvan} (“Yolhan Endüstri”) tarafından aşağıda açıklanan kapsamda işlenmektedir.\n\n- Adres: {merkezAdres}\n- Telefon: {telefon}\n- E-posta: {eposta}"
+        },
+        {
+          "baslik": "İşlediğimiz kişisel veriler",
+          "metin": "Web sitemizde üyelik, form ya da çevrim içi satış bulunmaz; ziyaretçileri izleyen analiz veya reklam araçları kullanmayız. İşlediğimiz kişisel veriler şunlardır:\n\n- Site ziyareti sırasında oluşan teknik kayıtlar: IP adresi, tarayıcı ve cihaz bilgisi, ziyaret tarihi ve saati, görüntülenen sayfa. Bu kayıtlar sitenin barındırıldığı altyapı tarafından otomatik olarak tutulur.\n- Bizimle iletişime geçtiğinizde paylaştığınız bilgiler: ad soyad, işletme adı, telefon numarası, e-posta adresi, bulunduğunuz il ve ilçe, mesajınızın içeriği.\n- Bayilik başvurusu ve ticari ilişki kapsamında: işletme ve yetkili kişi bilgileri, teklif, sipariş ve fatura yazışmaları."
+        },
+        {
+          "baslik": "İşleme amaçları",
+          "metin": "Kişisel verilerinizi aşağıdaki amaçlarla işleriz:\n\n- Web sitesini çalıştırmak, güvenliğini sağlamak ve teknik sorunları gidermek,\n- Ürün, stok, fiyat ve bayilik taleplerinizi yanıtlamak, sizinle iletişim kurmak,\n- Teklif hazırlamak, bayilik başvurularını değerlendirmek, sipariş, satış ve teslimat süreçlerini yürütmek,\n- Ticari ve mali mevzuattan doğan saklama ve bildirim yükümlülüklerimizi yerine getirmek,\n- Olası uyuşmazlıklarda hukuki haklarımızı kullanmak ve korumak."
+        },
+        {
+          "baslik": "Toplama yöntemi ve hukuki sebepler",
+          "metin": "Kişisel verileriniz; web sitemizi ziyaret ettiğinizde otomatik yollarla, bizi telefonla aradığınızda, WhatsApp'tan veya e-postayla yazdığınızda ve şubelerimizi ziyaret ettiğinizde sözlü, yazılı ya da elektronik ortamda toplanır. Bu veriler KVKK'nın 5. maddesinin 2. fıkrasındaki şu hukuki sebeplere dayanılarak işlenir:\n\n- Bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması (md. 5/2-c),\n- Veri sorumlusunun hukuki yükümlülüğünü yerine getirebilmesi için zorunlu olması (md. 5/2-ç),\n- Bir hakkın tesisi, kullanılması veya korunması için zorunlu olması (md. 5/2-e),\n- İlgili kişinin temel hak ve özgürlüklerine zarar vermemek kaydıyla, veri sorumlusunun meşru menfaatleri için zorunlu olması (md. 5/2-f)."
+        },
+        {
+          "baslik": "Kişisel verilerin aktarılması",
+          "metin": "Kişisel verilerinizi yalnızca yukarıdaki amaçlar için gerekli olduğu ölçüde aşağıdaki alıcılarla paylaşırız:\n\n- Hizmet sağlayıcılarımız: Web sitemiz GitHub, Inc. (ABD) altyapısında barındırılır; ziyaret sırasında oluşan teknik kayıtlar bu sağlayıcının sunucularında işlenir. Kurumsal e-posta hizmetimiz GoDaddy altyapısı üzerinden sağlanır.\n- Yetkili kamu kurum ve kuruluşları: Kanunlardan doğan yükümlülükler kapsamında ve talep edilmesi hâlinde.\n- Hukuk ve mali müşavirlik hizmeti aldığımız kişiler: Yasal yükümlülüklerin yerine getirilmesi ve hakların korunması amacıyla.\n\nHizmet sağlayıcılarımızın sunucuları yurt dışında bulunabildiğinden bu aktarımlar KVKK'nın 9. maddesinde öngörülen usul ve esaslara uygun olarak gerçekleştirilir.\n\nİletişim sayfasındaki haritayı açtığınızda ya da WhatsApp bağlantısını kullandığınızda, bu hizmetlere ilettiğiniz bilgiler Google LLC ve WhatsApp LLC tarafından kendi gizlilik koşullarına göre işlenir."
+        },
+        {
+          "baslik": "Saklama süresi",
+          "metin": "Kişisel verilerinizi işleme amacının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen süreler kadar saklarız. Ticari ilişki kapsamındaki defter ve belgeler Türk Ticaret Kanunu uyarınca 10 yıl saklanır. Süre dolduğunda verileriniz silinir, yok edilir veya anonim hâle getirilir."
+        },
+        {
+          "baslik": "Haklarınız",
+          "metin": "KVKK'nın 11. maddesi uyarınca veri sorumlusuna başvurarak:\n\n- Kişisel verilerinizin işlenip işlenmediğini öğrenme,\n- İşlenmişse buna ilişkin bilgi talep etme,\n- İşlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,\n- Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,\n- Eksik veya yanlış işlenmişse düzeltilmesini isteme,\n- KVKK'nın 7. maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini isteme,\n- Düzeltme, silme ve yok etme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,\n- İşlenen verilerin münhasıran otomatik sistemler ile analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,\n- Kanuna aykırı işleme sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme\n\nhaklarına sahipsiniz."
+        },
+        {
+          "baslik": "Başvuru yöntemi",
+          "metin": "Haklarınıza ilişkin taleplerinizi Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ'e uygun olarak:\n\n- {merkezAdres} adresine kimliğinizi tespit edici belgelerle birlikte yazılı olarak iletebilir,\n- Daha önce bize bildirdiğiniz ve kayıtlarımızda bulunan e-posta adresinizden {eposta} adresine gönderebilirsiniz.\n\nBaşvurunuzda adınız soyadınız, yazılı başvurularda imzanız, T.C. kimlik numaranız (yabancılar için uyruk ve pasaport ya da kimlik numarası), tebligata esas adresiniz, varsa e-posta adresiniz ve telefon numaranız ile talebinizin konusu yer almalıdır.\n\nTalebiniz en geç 30 gün içinde ücretsiz olarak sonuçlandırılır. İşlemin ayrıca bir maliyet gerektirmesi hâlinde Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret alınabilir."
+        }
+      ]
+    },
+    "gizlilik": {
+      "seoBaslik": "Gizlilik Politikası — Yolhan Endüstri",
+      "seoAciklama": "yolhanendustri.com'u ziyaret ettiğinizde hangi bilgilerin işlendiği, çerezler ve üçüncü taraf hizmetleri hakkında bilgi.",
+      "baslik": "Gizlilik Politikası",
+      "aciklama": "Web sitemizi ziyaret ettiğinizde hangi bilgilerin işlendiğini, çerezleri ve üçüncü taraf hizmetleri açıklıyoruz.",
+      "guncelleme": "16 Ekim 2026",
+      "bolumler": [
+        {
+          "baslik": "Kapsam",
+          "metin": "Bu politika {siteAdresi} adresindeki web sitesini kapsar. B2B sipariş sistemimiz (b2b.yolhanendustri.com) ayrı bir hizmet sağlayıcı üzerinde çalışır ve kendi koşullarına tabidir. Kişisel verilerinizin işlenmesine ilişkin ayrıntılar [KVKK Aydınlatma Metni](kvkk-aydinlatma-metni.html)'nde yer alır."
+        },
+        {
+          "baslik": "Topladığımız bilgiler",
+          "metin": "Sitemizde üyelik, iletişim formu veya çevrim içi ödeme yoktur. Bizimle telefon, WhatsApp ya da e-postayla iletişime geçtiğinizde paylaştığınız bilgileri yalnızca talebinizi yanıtlamak ve ticari ilişkimizi yürütmek için kullanırız.\n\nSitenin çalışabilmesi için barındırma altyapısı (GitHub Pages) her ziyarette IP adresi, tarayıcı bilgisi, tarih ve saat, görüntülenen sayfa gibi teknik kayıtları otomatik olarak tutar. Bu kayıtları reklam veya profil çıkarma amacıyla kullanmayız."
+        },
+        {
+          "baslik": "Çerezler",
+          "metin": "Sitemiz çerez kullanmaz ve ziyaretçileri izleyen analiz ya da reklam araçları içermez.\n\n- Sayfalar arası geçiş animasyonu için tarayıcınızın oturum belleğine kişisel veri içermeyen küçük bir işaret yazılır; sekmeyi kapattığınızda silinir.\n- Yazı tipleri ve görseller sitemizin kendi sunucusundan yüklenir; bu sırada üçüncü taraflara bilgi gönderilmez.\n- İletişim sayfasındaki haritalar siz “Haritayı göster” düğmesine basana kadar yüklenmez. Bastığınızda harita Google tarafından sunulur ve Google kendi çerezlerini kullanabilir."
+        },
+        {
+          "baslik": "Üçüncü taraf bağlantılar",
+          "metin": "Sitemizde B2B sipariş sistemimize, WhatsApp'a ve Google Haritalar'a giden bağlantılar bulunur. Bu bağlantıları kullandığınızda ilgili hizmetin kendi gizlilik koşulları geçerlidir:\n\n- Google Haritalar: [Google Gizlilik Politikası](https://policies.google.com/privacy?hl=tr)\n- WhatsApp: [WhatsApp Gizlilik İlkesi](https://www.whatsapp.com/legal/privacy-policy)"
+        },
+        {
+          "baslik": "Güvenlik",
+          "metin": "Sitemize yapılan tüm bağlantılar HTTPS ile şifrelenir. Bize ilettiğiniz bilgilere yalnızca işi gereği erişmesi gereken çalışanlarımız ulaşabilir."
+        },
+        {
+          "baslik": "Haklarınız",
+          "metin": "KVKK kapsamındaki haklarınızı ve başvuru yöntemini [KVKK Aydınlatma Metni](kvkk-aydinlatma-metni.html)'nde bulabilirsiniz."
+        },
+        {
+          "baslik": "Değişiklikler",
+          "metin": "Bu politikayı gerektiğinde güncelleyebiliriz. Güncel sürüm her zaman bu sayfada yayımlanır; sayfanın başındaki tarih son güncelleme tarihini gösterir."
+        },
+        {
+          "baslik": "İletişim",
+          "metin": "Gizlilikle ilgili sorularınız için {eposta} adresine yazabilir veya {telefon} numarasından bize ulaşabilirsiniz."
+        }
+      ]
+    }
+  }
 }

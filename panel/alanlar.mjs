@@ -7,6 +7,17 @@ const seo = (kok) => [
   { yol: kok + ".seoAciklama", ad: "Google açıklaması", tip: "uzun", ipucu: "Arama sonuçlarında başlığın altında görünür. 150–160 karakter idealdir." },
 ];
 
+const YASAL_ACIKLAMA = "Metinde {unvan}, {telefon}, {eposta}, {merkezAdres} ve {siteAdresi} yazdığınız yerler firma bilgilerinden otomatik doldurulur. Boş satır yeni paragraf başlatır, “- ” ile başlayan satırlar madde işaretli liste olur, [yazı](adres) bağlantı olur. Metni değiştirdiğinizde güncelleme tarihini de değiştirin.";
+
+const yasalAlanlar = (k) => [
+  { yol: `yasal.${k}.baslik`, ad: "Sayfa başlığı", tip: "metin" },
+  { yol: `yasal.${k}.aciklama`, ad: "Başlık altı açıklama", tip: "uzun" },
+  { yol: `yasal.${k}.guncelleme`, ad: "Son güncelleme tarihi", tip: "metin", ipucu: "Örn. 16 Ekim 2026" },
+  { yol: `yasal.${k}.bolumler`, ad: "Bölümler", tip: "nesneListesi", ekle: "Bölüm ekle", ozet: "baslik", kapali: true,
+    alanlar: [{ yol: "baslik", ad: "Bölüm başlığı", tip: "metin" }, { yol: "metin", ad: "Metin", tip: "uzun" }] },
+  ...seo(`yasal.${k}`),
+];
+
 export const BOLUMLER = [
   {
     grup: "Genel",
@@ -35,6 +46,8 @@ export const BOLUMLER = [
           { yol: "menu.iletisim", ad: "İletişim", tip: "metin" },
           { yol: "menu.bayiOl", ad: "Bayi olun düğmesi", tip: "metin" },
           { yol: "menu.b2bGiris", ad: "B2B Giriş düğmesi", tip: "metin" },
+          { yol: "menu.kvkk", ad: "Alt bilgi: KVKK bağlantısı", tip: "metin" },
+          { yol: "menu.gizlilik", ad: "Alt bilgi: Gizlilik bağlantısı", tip: "metin" },
         ],
       },
     ],
@@ -143,6 +156,13 @@ export const BOLUMLER = [
           ...seo("iletisim"),
         ],
       },
+    ],
+  },
+  {
+    grup: "Yasal metinler",
+    bolumler: [
+      { id: "kvkk", baslik: "KVKK Aydınlatma Metni", sayfa: "kvkk-aydinlatma-metni.html", hedef: ".yasal-giris", aciklama: YASAL_ACIKLAMA, alanlar: yasalAlanlar("kvkk") },
+      { id: "gizlilik", baslik: "Gizlilik Politikası", sayfa: "gizlilik-politikasi.html", hedef: ".yasal-giris", aciklama: YASAL_ACIKLAMA, alanlar: yasalAlanlar("gizlilik") },
     ],
   },
   {
