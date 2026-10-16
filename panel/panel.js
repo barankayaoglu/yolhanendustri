@@ -93,7 +93,7 @@ async function icerikGetir() {
 }
 
 /* ---------- Giriş ---------- */
-const IZIN_MESAJI = "Anahtarın sitenin deposuna yazma izni yok. GitHub'da anahtarı düzenleyin: Repository access → Only select repositories → yolhanendustri; Permissions → Contents: Read and write, Actions: Read-only. Sonra Update'e basın.";
+const IZIN_MESAJI = "Anahtarın sitenin deposuna yazma izni yok. GitHub'da anahtarı düzenleyin: Repository access → Only select repositories → yolhanendustri; Permissions → + Add permissions → Contents: Read and write, Actions: Read-only. Sonra Update'e basın ve bu sayfayı yenileyin.";
 
 /** Depo herkese açık olduğu için okuma her anahtarla çalışır; yazma iznini
     boş bir blob oluşturarak sınarız (commit oluşmaz, siteye hiçbir etkisi yoktur). */
