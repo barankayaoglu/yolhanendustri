@@ -93,12 +93,26 @@ async function icerikGetir() {
 }
 
 /* ---------- Giriş ---------- */
+const IZIN_MESAJI = "Anahtarın sitenin deposuna yazma izni yok. GitHub'da anahtarı düzenleyin: Repository access → Only select repositories → yolhanendustri; Permissions → Contents: Read and write, Actions: Read-only. Sonra Update'e basın.";
+
+/** Depo herkese açık olduğu için okuma her anahtarla çalışır; yazma iznini
+    boş bir blob oluşturarak sınarız (commit oluşmaz, siteye hiçbir etkisi yoktur). */
+async function yazmaIzniVar() {
+  try {
+    await gh(`/repos/${SAHIP}/${DEPO}/git/blobs`, { method: "POST", body: JSON.stringify({ content: "", encoding: "utf-8" }) });
+    return true;
+  } catch (err) {
+    if (err.durum === 403 || err.durum === 404) return false;
+    throw err;
+  }
+}
+
 async function girisYap(yeniAnahtar, hatirla) {
   anahtar = yeniAnahtar;
-  const depo = await gh(`/repos/${SAHIP}/${DEPO}`);
-  if (!depo.permissions || !depo.permissions.push) {
+  await gh(`/repos/${SAHIP}/${DEPO}`);
+  if (!(await yazmaIzniVar())) {
     anahtar = null;
-    throw new Error("Bu anahtarın sitenin deposuna yazma izni yok. Contents iznini 'Read and write' yapın.");
+    throw new Error(IZIN_MESAJI);
   }
   try {
     (hatirla ? localStorage : sessionStorage).setItem(ANAHTAR_KAYIT, yeniAnahtar);
@@ -122,7 +136,13 @@ async function baslat() {
   menuKur();
   bolumAc(location.hash.slice(1) || BOLUMLER[0].bolumler[0].id);
   dugmeleriGuncelle();
-  if (anahtar) { durumYaz("Güncel içerik yüklendi."); sonYayinDurumu(); }
+  if (anahtar) {
+    durumYaz("Güncel içerik yüklendi.");
+    yazmaIzniVar().then((var_) => {
+      if (var_) sonYayinDurumu();
+      else { durumYaz("Yayınlanamaz: anahtarın yazma izni yok."); bildir(IZIN_MESAJI, "hata"); }
+    }).catch(() => {});
+  }
 }
 
 function girisEkrani(hata) {
@@ -478,7 +498,7 @@ async function yayinla() {
     bildir("Kaydedildi. Site 1–2 dakika içinde güncellenecek.", "tamam");
     yayinIzle(commit.sha);
   } catch (err) {
-    bildir("Yayınlanamadı: " + (err.durum === 401 ? "anahtarın süresi dolmuş, yeniden giriş yapın." : err.message), "hata");
+    bildir("Yayınlanamadı: " + (err.durum === 401 ? "anahtarın süresi dolmuş, yeniden giriş yapın." : err.durum === 403 ? IZIN_MESAJI : err.message), "hata");
     durumYaz("Yayınlanamadı. Değişiklikleriniz bu cihazda duruyor, tekrar deneyebilirsiniz.");
   } finally {
     d.textContent = "Yayınla"; dugmeleriGuncelle();
