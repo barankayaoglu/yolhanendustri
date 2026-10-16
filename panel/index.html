@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Site paneli — Yolhan Endüstri</title>
+  <link rel="icon" type="image/png" href="../img/isaret-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700..900&family=Manrope:wght@400..700&display=swap">
+  <link rel="stylesheet" href="panel.css">
+  <script type="module" src="panel.js"></script>
+</head>
+<body>
+  <!-- Giriş -->
+  <section class="giris-ekrani" id="giris-ekrani" hidden>
+    <div class="giris-kart">
+      <img src="../img/logo.png" alt="Yolhan Endüstri" width="640" height="150" class="giris-kart__logo">
+      <h1>Site paneli</h1>
+      <p>Sitedeki yazıları, fotoğrafları, markaları ve ürün gruplarını buradan değiştirip yayınlayabilirsiniz.</p>
+
+      <form id="giris-formu">
+        <label for="anahtar">GitHub erişim anahtarı</label>
+        <input id="anahtar" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" required>
+        <label class="kutucuk"><input type="checkbox" id="hatirla" checked> Bu cihazda beni hatırla</label>
+        <p class="hata" id="giris-hata" hidden></p>
+        <button type="submit" class="p-dugme p-dugme--ana">Giriş yap</button>
+        <button type="button" class="p-dugme p-dugme--ikincil" id="dene">Giriş yapmadan göz at</button>
+      </form>
+
+      <details class="nasil">
+        <summary>Erişim anahtarını nasıl alırım? (bir kez yapılır)</summary>
+        <ol>
+          <li><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub'da yeni anahtar sayfasını</a> açın ve GitHub hesabınızla giriş yapın.</li>
+          <li><b>Token name</b> alanına “Site paneli” yazın. <b>Expiration</b> için en uzun süreyi seçin.</li>
+          <li><b>Repository access</b> bölümünde <b>Only select repositories</b> seçip <b>yolhanendustri</b> deposunu işaretleyin.</li>
+          <li><b>Permissions → Repository permissions</b> altında <b>Contents</b>'i <b>Read and write</b>, <b>Actions</b>'ı <b>Read-only</b> yapın.</li>
+          <li>Sayfanın sonundaki <b>Generate token</b>'a basın, çıkan anahtarı kopyalayıp yukarıdaki kutuya yapıştırın.</li>
+        </ol>
+        <p>Anahtar yalnızca bu tarayıcıda saklanır ve sadece sitenin deposuna erişebilir. Telefonda ya da başka bilgisayarda da aynı anahtarla giriş yapabilirsiniz.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Uygulama -->
+  <div class="uygulama" id="uygulama" hidden>
+    <header class="p-ust">
+      <a class="p-ust__logo" href="../" target="_blank" rel="noopener" title="Siteyi yeni sekmede aç"><img src="../img/isaret-512.png" alt="" width="32" height="32"><span>Site paneli</span></a>
+      <p class="p-durum" id="durum" aria-live="polite"></p>
+      <div class="p-ust__eylem">
+        <button type="button" class="p-dugme p-dugme--sade onizleme-ac" id="onizleme-ac">Önizleme</button>
+        <button type="button" class="p-dugme p-dugme--sade" id="geri-al" disabled>Değişiklikleri geri al</button>
+        <button type="button" class="p-dugme p-dugme--ana" id="yayinla" disabled>Yayınla</button>
+        <button type="button" class="p-dugme p-dugme--sade" id="cikis" title="Bu cihazdan çıkış yap">Çıkış</button>
+      </div>
+    </header>
+
+    <nav class="p-yan" id="bolum-menusu" aria-label="Bölümler"></nav>
+
+    <main class="p-form" id="form-alani" tabindex="-1"></main>
+
+    <section class="p-onizleme" id="onizleme" aria-label="Canlı önizleme">
+      <div class="p-onizleme__arac">
+        <label class="gizli" for="sayfa-sec">Önizlenen sayfa</label>
+        <select id="sayfa-sec">
+          <option value="index.html">Ana sayfa</option>
+          <option value="hakkimizda.html">Hakkımızda</option>
+          <option value="urun-gruplari.html">Ürün Grupları</option>
+          <option value="iletisim.html">İletişim</option>
+        </select>
+        <div class="cihaz" role="group" aria-label="Önizleme boyutu">
+          <button type="button" data-cihaz="masaustu" aria-pressed="true">Masaüstü</button>
+          <button type="button" data-cihaz="telefon" aria-pressed="false">Telefon</button>
+        </div>
+        <button type="button" class="p-dugme p-dugme--sade onizleme-kapat" id="onizleme-kapat">Kapat</button>
+      </div>
+      <div class="p-onizleme__cerceve" id="cerceve-kutu"><iframe id="onizleme-cerceve" title="Sitenin önizlemesi"></iframe></div>
+    </section>
+  </div>
+
+  <div class="bildirim" id="bildirim" role="status" hidden></div>
+</body>
+</html>
