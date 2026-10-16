@@ -10,7 +10,6 @@
     "b2bAdres": "https://b2b.yolhanendustri.com/",
     "bayilikMesaji": "Merhaba, Yolhan Endüstri bayiliği hakkında bilgi almak istiyorum."
   },
-
   "menu": {
     "anaSayfa": "Ana Sayfa",
     "hakkimizda": "Hakkımızda",
@@ -19,34 +18,65 @@
     "bayiOl": "Bayi olun",
     "b2bGiris": "B2B Giriş"
   },
-
   "anaSayfa": {
     "seoBaslik": "Yolhan Endüstri — İzmir'de hırdavat ve endüstriyel malzeme tedariki",
     "seoAciklama": "2019'dan beri İzmir'de yapı kimyasalları, iş güvenliği, el aletleri, bant, boya ve bağlantı ekipmanları tedariki. Bornova merkez depo ve Konak gıda şube.",
     "giris": {
       "ustSatir": "İzmir'de 2019'dan beri",
       "baslik": "Hırdavatın\nkısa yolu.",
-      "doneneOnEk": "Stokta:",
-      "donenler": ["yapı kimyasalları", "iş güvenliği", "el aletleri", "bant grubu", "boya malzemeleri", "bağlantı ekipmanları"],
+      "doneneOnEk": "Ürün grupları:",
+      "donenler": [
+        "Yapı Kimyasalları",
+        "İş Güvenliği",
+        "El Aletleri",
+        "Bant Grubu",
+        "Boya Malzemeleri",
+        "Bağlantı Ekipmanları"
+      ],
       "aciklama": "Bornova'daki merkez depomuzdan ve Konak'taki şubemizden ustalara, nalburlara ve sanayiye hırdavat tedarik ediyoruz.",
       "buton1": "Ürün gruplarını görün",
       "buton2": "B2B'ye giriş yapın",
       "gorseller": [
-        { "src": "medya/depo-koridor.webp", "alt": "Merkez depoda forklift ile raf arası sevkiyat" },
-        { "src": "medya/magaza-ic.webp", "alt": "Mağaza içinde reyonlar ve alet duvarı" },
-        { "src": "medya/merkez-depo-cephe.webp", "alt": "Bornova İş Merkezi'ndeki merkez depo binası" },
-        { "src": "medya/magaza-cephe.webp", "alt": "Marka tabelalarıyla Yolhan mağaza cephesi" }
+        {
+          "src": "medya/depo-koridor.webp",
+          "alt": "Merkez depoda forklift ile raf arası sevkiyat"
+        },
+        {
+          "src": "medya/magaza-ic.webp",
+          "alt": "Mağaza içinde reyonlar ve alet duvarı"
+        },
+        {
+          "src": "medya/merkez-depo-cephe.webp",
+          "alt": "Bornova İş Merkezi'ndeki merkez depo binası"
+        },
+        {
+          "src": "medya/magaza-cephe.webp",
+          "alt": "Marka tabelalarıyla Yolhan mağaza cephesi"
+        }
       ]
     },
     "profil": {
       "baslik": "Genç bir ekip, dolu bir depo.",
       "metin": "Firmamız 2019 yılında kurulmuş olup faaliyet gösterdiği sektöre hızlı, dinamik ve kararlı bir giriş yapmıştır. Genç, dinamik, çalışkan ve azimli kadrosuyla kısa sürede piyasada yerini alarak yükselmeye ve ilerici adımlar atmaya devam etmektedir.",
-      "maddeler": ["Müşteri odaklı", "Güvenilir", "Yenilikçi"],
+      "maddeler": [
+        "Müşteri odaklı",
+        "Güvenilir",
+        "Yenilikçi"
+      ],
       "baglanti": "Hikâyemizi okuyun",
       "gorseller": [
-        { "src": "medya/depo-forklift.webp", "alt": "Depoda forklift operatörü" },
-        { "src": "medya/alet-duvari.webp", "alt": "Elektrikli el aletleri duvarı" },
-        { "src": "medya/depo-ic.webp", "alt": "Merkez depo içi genel görünüm" }
+        {
+          "src": "medya/depo-forklift.webp",
+          "alt": "Depoda forklift operatörü"
+        },
+        {
+          "src": "medya/alet-duvari.webp",
+          "alt": "Elektrikli el aletleri duvarı"
+        },
+        {
+          "src": "medya/depo-ic.webp",
+          "alt": "Merkez depo içi genel görünüm"
+        }
       ]
     },
     "gruplar": {
@@ -67,16 +97,21 @@
       "metin": "Güncel fiyatları, stok durumunu ve siparişlerinizi B2B sistemimizden takip edin. Henüz bayimiz değilseniz bize yazın, başvurunuzu birlikte tamamlayalım.",
       "buton1": "B2B'ye giriş yapın",
       "buton2": "Bayilik için yazın",
-      "gorsel": { "src": "medya/depo-koliler.webp", "alt": "Depoda sevkiyata hazır koliler" }
+      "gorsel": {
+        "src": "medya/depo-koliler.webp",
+        "alt": "Depoda sevkiyata hazır koliler"
+      }
     }
   },
-
   "hakkimizda": {
     "seoBaslik": "Hakkımızda — Yolhan Endüstri",
     "seoAciklama": "Yolhan Endüstri 2019'da İzmir'de kuruldu. Genç ve dinamik kadrosuyla müşteri odaklı, güvenilir ve yenilikçi hırdavat tedariki.",
     "baslik": "Genç, dinamik ve kararlı bir ekip.",
     "aciklama": "2019'dan beri İzmir'de hırdavat ve endüstriyel malzeme tedariki yapıyoruz.",
-    "gorsel": { "src": "medya/depo-ic.webp", "alt": "Merkez depo içi" },
+    "gorsel": {
+      "src": "medya/depo-ic.webp",
+      "alt": "Merkez depo içi"
+    },
     "hikayeBaslik": "Hikâyemiz",
     "hikaye": [
       "Firmamız 2019 yılında kurulmuş olup faaliyet gösterdiği sektöre hızlı, dinamik ve kararlı bir giriş yapmıştır.",
@@ -85,83 +120,337 @@
     ],
     "ilkelerBaslik": "Üç ilkemiz",
     "ilkeler": [
-      { "ad": "Müşteri odaklı", "metin": "Müşterilerimizin ihtiyaçlarını gözeterek her işe uygun ürünü ve çözümü birlikte buluyoruz." },
-      { "ad": "Güvenilir", "metin": "Kaliteden ödün vermeden çalışıyor, verdiğimiz sözün arkasında duruyoruz." },
-      { "ad": "Yenilikçi", "metin": "Ürünlerimizdeki çeşitliliği sürekli artırıyor, ihtiyaçlara uygun yeni çözümler üretiyoruz." }
+      {
+        "ad": "Müşteri odaklı",
+        "metin": "Müşterilerimizin ihtiyaçlarını gözeterek her işe uygun ürünü ve çözümü birlikte buluyoruz."
+      },
+      {
+        "ad": "Güvenilir",
+        "metin": "Kaliteden ödün vermeden çalışıyor, verdiğimiz sözün arkasında duruyoruz."
+      },
+      {
+        "ad": "Yenilikçi",
+        "metin": "Ürünlerimizdeki çeşitliliği sürekli artırıyor, ihtiyaçlara uygun yeni çözümler üretiyoruz."
+      }
     ],
     "galeri": [
-      { "src": "medya/depo-koridor.webp", "alt": "Depo raf koridoru" },
-      { "src": "medya/magaza-reyon.webp", "alt": "Mağaza reyonları" },
-      { "src": "medya/merkez-depo-cephe.webp", "alt": "Merkez depo cephesi" }
+      {
+        "src": "medya/depo-koridor.webp",
+        "alt": "Depo raf koridoru"
+      },
+      {
+        "src": "medya/magaza-reyon.webp",
+        "alt": "Mağaza reyonları"
+      },
+      {
+        "src": "medya/merkez-depo-cephe.webp",
+        "alt": "Merkez depo cephesi"
+      }
     ]
   },
-
   "urunGruplari": {
     "seoBaslik": "Ürün Grupları ve Markalar — Yolhan Endüstri",
     "seoAciklama": "Yapı kimyasalları, hırdavat nalburiye, kesme ve delme araçları, bant grubu, boya malzemeleri, el aletleri, iş güvenliği ve bağlantı ekipmanları.",
     "baslik": "Ürün gruplarımız ve markalarımız.",
     "aciklama": "Fiyat ve stok bilgisi için bize ulaşın; bayilerimiz güncel fiyatları B2B sistemimizden görebilir.",
-    "gorsel": { "src": "medya/magaza-reyon.webp", "alt": "Mağaza reyonları" },
+    "gorsel": {
+      "src": "medya/magaza-reyon.webp",
+      "alt": "Mağaza reyonları"
+    },
     "markalarBaslik": "Tüm markalar",
     "markalarAciklama": "Her markanın altında, o markayı bulabileceğiniz ürün grupları yazar."
   },
-
   "iletisim": {
     "seoBaslik": "İletişim — Yolhan Endüstri",
     "seoAciklama": "Yolhan Endüstri iletişim: 0232 458 30 12, WhatsApp 0542 368 24 12, info@yolhanendustri.com. Merkez Depo Bornova, Gıda Şube Konak / İzmir.",
     "baslik": "Bize ulaşın.",
     "aciklama": "Ürün, stok ve fiyat sorularınız için arayın, WhatsApp'tan yazın ya da şubelerimize uğrayın.",
-    "gorsel": { "src": "medya/merkez-depo-cephe.webp", "alt": "Merkez depo binası" },
+    "gorsel": {
+      "src": "medya/merkez-depo-cephe.webp",
+      "alt": "Merkez depo binası"
+    },
     "subelerBaslik": "Şubelerimiz",
     "bayilikBaslik": "Bayimiz olun.",
     "bayilikMetin": "İşletmenizin adını ve bulunduğunuz ilçeyi WhatsApp'tan yazın; temsilcimiz sizi arayıp bayilik koşullarını anlatsın."
   },
-
   "gruplar": [
-    { "id": "yapi-kimyasallari", "ad": "Yapı Kimyasalları", "ozet": "Silikon, köpük, mastik, yapıştırıcı ve su yalıtımı", "aciklama": "Profesyonel uygulamalar için formüle edilmiş yapı kimyasalları. Şantiye, tadilat ve endüstriyel bakım işlerinde iç ve dış mekânda güvenle kullanılır.", "gorsel": { "src": "medya/grup-yapi-kimyasallari.webp", "alt": "Reyonda silikon ve mastik tüpleri" } },
-    { "id": "hirdavat-nalburiye", "ad": "Hırdavat Nalburiye", "ozet": "Menteşe, kulp, kilit, ray ve mobilya aksesuarı", "aciklama": "Mobilya, kapı ve dolap uygulamaları için dayanıklı nalburiye ürünleri. Yoğun kullanıma uygun malzeme ve yüzey kalitesi.", "gorsel": { "src": "medya/grup-hirdavat-nalburiye.webp", "alt": "Rafta nalburiye ürünleri" } },
-    { "id": "kesme-delme", "ad": "Kesme ve Delme Araçları", "ozet": "Kesme ve taşlama diskleri, matkap uçları, panç", "aciklama": "Metal, beton, ahşap ve seramik işleme için yüksek performanslı kesme ve delme ürünleri. Uzun ömür ve temiz kesim için tasarlandı.", "gorsel": { "src": "medya/grup-kesme-delme.webp", "alt": "Duvarda matkaplar ve kesme aletleri" } },
-    { "id": "bant-grubu", "ad": "Bant Grubu", "ozet": "Koli, maskeleme, izole, köpük ve ikaz bantları", "aciklama": "Paketleme, boya, elektrik ve montaj işleri için güçlü yapışma sağlayan bantlar. Kolay açılır, iz bırakmadan çalışır.", "gorsel": { "src": "medya/grup-bant-grubu.webp", "alt": "Reyonda bant çeşitleri" } },
-    { "id": "boya-malzemeleri", "ad": "Boya Malzemeleri", "ozet": "Rulo, fırça, tekne, spatula ve sprey boya", "aciklama": "Boya ve badana işlerinde düzgün ve hızlı uygulama sağlayan profesyonel ekipman. Ustaların günlük kullanımına uygun.", "gorsel": { "src": "medya/grup-boya-malzemeleri.webp", "alt": "Fırça ve rulo standı" } },
-    { "id": "el-aletleri", "ad": "El Aletleri", "ozet": "Çekiç, pense, tornavida, anahtar ve elektrikli aletler", "aciklama": "Ergonomik tutuşlu, sertleştirilmiş çelikten el aletleri. Atölye ve saha kullanımında uzun ömürlü.", "gorsel": { "src": "medya/grup-el-aletleri.webp", "alt": "Elektrikli el aletleri duvarı" } },
-    { "id": "is-guvenligi", "ad": "İş Güvenliği", "ozet": "Eldiven, baret, gözlük, maske ve ikaz yeleği", "aciklama": "İlgili EN standartlarına uygun kişisel koruyucu donanım. Şantiye ve sanayi ortamında çalışan güvenliği için.", "gorsel": { "src": "medya/grup-is-guvenligi.webp", "alt": "İş eldivenleri ve ikaz yelekleri" } },
-    { "id": "baglanti-ekipmanlari", "ad": "Bağlantı Ekipmanları", "ozet": "Vida, dübel, cıvata, somun, pul ve kimyasal dübel", "aciklama": "Ahşap, metal ve beton uygulamalarında güvenli sabitleme sağlayan bağlantı elemanları. Korozyona karşı yüzey işlemli.", "gorsel": { "src": "medya/grup-baglanti-ekipmanlari.webp", "alt": "Depoda koliler" } }
+    {
+      "id": "yapi-kimyasallari",
+      "ad": "Yapı Kimyasalları",
+      "ozet": "Silikon, köpük, mastik, yapıştırıcı ve su yalıtımı",
+      "aciklama": "Profesyonel uygulamalar için formüle edilmiş yapı kimyasalları. Şantiye, tadilat ve endüstriyel bakım işlerinde iç ve dış mekânda güvenle kullanılır.",
+      "gorsel": {
+        "src": "medya/grup-yapi-kimyasallari.webp",
+        "alt": "Reyonda silikon ve mastik tüpleri"
+      }
+    },
+    {
+      "id": "hirdavat-nalburiye",
+      "ad": "Hırdavat Nalburiye",
+      "ozet": "Menteşe, kulp, kilit, ray ve mobilya aksesuarı",
+      "aciklama": "Mobilya, kapı ve dolap uygulamaları için dayanıklı nalburiye ürünleri. Yoğun kullanıma uygun malzeme ve yüzey kalitesi.",
+      "gorsel": {
+        "src": "medya/grup-hirdavat-nalburiye.webp",
+        "alt": "Rafta nalburiye ürünleri"
+      }
+    },
+    {
+      "id": "kesme-delme",
+      "ad": "Kesme ve Delme Araçları",
+      "ozet": "Kesme ve taşlama diskleri, matkap uçları, panç",
+      "aciklama": "Metal, beton, ahşap ve seramik işleme için yüksek performanslı kesme ve delme ürünleri. Uzun ömür ve temiz kesim için tasarlandı.",
+      "gorsel": {
+        "src": "medya/grup-kesme-delme.webp",
+        "alt": "Duvarda matkaplar ve kesme aletleri"
+      }
+    },
+    {
+      "id": "bant-grubu",
+      "ad": "Bant Grubu",
+      "ozet": "Koli, maskeleme, izole, köpük ve ikaz bantları",
+      "aciklama": "Paketleme, boya, elektrik ve montaj işleri için güçlü yapışma sağlayan bantlar. Kolay açılır, iz bırakmadan çalışır.",
+      "gorsel": {
+        "src": "medya/grup-bant-grubu.webp",
+        "alt": "Reyonda bant çeşitleri"
+      }
+    },
+    {
+      "id": "boya-malzemeleri",
+      "ad": "Boya Malzemeleri",
+      "ozet": "Rulo, fırça, tekne, spatula ve sprey boya",
+      "aciklama": "Boya ve badana işlerinde düzgün ve hızlı uygulama sağlayan profesyonel ekipman. Ustaların günlük kullanımına uygun.",
+      "gorsel": {
+        "src": "medya/grup-boya-malzemeleri.webp",
+        "alt": "Fırça ve rulo standı"
+      }
+    },
+    {
+      "id": "el-aletleri",
+      "ad": "El Aletleri",
+      "ozet": "Çekiç, pense, tornavida, anahtar ve elektrikli aletler",
+      "aciklama": "Ergonomik tutuşlu, sertleştirilmiş çelikten el aletleri. Atölye ve saha kullanımında uzun ömürlü.",
+      "gorsel": {
+        "src": "medya/grup-el-aletleri.webp",
+        "alt": "Elektrikli el aletleri duvarı"
+      }
+    },
+    {
+      "id": "is-guvenligi",
+      "ad": "İş Güvenliği",
+      "ozet": "Eldiven, baret, gözlük, maske ve ikaz yeleği",
+      "aciklama": "İlgili EN standartlarına uygun kişisel koruyucu donanım. Şantiye ve sanayi ortamında çalışan güvenliği için.",
+      "gorsel": {
+        "src": "medya/grup-is-guvenligi.webp",
+        "alt": "İş eldivenleri ve ikaz yelekleri"
+      }
+    },
+    {
+      "id": "baglanti-ekipmanlari",
+      "ad": "Bağlantı Ekipmanları",
+      "ozet": "Vida, dübel, cıvata, somun, pul ve kimyasal dübel",
+      "aciklama": "Ahşap, metal ve beton uygulamalarında güvenli sabitleme sağlayan bağlantı elemanları. Korozyona karşı yüzey işlemli.",
+      "gorsel": {
+        "src": "medya/grup-baglanti-ekipmanlari.webp",
+        "alt": "Depoda koliler"
+      }
+    }
   ],
-
   "markalar": [
-    { "ad": "Astel", "gruplar": [] },
-    { "ad": "Atlas", "gruplar": ["boya-malzemeleri"] },
-    { "ad": "Ay-San", "gruplar": ["is-guvenligi"] },
-    { "ad": "Bantex", "gruplar": ["bant-grubu", "boya-malzemeleri", "is-guvenligi"] },
-    { "ad": "Best", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Dekor", "gruplar": ["hirdavat-nalburiye", "boya-malzemeleri"] },
-    { "ad": "Derby", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Era Tool", "gruplar": ["bant-grubu"] },
-    { "ad": "Es-Sa", "gruplar": ["bant-grubu"] },
-    { "ad": "Essafe", "gruplar": ["is-guvenligi"] },
-    { "ad": "Evobond", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Förbix", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "GFB", "gruplar": ["hirdavat-nalburiye", "kesme-delme", "boya-malzemeleri", "el-aletleri"] },
-    { "ad": "GFB XPRO", "gruplar": ["boya-malzemeleri"] },
-    { "ad": "Haıs", "gruplar": [] },
-    { "ad": "Kenito", "gruplar": [] },
-    { "ad": "Made", "gruplar": ["kesme-delme", "bant-grubu", "el-aletleri", "baglanti-ekipmanlari"] },
-    { "ad": "MG", "gruplar": ["is-guvenligi"] },
-    { "ad": "Np1", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Polikor", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Power", "gruplar": ["is-guvenligi"] },
-    { "ad": "Proft", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Selsil", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Stern", "gruplar": ["yapi-kimyasallari"] },
-    { "ad": "Tekno", "gruplar": [] },
-    { "ad": "Tesa", "gruplar": ["bant-grubu", "boya-malzemeleri"] },
-    { "ad": "Tork", "gruplar": ["baglanti-ekipmanlari"] },
-    { "ad": "Yılsan", "gruplar": ["boya-malzemeleri"] },
-    { "ad": "Zimak", "gruplar": [] }
+    {
+      "ad": "Astel",
+      "gruplar": []
+    },
+    {
+      "ad": "Atlas",
+      "gruplar": [
+        "boya-malzemeleri"
+      ]
+    },
+    {
+      "ad": "Ay-San",
+      "gruplar": [
+        "is-guvenligi"
+      ]
+    },
+    {
+      "ad": "Bantex",
+      "gruplar": [
+        "bant-grubu",
+        "boya-malzemeleri",
+        "is-guvenligi"
+      ]
+    },
+    {
+      "ad": "Best",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Dekor",
+      "gruplar": [
+        "hirdavat-nalburiye",
+        "boya-malzemeleri"
+      ]
+    },
+    {
+      "ad": "Derby",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Era Tool",
+      "gruplar": [
+        "bant-grubu"
+      ]
+    },
+    {
+      "ad": "Es-Sa",
+      "gruplar": [
+        "bant-grubu"
+      ]
+    },
+    {
+      "ad": "Essafe",
+      "gruplar": [
+        "is-guvenligi"
+      ]
+    },
+    {
+      "ad": "Evobond",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Förbix",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "GFB",
+      "gruplar": [
+        "hirdavat-nalburiye",
+        "kesme-delme",
+        "boya-malzemeleri",
+        "el-aletleri"
+      ]
+    },
+    {
+      "ad": "GFB XPRO",
+      "gruplar": [
+        "boya-malzemeleri"
+      ]
+    },
+    {
+      "ad": "Haıs",
+      "gruplar": []
+    },
+    {
+      "ad": "Kenito",
+      "gruplar": []
+    },
+    {
+      "ad": "Made",
+      "gruplar": [
+        "kesme-delme",
+        "bant-grubu",
+        "el-aletleri",
+        "baglanti-ekipmanlari"
+      ]
+    },
+    {
+      "ad": "MG",
+      "gruplar": [
+        "is-guvenligi"
+      ]
+    },
+    {
+      "ad": "Np1",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Polikor",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Power",
+      "gruplar": [
+        "is-guvenligi"
+      ]
+    },
+    {
+      "ad": "Proft",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Selsil",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Stern",
+      "gruplar": [
+        "yapi-kimyasallari"
+      ]
+    },
+    {
+      "ad": "Tekno",
+      "gruplar": []
+    },
+    {
+      "ad": "Tesa",
+      "gruplar": [
+        "bant-grubu",
+        "boya-malzemeleri"
+      ]
+    },
+    {
+      "ad": "Tork",
+      "gruplar": [
+        "baglanti-ekipmanlari"
+      ]
+    },
+    {
+      "ad": "Yılsan",
+      "gruplar": [
+        "boya-malzemeleri"
+      ]
+    },
+    {
+      "ad": "Zimak",
+      "gruplar": []
+    }
   ],
-
   "subeler": [
-    { "ad": "Merkez Depo", "ilce": "Bornova", "adres": "Bornova İş Merkezi, Ümit, 1411/7 Sk.\nBornova / İzmir", "haritaSorgu": "Yolhan Endüstri - Merkez Depo, Bornova İş Merkezi, Ümit, 1411/7 Sk, Bornova/İzmir", "gorsel": { "src": "medya/merkez-depo-cephe.webp", "alt": "Merkez depo binası" } },
-    { "ad": "Gıda Şube", "ilce": "Konak", "adres": "Yenişehir, 1201/4. Sk.\nKonak / İzmir", "haritaSorgu": "Yolhan Endüstri - Gıda Şube, Yenişehir, 1201/4. Sokak, Konak/İzmir", "gorsel": { "src": "medya/magaza-cephe.webp", "alt": "Gıda şube mağaza cephesi" } }
+    {
+      "ad": "Merkez Depo",
+      "ilce": "Bornova",
+      "adres": "Bornova İş Merkezi, Ümit, 1411/7 Sk.\nBornova / İzmir",
+      "haritaSorgu": "Yolhan Endüstri - Merkez Depo, Bornova İş Merkezi, Ümit, 1411/7 Sk, Bornova/İzmir",
+      "gorsel": {
+        "src": "medya/merkez-depo-cephe.webp",
+        "alt": "Merkez depo binası"
+      }
+    },
+    {
+      "ad": "Gıda Şube",
+      "ilce": "Konak",
+      "adres": "Yenişehir, 1201/4. Sk.\nKonak / İzmir",
+      "haritaSorgu": "Yolhan Endüstri - Gıda Şube, Yenişehir, 1201/4. Sokak, Konak/İzmir",
+      "gorsel": {
+        "src": "medya/magaza-cephe.webp",
+        "alt": "Gıda şube mağaza cephesi"
+      }
+    }
   ]
 }
