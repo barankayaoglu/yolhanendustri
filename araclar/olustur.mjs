@@ -21,8 +21,9 @@ for (const { dosya, olustur } of SAYFALAR) {
 
 // Sabit dosyalar ve panel
 await cp(path.join(KOK, "statik"), DIST, { recursive: true });
-for (const klasor of ["medya", "panel", "sablon", "icerik"]) {
-  await cp(path.join(KOK, klasor), path.join(DIST, klasor), { recursive: true });
+for (const klasor of ["medya", "panel", "sablon", "icerik", "ekatalog"]) {
+  try { await cp(path.join(KOK, klasor), path.join(DIST, klasor), { recursive: true }); }
+  catch (e) { if (!(klasor === "ekatalog" && e.code === "ENOENT")) throw e; } // e-katalog henüz yayınlanmadıysa klasör yok
 }
 
 await writeFile(path.join(DIST, "CNAME"), "yolhanendustri.com\n");

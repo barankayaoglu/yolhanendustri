@@ -14,6 +14,7 @@
     "anaSayfa": "Ana Sayfa",
     "hakkimizda": "Hakkımızda",
     "urunGruplari": "Ürün Grupları",
+    "ekatalog": "E-Katalog",
     "iletisim": "İletişim",
     "bayiOl": "Bayi olun",
     "b2bGiris": "B2B Giriş",
@@ -161,6 +162,19 @@
     },
     "markalarBaslik": "Tüm markalar",
     "markalarAciklama": "Her markanın altında, o markayı bulabileceğiniz ürün grupları yazar."
+  },
+  "ekatalog": {
+    "seoBaslik": "E-Katalog — Yolhan Endüstri Ürün Kataloğu 2026",
+    "seoAciklama": "Yolhan Endüstri ürün kataloğunu sayfaları çevirerek inceleyin: sprey boya, yapı kimyasalları, yapıştırıcı, zımpara, el aletleri, dübel, iş güvenliği ve daha fazlası.",
+    "ustSatir": "E-Katalog",
+    "baslik": "Ürün kataloğunu\nsayfa sayfa gezin.",
+    "aciklama": "Binlerce ürün, 13 bölüm. Sayfaları sürükleyerek çevirin, ürün adıyla arayın.",
+    "ipucu": "Sayfayı sürükleyin ya da ok tuşlarını kullanın",
+    "notBaslik": "Güncel fiyat ve stok için\nbizimle iletişime geçin.",
+    "notMetin": "Katalogda fiyat yer almaz. Bayilerimiz güncel net fiyatları B2B sistemimizden görür.",
+    "notButon1": "B2B girişi",
+    "notButon2": "WhatsApp'tan yazın",
+    "whatsappMesaji": "Merhaba, e-katalogdaki ürünler için fiyat ve stok bilgisi almak istiyorum."
   },
   "iletisim": {
     "seoBaslik": "İletişim — Yolhan Endüstri",

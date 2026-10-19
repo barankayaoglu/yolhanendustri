@@ -20,6 +20,10 @@ Fikir: logodaki çatı (han) ve altından geçen yol. Masaüstünde solda 72 px'
 - Yazı tipleri: Big Shoulders Display (başlıklar), Manrope (metin).
 - Animasyonlar dış kütüphane olmadan: başlık satırları maskeden yükselir, giriş slaytı yavaş yakınlaşarak geçer, dönen kelimeler, marka şeridi, sayfa geçiş perdesi (CSS + `sessionStorage` bayrağı). `prefers-reduced-motion`'da hepsi kapanır.
 
+## E-katalog
+
+`e-katalog.html`: sayfa çevirmeli kitap (`statik/js/ekatalog.js`, `statik/css/ekatalog.css`; 3B CSS dönüşümleri, dış kütüphane yok; masaüstünde çift sayfa, dar ekranda tek sayfa; sürükleme, ok tuşları, içindekiler, ürün arama, yakınlaştırma, `#s=24` ile sayfa bağlantısı). Sayfa görselleri ve fihrist `ekatalog/` klasöründedir (`s001.webp…`, `index.json`) ve **elle düzenlenmez**: Yolhan Fiyat Paneli'ndeki "E-kataloğu yayınla" düğmesi (`claudecalisma/katalog`) fiyatsız kataloğu yeniden üretip bu klasöre commit atar. Çevresindeki yazılar site panelinden ("E-Katalog sayfası") düzenlenir.
+
 ## Fotoğraflar
 
 Ham çekimler `fotograflar-ham/` (depoya girmez). Web sürümleri `medya/*.webp`; seçim ve kırpmalar bir kerelik Pillow betiğiyle üretildi. Yeni fotoğraflar panelden yüklenir; panel tarayıcıda 2200 px'e küçültüp WebP yapar.

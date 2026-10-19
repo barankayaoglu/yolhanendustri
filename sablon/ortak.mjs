@@ -30,13 +30,16 @@ const SAYFALAR = [
   ["index.html", "anaSayfa"],
   ["hakkimizda.html", "hakkimizda"],
   ["urun-gruplari.html", "urunGruplari"],
+  ["e-katalog.html", "ekatalog"],
   ["iletisim.html", "iletisim"],
 ];
+
+const ETIKET_YEDEK = { ekatalog: "E-Katalog" }; // site.json'da menü adı yoksa
 
 function ustBolum(c, aktif) {
   const m = c.menu, f = c.firma;
   const linkler = SAYFALAR.map(([href, anahtar]) =>
-    `<a href="${href}"${href === aktif ? ' aria-current="page"' : ""}>${esc(m[anahtar])}</a>`).join("");
+    `<a href="${href}"${href === aktif ? ' aria-current="page"' : ""}>${esc(m[anahtar] || ETIKET_YEDEK[anahtar])}</a>`).join("");
   return `
   <header class="ust" data-ust>
     <div class="ust__ic">
@@ -87,7 +90,7 @@ function altBolum(c) {
         </div>
         <div>
           <h2>Sayfalar</h2>
-          <ul>${SAYFALAR.slice(1).map(([h, a]) => `<li><a href="${h}">${esc(m[a])}</a></li>`).join("")}
+          <ul>${SAYFALAR.slice(1).map(([h, a]) => `<li><a href="${h}">${esc(m[a] || ETIKET_YEDEK[a])}</a></li>`).join("")}
             <li><a href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2bGiris)}</a></li>
           </ul>
         </div>
@@ -102,7 +105,7 @@ function altBolum(c) {
 }
 
 /** Tam sayfa iskeleti */
-export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "" }) {
+export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [] }) {
   const url = SITE + (dosya === "index.html" ? "" : dosya);
   return `<!doctype html>
 <html lang="tr">
@@ -125,7 +128,7 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "" }) {
   <link rel="preload" href="fonts/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fontlar.css">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/site.css">${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
   <script>
     (function (d) {
       d.classList.add("js");
@@ -133,7 +136,7 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "" }) {
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("az-hareket");
     })(document.documentElement);
   </script>
-  <script defer src="js/site.js"></script>${jsonLd}
+  <script defer src="js/site.js"></script>${js.map((h) => `\n  <script defer src="${h}"></script>`).join("")}${jsonLd}
 </head>
 <body data-sayfa="${dosya.replace(".html", "")}">
   <a class="atla" href="#ana">İçeriğe geç</a>

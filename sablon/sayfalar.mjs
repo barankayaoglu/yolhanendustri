@@ -225,6 +225,89 @@ ${bayiBandi(c)}`;
   return iskelet(c, { dosya: "urun-gruplari.html", baslik: u.seoBaslik, aciklama: u.seoAciklama, govde });
 }
 
+/* ---------- E-katalog ---------- */
+
+// Kitap motoru (statik/js/ekatalog.js) bu iskeleti doldurur; sayfa görselleri ve fihrist
+// ekatalog/ klasöründen gelir (Yolhan Fiyat Paneli'nden yayınlanır).
+const ek = (yol) => `<svg class="ekat__i" viewBox="0 0 24 24" aria-hidden="true">${yol}</svg>`;
+const EK_IKON = {
+  geri: ek('<path d="M15 5l-7 7 7 7"/>'),
+  ileri: ek('<path d="M9 5l7 7-7 7"/>'),
+  liste: ek('<path d="M8 6h12M8 12h12M8 18h12M3.5 6h.01M3.5 12h.01M3.5 18h.01"/>'),
+  ara: ek('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/>'),
+  buyut: ek('<circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5M11 8v6M8 11h6"/>'),
+  tam: ek('<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>'),
+  paylas: ek('<circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-3.6M8.2 13.2l7.6 3.6"/>'),
+  kapat: ek('<path d="M6 6l12 12M18 6L6 18"/>'),
+};
+
+export function eKatalog(c) {
+  const e = c.ekatalog;
+  const f = c.firma;
+  const govde = `
+    <section class="ekat" data-ekatalog data-durak aria-label="${esc(e.baslik.replace(/\n/g, " "))}">
+      <div class="ekat__ust kap">
+        <p class="ekat__ustsatir">${esc(e.ustSatir)}</p>
+        <h1 class="ekat__baslik">${satirlar(e.baslik)}</h1>
+        <p class="ekat__aciklama">${br(e.aciklama)} <span class="ekat__tarih" data-tarih></span></p>
+      </div>
+
+      <div class="ekat__sahne">
+        <button class="ekat__ok ekat__ok--geri" type="button" data-geri aria-label="Önceki sayfa">${EK_IKON.geri}</button>
+        <div class="ekat__alan" data-alan tabindex="0" role="group" aria-roledescription="katalog" aria-label="Katalog sayfaları. Ok tuşlarıyla sayfa çevirin.">
+          <div class="ekat__yukleniyor" data-yukleniyor><span class="ekat__donen" aria-hidden="true"></span><span>Katalog açılıyor…</span></div>
+          <div class="ekat__kayan" data-kayan><div class="ekat__cilt" data-cilt></div></div>
+          <p class="ekat__ipucu" data-ipucu hidden>${esc(e.ipucu)}</p>
+        </div>
+        <button class="ekat__ok ekat__ok--ileri" type="button" data-ileri aria-label="Sonraki sayfa">${EK_IKON.ileri}</button>
+      </div>
+
+      <div class="ekat__cubuk">
+        <button class="ekat__dugme" type="button" data-ac="icindekiler" aria-expanded="false">${EK_IKON.liste}<span>İçindekiler</span></button>
+        <button class="ekat__dugme" type="button" data-ac="ara" aria-expanded="false">${EK_IKON.ara}<span>Ürün ara</span></button>
+        <div class="ekat__ilerleme">
+          <output class="ekat__etiket" data-etiket aria-live="polite">1</output>
+          <input class="ekat__kaydirgac" type="range" min="1" max="2" value="1" step="1" data-kaydirgac aria-label="Sayfaya git">
+          <span class="ekat__toplam" data-toplam></span>
+        </div>
+        <button class="ekat__dugme ekat__dugme--ikon" type="button" data-buyut aria-pressed="false" aria-label="Yakınlaştır">${EK_IKON.buyut}</button>
+        <button class="ekat__dugme ekat__dugme--ikon" type="button" data-paylas aria-label="Bu sayfayı paylaş">${EK_IKON.paylas}</button>
+        <button class="ekat__dugme ekat__dugme--ikon" type="button" data-tam aria-label="Tam ekran">${EK_IKON.tam}</button>
+      </div>
+
+      <aside class="ekat__cekmece" data-cekmece hidden aria-label="Katalog gezinmesi">
+        <div class="ekat__cekmece-bas">
+          <div class="ekat__sekmeler" role="tablist">
+            <button type="button" role="tab" data-sekme="icindekiler">İçindekiler</button>
+            <button type="button" role="tab" data-sekme="ara">Ürün ara</button>
+          </div>
+          <button class="ekat__dugme ekat__dugme--ikon" type="button" data-kapat aria-label="Kapat">${EK_IKON.kapat}</button>
+        </div>
+        <div class="ekat__panel" data-panel="icindekiler"><ol class="ekat__bolumler" data-bolumler></ol></div>
+        <div class="ekat__panel" data-panel="ara">
+          <input class="ekat__arama" type="search" placeholder="Ürün ya da marka yazın" autocomplete="off" data-arama aria-label="Ürün ya da marka ara">
+          <ul class="ekat__sonuclar" data-sonuclar></ul>
+        </div>
+      </aside>
+
+      <noscript><p class="ekat__nojs">Katalog sayfalarını görmek için JavaScript gerekir. Güncel ürün ve fiyat bilgisi için <a href="${esc(f.b2bAdres)}">B2B sistemimizi</a> kullanabilir ya da bizi arayabilirsiniz: <a href="${telHref(f.telefon)}">${esc(f.telefon)}</a>.</p></noscript>
+    </section>
+
+    <section class="ekat-not bolum bolum--gece" data-durak>
+      <div class="kap ekat-not__ic">
+        <div>
+          <h2 class="baslik-3">${br(e.notBaslik)}</h2>
+          <p>${br(e.notMetin)}</p>
+        </div>
+        <div class="dugmeler">
+          <a class="dugme dugme--sari dugme--b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(e.notButon1)}${ikon("external", "i--k")}</a>
+          <a class="dugme dugme--cizgi dugme--b" href="${waHref(f.whatsapp, e.whatsappMesaji)}" target="_blank" rel="noopener">${ikon("chat", "i--k")}${esc(e.notButon2)}</a>
+        </div>
+      </div>
+    </section>`;
+  return iskelet(c, { dosya: "e-katalog.html", baslik: e.seoBaslik, aciklama: e.seoAciklama, govde, css: ["css/ekatalog.css"], js: ["js/ekatalog.js"] });
+}
+
 /* ---------- İletişim ---------- */
 
 export function iletisim(c) {
@@ -303,6 +386,7 @@ export const SAYFALAR = [
   { dosya: "index.html", olustur: anaSayfa },
   { dosya: "hakkimizda.html", olustur: hakkimizda },
   { dosya: "urun-gruplari.html", olustur: urunGruplari },
+  { dosya: "e-katalog.html", olustur: eKatalog },
   { dosya: "iletisim.html", olustur: iletisim },
   { dosya: "kvkk-aydinlatma-metni.html", olustur: kvkk },
   { dosya: "gizlilik-politikasi.html", olustur: gizlilik },
