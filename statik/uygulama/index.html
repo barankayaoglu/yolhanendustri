@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yolhan B2B</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14295a">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="uyg-192.png">
+<link rel="apple-touch-icon" href="uyg-apple-180.png">
+<meta name="apple-mobile-web-app-title" content="Yolhan B2B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>
+  html, body { margin: 0; height: 100%; background: #fff; font-family: system-ui, sans-serif; color: #14295a; }
+  /* Canlı B2B aynı site (yolhanendustri.com) altında açılır: giriş çerezleri iframe'de de çalışır. */
+  iframe { position: fixed; inset: env(safe-area-inset-top) 0 0 0; width: 100%; height: calc(100% - env(safe-area-inset-top)); border: 0; }
+  .perde { position: fixed; inset: 0; display: grid; place-content: center; justify-items: center; gap: 16px; background: #fff; text-align: center; padding: 16px; }
+  .perde[hidden] { display: none; }
+  .perde img { width: 96px; height: 96px; }
+  .perde button { font: inherit; font-weight: 600; padding: 12px 24px; border: 0; border-radius: 8px; background: #14295a; color: #fff; }
+</style>
+</head>
+<body>
+<iframe id="b2b" title="Yolhan Endüstri B2B" src="https://b2b.yolhanendustri.com/" allow="payment; clipboard-write"></iframe>
+<div class="perde" id="yukleniyor" role="status"><img src="uyg-192.png" alt=""><span>Yükleniyor…</span></div>
+<div class="perde" id="cevrimdisi" hidden role="alert">
+  <img src="uyg-192.png" alt="">
+  <strong>İnternet bağlantısı yok</strong>
+  <span>Bağlantı gelince sipariş ekranı açılır.</span>
+  <button type="button" onclick="location.reload()">Tekrar dene</button>
+</div>
+<script>
+  var b2b = document.getElementById("b2b"), yuk = document.getElementById("yukleniyor"), yok = document.getElementById("cevrimdisi");
+  b2b.addEventListener("load", function () { yuk.hidden = true; });
+  function durum() { yok.hidden = navigator.onLine; }
+  addEventListener("online", function () { if (!yok.hidden) location.reload(); });
+  addEventListener("offline", durum);
+  durum();
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(function () {});
+</script>
+</body>
+</html>
