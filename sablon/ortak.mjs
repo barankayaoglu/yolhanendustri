@@ -116,6 +116,7 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = 
   <meta name="description" content="${esc(aciklama)}">
   <link rel="canonical" href="${url}">
   <meta name="theme-color" content="#10203f">
+  <meta name="facebook-domain-verification" content="xti50lg1k51xgf5lwkl1p1h224gk2m">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:site_name" content="${esc(c.firma.ad)}">
