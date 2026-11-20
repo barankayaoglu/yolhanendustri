@@ -124,6 +124,10 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = 
   <meta property="og:description" content="${esc(aciklama)}">
   <meta property="og:url" content="${url}">
   <meta property="og:image" content="${SITE}${esc((c.anaSayfa.giris.gorseller[0] || {}).src || "img/logo.png")}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(baslik)}">
+  <meta name="twitter:description" content="${esc(aciklama)}">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="img/isaret-512.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="preload" href="fonts/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
@@ -142,7 +146,7 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = 
 <body data-sayfa="${dosya.replace(".html", "")}">
   <a class="atla" href="#ana">İçeriğe geç</a>
   <div class="perde" aria-hidden="true"><div class="perde__serit"></div><img class="perde__isaret" src="img/isaret-512.png" alt="" width="96" height="96"></div>
-  ${ustBolum(c, dosya)}
+  ${ustBolum(c, dosya.startsWith("urun-") ? "urun-gruplari.html" : dosya)}
   <main id="ana">
     <div class="yol" aria-hidden="true"></div>
 ${govde}

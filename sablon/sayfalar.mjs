@@ -10,11 +10,17 @@ const grupAdi = (c, id) => ((c.gruplar || []).find((g) => g.id === id) || {}).ad
 
 /* ---------- Parçalar ---------- */
 
+const ldBlok = (o) => `\n  <script type="application/ld+json">${JSON.stringify(o)}</script>`;
+const ekmek = (adimlar) => ({
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: adimlar.map(([ad, yol], i) => ({ "@type": "ListItem", position: i + 1, name: ad, item: SITE + yol })),
+});
+
 function grupKarolari(c) {
   return (c.gruplar || []).map((g, i) => {
     const sayi = grupMarkalari(c, g.id).length;
     return `
-        <a class="karo karo--${(i % 8) + 1}" href="urun-gruplari.html#${esc(g.id)}">
+        <a class="karo karo--${(i % 8) + 1}" href="urun-${esc(g.id)}.html">
           ${gorsel(g.gorsel, { sinif: "karo__gorsel", boyutlar: "(min-width: 900px) 50vw, 100vw" })}
           <span class="karo__metin">
             <span class="karo__ad">${esc(g.ad)}</span>
@@ -68,16 +74,22 @@ export function anaSayfa(c) {
     gorsel(x, { sinif: "giris__gorsel" + (i === 0 ? " aktif" : ""), yukle: i === 0 ? "eager" : "lazy" })).join("");
   const imler = (g.gorseller || []).map(() => `<span class="giris__im"><span></span></span>`).join("");
 
-  const jsonLd = `
-  <script type="application/ld+json">${JSON.stringify({
-    "@context": "https://schema.org", "@type": "Organization",
-    name: f.ad, legalName: f.unvan, url: SITE, logo: SITE + "img/logo.png",
-    foundingDate: f.kurulus, email: f.eposta, telephone: "+90 " + f.telefon.replace(/^0/, ""),
-    location: (c.subeler || []).map((s) => ({
-      "@type": "HardwareStore", name: f.ad + " - " + s.ad,
-      address: { "@type": "PostalAddress", streetAddress: s.adres.split("\n")[0], addressLocality: s.ilce, addressRegion: "İzmir", addressCountry: "TR" },
-    })),
-  })}</script>`;
+  const jsonLd = ldBlok({
+    "@context": "https://schema.org", "@graph": [
+      {
+        "@type": "Organization", "@id": SITE + "#firma",
+        name: f.ad, legalName: f.unvan, url: SITE, logo: SITE + "img/logo.png",
+        foundingDate: f.kurulus, email: f.eposta, telephone: "+90 " + f.telefon.replace(/^0/, ""),
+        sameAs: ["https://www.instagram.com/yolhanendustri/"],
+        location: (c.subeler || []).map((s) => ({
+          "@type": "HardwareStore", name: f.ad + " - " + s.ad, url: SITE, image: SITE + s.gorsel.src,
+          telephone: "+90 " + f.telefon.replace(/^0/, ""),
+          address: { "@type": "PostalAddress", streetAddress: s.adres.split("\n")[0], addressLocality: s.ilce, addressRegion: "İzmir", addressCountry: "TR" },
+        })),
+      },
+      { "@type": "WebSite", "@id": SITE + "#site", url: SITE, name: f.ad, inLanguage: "tr", publisher: { "@id": SITE + "#firma" } },
+    ],
+  });
 
   const govde = `
     <section class="giris" data-durak>
@@ -196,6 +208,7 @@ export function urunGruplari(c) {
             <p class="grup-satir__ozet">${esc(g.ozet)}</p>
             <p>${br(g.aciklama)}</p>
             ${markalar.length ? `<ul class="etiketler" aria-label="Markalar">${markalar.map((m) => `<li>${esc(m.ad)}</li>`).join("")}</ul>` : ""}
+            <a class="ok-link" href="urun-${esc(g.id)}.html">${esc(g.ad)} hakkında ayrıntılar${ikon("arrow", "i--k")}</a>
           </div>
         </article>`;
   }).join("");
@@ -222,8 +235,50 @@ export function urunGruplari(c) {
       </div>
     </section>
 ${bayiBandi(c)}`;
-  return iskelet(c, { dosya: "urun-gruplari.html", baslik: u.seoBaslik, aciklama: u.seoAciklama, govde });
+  return iskelet(c, { dosya: "urun-gruplari.html", baslik: u.seoBaslik, aciklama: u.seoAciklama, govde,
+    jsonLd: ldBlok(ekmek([["Ana sayfa", ""], [c.menu.urunGruplari || "Ürün Grupları", "urun-gruplari.html"]])) });
 }
+
+/* ---------- Ürün grubu sayfaları (urun-<id>.html) ---------- */
+
+export function grupSayfasi(c, g) {
+  const f = c.firma;
+  const markalar = grupMarkalari(c, g.id);
+  const dosya = `urun-${g.id}.html`;
+  const digerleri = (c.gruplar || []).filter((x) => x.id !== g.id)
+    .map((x) => `<li><a href="urun-${esc(x.id)}.html">${esc(x.ad)}</a></li>`).join("");
+  const govde = `${sayfaGiris({ baslik: g.ad, aciklama: g.ozet, gorsel: g.gorsel })}
+
+    <section class="bolum grup-listesi">
+      <div class="kap">
+        <div class="bolum-bas">
+          <h2 class="baslik-2">İzmir'de ${esc(g.ad)} tedariki</h2>
+          <p>${br(g.aciklama)}</p>
+          <p>${esc(g.ad)} ürünlerini ${esc(f.ad)}'in Bornova merkez deposundan ve Konak şubesinden işletmelere, ustalara ve bayilere tedarik ediyoruz. Güncel fiyat ve stok bilgisi için bizi arayın veya bayi hesabıyla B2B sistemimizden bakın.</p>
+        </div>
+        ${markalar.length ? `<h2 class="baslik-3">${esc(g.ad)} markalarımız</h2><ul class="etiketler" aria-label="Markalar">${markalar.map((m) => `<li>${esc(m.ad)}</li>`).join("")}</ul>` : ""}
+        <p><a class="ok-link" href="${telHref(f.telefon)}">${esc(f.telefon)}${ikon("phone", "i--k")}</a></p>
+      </div>
+    </section>
+
+    <section class="bolum bolum--beton" data-durak>
+      <div class="kap">
+        <div class="bolum-bas"><h2 class="baslik-2">Diğer ürün gruplarımız</h2></div>
+        <ul class="etiketler">${digerleri}</ul>
+      </div>
+    </section>
+${bayiBandi(c)}`;
+  return iskelet(c, {
+    dosya,
+    baslik: `${g.ad} — İzmir'de Tedarik | ${f.ad}`,
+    aciklama: `${g.ozet}. ${f.ad} Bornova merkez depo ve Konak şubesinden İzmir'deki işletme ve bayilere ${g.ad.toLocaleLowerCase("tr")} tedariki.`,
+    govde,
+    jsonLd: ldBlok(ekmek([["Ana sayfa", ""], ["Ürün Grupları", "urun-gruplari.html"], [g.ad, dosya]])),
+  });
+}
+
+/** İçeriğe bağlı sayfalar: her ürün grubu için bir sayfa */
+export const grupSayfalari = (c) => (c.gruplar || []).map((g) => ({ dosya: `urun-${g.id}.html`, olustur: (cc) => grupSayfasi(cc, g) }));
 
 /* ---------- E-katalog ---------- */
 

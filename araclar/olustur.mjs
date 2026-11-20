@@ -3,7 +3,7 @@
 import { readFile, writeFile, mkdir, rm, cp } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-import { SAYFALAR } from "../sablon/sayfalar.mjs";
+import { SAYFALAR, grupSayfalari } from "../sablon/sayfalar.mjs";
 import { SITE } from "../sablon/ortak.mjs";
 
 const KOK = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -14,7 +14,8 @@ const icerik = JSON.parse(await readFile(path.join(KOK, "icerik/site.json"), "ut
 await rm(DIST, { recursive: true, force: true });
 await mkdir(DIST, { recursive: true });
 
-for (const { dosya, olustur } of SAYFALAR) {
+const TUM = [...SAYFALAR, ...grupSayfalari(icerik)];
+for (const { dosya, olustur } of TUM) {
   await writeFile(path.join(DIST, dosya), olustur(icerik), "utf8");
   console.log("sayfa:", dosya);
 }
@@ -30,7 +31,7 @@ await writeFile(path.join(DIST, "CNAME"), "yolhanendustri.com\n");
 await writeFile(path.join(DIST, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /panel/\n\nSitemap: ${SITE}sitemap.xml\n`);
 await writeFile(path.join(DIST, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  SAYFALAR.map(({ dosya }) => `  <url><loc>${SITE}${dosya === "index.html" ? "" : dosya}</loc></url>`).join("\n") +
+  TUM.map(({ dosya }) => `  <url><loc>${SITE}${dosya === "index.html" ? "" : dosya}</loc></url>`).join("\n") +
   `\n</urlset>\n`);
 
 console.log("tamam →", DIST);
