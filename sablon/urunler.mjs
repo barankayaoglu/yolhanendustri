@@ -25,10 +25,10 @@ function aciklamaYaz(c, u, v, kardesler) {
   const f = c.firma;
   const cesit = u.v ? ` Çeşit/ölçü: ${u.v.replace(/\s*·\s*/g, ", ")}.` : "";
   const ral = u.ral ? ` RAL ${u.ral} renk koduyla sunulan bu sprey boya, metal, ahşap ve plastik yüzeylerde dekoratif ve koruyucu boyama için kullanılır.` : "";
-  const fa = v.acik && v.acik.aileler && v.acik.aileler[u.fa];
+  const fa = v.acik && ((v.acik.aileler && v.acik.aileler[u.fa]) || (v.acik.urunler && v.acik.urunler[u.s]));
   const kisa = `${u.a}, ${u.m} markasının ${kucuk(u.g)} grubundaki ürünüdür (ürün kodu ${u.k}).${cesit}${ral}`;
   const kurum = `${f.ad}, ${u.m} ürünlerini İzmir'de Bornova merkez deposundan ve Konak şubesinden işletmelere, ustalara ve bayilere tedarik eder. Güncel fiyat ve stok bilgisi için bizi arayın veya bayi hesabıyla B2B sistemimizden bakın.`;
-  return { kisa, kurum, fa, grupMetni: v.acik && v.acik.gruplar && v.acik.gruplar[u.g] };
+  return { kisa, kurum, fa, grupMetni: [v.acik && v.acik.markalar && v.acik.markalar[u.m], v.acik && v.acik.gruplar && v.acik.gruplar[u.g]].filter(Boolean).join(" ") };
 }
 
 /* ---------- Ürünlerimiz (sayfalı liste + süzgeç) ---------- */

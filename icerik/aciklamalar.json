@@ -1,48 +1,3793 @@
 {
   "aileler": {
-    "best-sp-elite": { "ozet": "Best Elite, RAL renk kodlarıyla üretilen 400 ml akrilik esaslı sprey boyadır. Standart RAL tonlarını (ör. RAL 9005 mat siyah, RAL 9010 beyaz, RAL 7035 açık gri, RAL 5015 gök mavisi) kolayca bulmak ve tekrar sipariş etmek isteyen atölye, montaj ve bakım işleri için uygundur.", "kullanim": ["Metal, ahşap, sert plastik ve alüminyum yüzeylerde dekoratif ve koruyucu boyama", "Kapı, pencere doğrama, korkuluk, raf ve makine parçalarında rötuş ve komple boyama", "RAL kodu belli bir rengi tutturmak gereken işler"], "ipucu": "Boyamadan önce yüzeyi yağdan ve tozdan arındırın, ince katlarla 2–3 geçiş yapın, katlar arasında kısa süre bekleyin." },
-    "best-sp-klasik": { "ozet": "Best Klasik, günlük dekoratif işler için 400 ml temel renk sprey boya serisidir (beyaz, krem, sarı, yeşil, kırmızı, mavi, kahve, mat ve parlak siyah gibi).", "kullanim": ["Ev, atölye ve şantiyede metal, ahşap ve plastik yüzeylerin boyanması", "Küçük onarım ve yenileme işleri"], "ipucu": "RAL kodu aranıyorsa Best Elite serisine bakın." },
-    "best-icon-spray-boya": { "ozet": "Best İcon, 400 ml renkli sprey boya serisidir. Canlı renk seçenekleriyle hobi, dekorasyon ve genel boyama işlerinde kullanılır.", "kullanim": ["Dekoratif objeler, mobilya ve aksesuar boyama", "Metal ve ahşap yüzeylerde renk yenileme"], "ipucu": "Uygulamadan önce kutuyu iyice çalkalayın ve yüzeyden yaklaşık 20–25 cm uzakta, ince katlarla boyayın." },
-    "best-light-sp": { "ozet": "Best Light, 250 ml küçük boy sprey boya serisidir. Az miktarda boyaya ihtiyaç olan rötuş ve küçük işler için pratik ambalajdır.", "kullanim": ["Rötuş ve küçük yüzeylerin boyanması", "Hobi ve onarım işleri"], "ipucu": "Geniş yüzeyler için 400 ml serilerini tercih edin." },
-    "best-parlak-metal-sp": { "ozet": "Best Parlak Metal serisi, altın, alüminyum ve bakır görünümü veren metalik sprey boyalardır.", "kullanim": ["Dekoratif parçalar, çerçeve, aksesuar ve metal yüzeylerde parlak metalik görünüm", "Tabela, vitrin ve süsleme işleri"] },
-    "best-sp-elite-efekt-boya": { "ozet": "Best Elite Efekt Boya serisi bakır, gold ve krom görünümlü efekt sprey boyalardır.", "kullanim": ["Dekoratif ve vitrin işleri, aksesuar ve model boyama", "Metal ve plastik yüzeylerde krom, altın veya bakır görünümü"] },
-    "best-sp-elite-ozel-boya": { "ozet": "Best Elite Özel Boya, 500 ml gümüş ve siyah sprey boyadır. Daha büyük yüzeylerde tek kutuyla daha geniş alan boyamak için tercih edilir.", "kullanim": ["Metal yapılar, korkuluk, ızgara ve makine gövdelerinde gümüş veya siyah boyama"] },
-    "best-sp-elite-floresan": { "ozet": "Best Elite Floresan serisi, dikkat çeken parlak floresan renkli sprey boyalardır (kırmızı, mavi, pembe, sarı, turuncu, yeşil, lila).", "kullanim": ["İşaretleme, görünürlük ve uyarı gerektiren işler", "Tabela, afiş, dekorasyon ve model boyama"], "ipucu": "Floresan renkler açık zemin üzerinde daha canlı görünür; beyaz astar yardımcı olur." },
-    "best-sp-elite-transparan-boya": { "ozet": "Best Elite Transparan Boya, 200 ml şeffaf renkli sprey boyadır (mavi, siyah, kırmızı, turuncu). Yüzeyin altındaki deseni gizlemeden renk verir.", "kullanim": ["Cam, akrilik ve far gibi şeffaf yüzeylere renk tonu verme", "Dekoratif ve aydınlatma uygulamaları"] },
-    "best-elite-traktor-sp-boya": { "ozet": "Best Elite Traktör Boyaları, tarım makinelerinin orijinal renklerine uygun sprey boyalardır: Ferguson kırmızı, John Deere yeşil, New Holland gri, jant beyazı, kök gri, mavi, turuncu, kahve, kiremit, siyah ve smoke gri.", "kullanim": ["Traktör ve tarım makinelerinde rötuş ve komple boyama", "Jant, şasi ve gövde parçalarının renk yenilemesi"], "ipucu": "Pas ve eski boya kalıntılarını temizleyip gerekirse astar uygulayın." },
-    "best-elite-ozel-boyalar": { "ozet": "Best Elite özel boyalar; pütür (dokulu), tampon ve radyatör boyalarını kapsar.", "kullanim": ["Tampon ve plastik aksamda dokulu veya mat kaplama", "Radyatör ve benzeri metal yüzeylerin boyanması"] },
-    "best-elite-yuk-isi-boya": { "ozet": "Best Elite Yüksek Isı Boya, sıcağa maruz kalan yüzeyler için üretilmiş sprey boyadır. Gümüş ve kırmızı gibi renkleri vardır.", "kullanim": ["Egzoz, soba, baca, kazan ve motor parçaları", "Sıcağa maruz kalan metal yüzeylerin korunması ve renklendirilmesi"], "ipucu": "Dayanabildiği sıcaklık seviyesi için ürün etiketine bakın; yüzey temiz ve yağsız olmalıdır." },
-    "best-elite-eko-isi-boya": { "ozet": "Best Elite Eko Isı Boya, orta düzey ısıya maruz kalan yüzeyler için ekonomik sprey boya serisidir.", "kullanim": ["Soba, baca, radyatör ve ısınan metal yüzeyler"], "ipucu": "Çok yüksek sıcaklık için Yüksek Isı Boya serisini tercih edin." },
-    "best-elite-selulozik-vernik": { "ozet": "Best Elite Selülozik Vernik, ahşap yüzeylere ceviz, meşe ve renksiz tonlarında koruyucu ve dekoratif vernik katmanı veren spreydir.", "kullanim": ["Ahşap mobilya, kapı, çerçeve ve el işlerinde vernik uygulaması", "Renk tonunu yenileme ve yüzey koruma"] },
-    "best-yolhan-best-elite-akrilik-vernik": { "ozet": "Best Elite Akrilik Vernik, parlak ve mat seçenekleriyle boyalı yüzeyleri koruyan şeffaf sprey vernik.", "kullanim": ["Boyanmış yüzeylerin üzerine koruyucu şeffaf kat", "Dekoratif ve el işi parçalarda parlaklık veya mat görünüm"] },
-    "best-astarlar": { "ozet": "Best Astar Spreyleri; selülozik ve plastik yüzeyler için hazırlanan astar spreydir. Boyanın yüzeye tutunmasını artırır.", "kullanim": ["Boya öncesi yüzey hazırlığı", "Plastik ve metal yüzeylerde tutunmayı artırma"] },
-    "best-kalip-ayirici": { "ozet": "Best Kalıp Ayırıcı Sprey (KA 1000, KA 2000, KA 571 silikonsuz), kalıptan çıkan parçaların kalıba yapışmasını önler.", "kullanim": ["Plastik enjeksiyon, kauçuk ve döküm kalıpları", "Silikonsuz seçenek, sonradan boya veya yapıştırma yapılacak parçalar için"], "ipucu": "Boyanacak veya yapıştırılacak parçalarda silikonsuz modeli (KA 571) seçin." },
-    "best-kalip-bakim": { "ozet": "Best Kalıp Koruyucu (MP 61) ve Kalıp Temizleyici (MP 62), kalıpların temizliği ve korunması için sprey ürünlerdir.", "kullanim": ["Kalıp yüzeylerinde kir, kalıntı ve yağ temizliği", "Kalıp depolama sırasında yüzey koruma"] },
-    "best-gazalti-kaynak": { "ozet": "Best Gazaltı Kaynak Spreyleri (GK serisi), gazaltı kaynağında kaynak sıçramalarının parçaya ve torç ucuna yapışmasını azaltır.", "kullanim": ["Gazaltı (MIG/MAG) kaynak atölyeleri", "Torç ucu ve kaynak çevresi koruma, parça temizliğini kolaylaştırma"], "ipucu": "Silikonsuz (free silikon) seçenek, kaynak sonrası boyanacak parçalar için uygundur." },
-    "best-pas-sokucu": { "ozet": "Best Pas Sökücü Sprey (LU 100, LU 250), paslanmış ve sıkışmış cıvata, somun ve mafsalları gevşetmeye yarayan nüfuz edici spreydir.", "kullanim": ["Paslanmış cıvata ve somunların sökülmesi", "Sıkışmış menteşe, kilit ve mekanik parçalar"] },
-    "best-catlak-arayici": { "ozet": "Best Çatlak Arayıcı Set (SP 88 temizleyici, SP 89 penetrant, SP 90 developer), sıvı penetrant yöntemiyle metal ve kaynak yüzeylerindeki çatlakları görünür hale getirir.", "kullanim": ["Kaynak dikişi ve döküm parçalarda yüzey çatlağı kontrolü", "Bakım ve kalite kontrol işleri"], "ipucu": "Kullanım sırası: önce temizleyici, sonra penetrant, ardından developer." },
-    "best-yaglayicilar": { "ozet": "Best Yağlayıcı Spreyler; zincir yağlayıcı, mum sprey, kesme yağı ve koşu bandı yağlayıcı gibi sprey yağlama ürünlerini kapsar.", "kullanim": ["Zincir, dişli ve mafsal yağlama", "Kesme ve delme işlerinde soğutma ve yağlama", "Koşu bandı ve benzeri makinelerin bakımı"] },
-    "best-yolhan-best-sivi-gres": { "ozet": "Best Sıvı Gres (LU 500, kauçuklu LU 1000), akışkan yapıda uzun süre yağlama sağlayan gres sprey ürünlerdir.", "kullanim": ["Rulman, zincir, kızak ve mafsal yağlama", "Kauçuk ve plastik parçaların bakımı (kauçuklu model)"] },
-    "best-kir-yag-sokucu": { "ozet": "Best Kir, Yağ, Katran ve Etiket Sökücü ürünleri; inox temizleyici, ağır kir ve yağ sökücü gibi sprey temizlik çözümlerini kapsar.", "kullanim": ["Makine, atölye ve zemin yağ ve kir temizliği", "Paslanmaz yüzey temizliği", "Etiket ve katran kalıntılarının sökülmesi"] },
-    "best-balata-motor-temizleyici": { "ozet": "Best Motor, Balata ve Fren Temizleyici (CR serisi), fren balatası ve motor parçalarındaki yağ ve kiri hızlı çözen sprey temizleyicilerdir.", "kullanim": ["Fren sistemi ve balata temizliği", "Motor ve mekanik parçalarda yağ alma"] },
-    "best-devre-temizleyici": { "ozet": "Best Devre Temizleyici (EL 100 yağlı, EL 200 yağsız), elektronik kart ve elektrik kontaklarının temizliği için sprey üründür.", "kullanim": ["Elektronik kart, kontak ve konnektör temizliği", "Pano ve elektrik bakım işleri"], "ipucu": "Uygulamadan önce enerjiyi kesin." },
-    "best-6-faktor-sprey": { "ozet": "Best 6 Faktör Performans Spreyi, 200 ml ve 400 ml boylarında çok amaçlı bakım spreyidir.", "kullanim": ["Pas çözme, yağlama ve koruma gerektiren genel bakım işleri"] },
-    "best-silikon-tup": { "ozet": "Best Silikon Tüp, 50 g şeffaf ve beyaz renkte tüp silikondur.", "kullanim": ["Küçük çaplı sızdırmazlık ve yapıştırma işleri", "Cam, seramik ve metal birleşimlerinde dolgu"] },
-    "best-sivi-conta": { "ozet": "Best Sıvı Conta, 45 g tüpte kırmızı ve siyah seçenekleriyle flanş ve kapak yüzeylerinde conta yerine kullanılan sızdırmazlık macunudur.", "kullanim": ["Motor, şanzıman ve pompa kapaklarında sızdırmazlık", "Flanş birleşimleri"] },
-    "best-mdf-yapistirici": { "ozet": "Best MDF Yapıştırıcı, MDF ve benzeri panellerin yapıştırılmasında kullanılan yapıştırıcı setidir (400 ml + 100 g ve 200 ml + 50 g boylarında).", "kullanim": ["MDF ve ahşap panel montajı", "Atölye ve mobilya imalatı"] },
-    "best-bybest-ken-yuk-kuv-yuk-isi-by-020": { "ozet": "BY-020, yüksek kuvvetli ve yüksek ısıya dayanıklı anaerobik kenetleyicidir (10 ml ve 250 ml). Silindirik parçaları (burç, rulman, mil) birbirine sabitler.", "kullanim": ["Rulman ve burçların mile sabitlenmesi", "Sıkı geçme birleşimlerde ek tutunma"] },
-    "best-civata-sab-dusuk-kuv-by-022": { "ozet": "BY-022, düşük kuvvetli anaerobik cıvata sabitleyicidir (50 ml, 250 ml). Küçük cıvataların titreşimle gevşemesini engeller, el aletleriyle kolay sökülebilir.", "kullanim": ["Küçük vida ve cıvatalarda titreşim emniyeti", "Sonradan sökülmesi gereken bağlantılar"] },
-    "best-bybest-ken-yuk-kuv-by-038": { "ozet": "BY-038, yüksek kuvvetli anaerobik kenetleyicidir (50 ml, 250 ml). Yataklı ve geçmeli parçaların sabitlenmesinde kullanılır.", "kullanim": ["Rulman, burç ve mil birleşimleri"] },
-    "best-civata-sab-orta-kuv-by-042": { "ozet": "BY-042, orta kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Cıvata ve saplamaları titreşime karşı sabitler; el aletleriyle sökülebilir.", "kullanim": ["Genel amaçlı cıvata ve somun emniyeti", "Bakımda sökülmesi gereken bağlantılar"] },
-    "best-civata-sab-orta-yuk-by-043": { "ozet": "BY-043, orta-yüksek kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Daha çok tutunma gereken büyük cıvata ve saplamalarda kullanılır.", "kullanim": ["Büyük çaplı cıvata ve saplama bağlantıları", "Yoğun titreşimli makine parçaları"] },
-    "best-civata-sab-yuk-kuv-by-070": { "ozet": "BY-070, yüksek kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Kalıcı sabitleme gereken bağlantılarda kullanılır; sökmek için ısı gerekebilir.", "kullanim": ["Kalıcı cıvata ve saplama sabitleme", "Ağır makine ve ekipman bağlantıları"] },
-    "best-civata-sab-yuk-kuv-yuk-isi-by-072": { "ozet": "BY-072, yüksek kuvvetli ve yüksek ısıya dayanıklı anaerobik cıvata sabitleyicidir (50 ml, 250 ml). Sıcak çalışan bağlantılar için uygundur.", "kullanim": ["Motor, egzoz ve ısınan makine parçalarındaki cıvata bağlantıları"] },
-    "best-teflon-boru-sizdirmazi-by-077": { "ozet": "BY-077, dişli boru bağlantıları için teflon esaslı anaerobik sızdırmazlık macunudur (50 ml, 250 ml). Boru ve fitting dişlerini sızdırmaz hale getirir.", "kullanim": ["Metal dişli boru ve fitting bağlantıları", "Hidrolik ve pnömatik hat bağlantıları"] },
-    "best-yuk-basinc-sizdirmazlik-by-142": { "ozet": "BY-142, yüksek basınca dayanıklı anaerobik sızdırmazlık macunudur (10 ml, 250 ml). Dişli bağlantılarda sızıntıyı önler.", "kullanim": ["Yüksek basınçlı hidrolik ve pnömatik hat bağlantıları"] }
+    "best-sp-elite": {
+      "ozet": "Best Elite, RAL renk kodlarıyla üretilen 400 ml akrilik esaslı sprey boyadır. Standart RAL tonlarını (ör. RAL 9005 mat siyah, RAL 9010 beyaz, RAL 7035 açık gri, RAL 5015 gök mavisi) kolayca bulmak ve tekrar sipariş etmek isteyen atölye, montaj ve bakım işleri için uygundur.",
+      "kullanim": [
+        "Metal, ahşap, sert plastik ve alüminyum yüzeylerde dekoratif ve koruyucu boyama",
+        "Kapı, pencere doğrama, korkuluk, raf ve makine parçalarında rötuş ve komple boyama",
+        "RAL kodu belli bir rengi tutturmak gereken işler"
+      ],
+      "ipucu": "Boyamadan önce yüzeyi yağdan ve tozdan arındırın, ince katlarla 2–3 geçiş yapın, katlar arasında kısa süre bekleyin."
+    },
+    "best-sp-klasik": {
+      "ozet": "Best Klasik, günlük dekoratif işler için 400 ml temel renk sprey boya serisidir (beyaz, krem, sarı, yeşil, kırmızı, mavi, kahve, mat ve parlak siyah gibi).",
+      "kullanim": [
+        "Ev, atölye ve şantiyede metal, ahşap ve plastik yüzeylerin boyanması",
+        "Küçük onarım ve yenileme işleri"
+      ],
+      "ipucu": "RAL kodu aranıyorsa Best Elite serisine bakın."
+    },
+    "best-icon-spray-boya": {
+      "ozet": "Best İcon, 400 ml renkli sprey boya serisidir. Canlı renk seçenekleriyle hobi, dekorasyon ve genel boyama işlerinde kullanılır.",
+      "kullanim": [
+        "Dekoratif objeler, mobilya ve aksesuar boyama",
+        "Metal ve ahşap yüzeylerde renk yenileme"
+      ],
+      "ipucu": "Uygulamadan önce kutuyu iyice çalkalayın ve yüzeyden yaklaşık 20–25 cm uzakta, ince katlarla boyayın."
+    },
+    "best-light-sp": {
+      "ozet": "Best Light, 250 ml küçük boy sprey boya serisidir. Az miktarda boyaya ihtiyaç olan rötuş ve küçük işler için pratik ambalajdır.",
+      "kullanim": [
+        "Rötuş ve küçük yüzeylerin boyanması",
+        "Hobi ve onarım işleri"
+      ],
+      "ipucu": "Geniş yüzeyler için 400 ml serilerini tercih edin."
+    },
+    "best-parlak-metal-sp": {
+      "ozet": "Best Parlak Metal serisi, altın, alüminyum ve bakır görünümü veren metalik sprey boyalardır.",
+      "kullanim": [
+        "Dekoratif parçalar, çerçeve, aksesuar ve metal yüzeylerde parlak metalik görünüm",
+        "Tabela, vitrin ve süsleme işleri"
+      ]
+    },
+    "best-sp-elite-efekt-boya": {
+      "ozet": "Best Elite Efekt Boya serisi bakır, gold ve krom görünümlü efekt sprey boyalardır.",
+      "kullanim": [
+        "Dekoratif ve vitrin işleri, aksesuar ve model boyama",
+        "Metal ve plastik yüzeylerde krom, altın veya bakır görünümü"
+      ]
+    },
+    "best-sp-elite-ozel-boya": {
+      "ozet": "Best Elite Özel Boya, 500 ml gümüş ve siyah sprey boyadır. Daha büyük yüzeylerde tek kutuyla daha geniş alan boyamak için tercih edilir.",
+      "kullanim": [
+        "Metal yapılar, korkuluk, ızgara ve makine gövdelerinde gümüş veya siyah boyama"
+      ]
+    },
+    "best-sp-elite-floresan": {
+      "ozet": "Best Elite Floresan serisi, dikkat çeken parlak floresan renkli sprey boyalardır (kırmızı, mavi, pembe, sarı, turuncu, yeşil, lila).",
+      "kullanim": [
+        "İşaretleme, görünürlük ve uyarı gerektiren işler",
+        "Tabela, afiş, dekorasyon ve model boyama"
+      ],
+      "ipucu": "Floresan renkler açık zemin üzerinde daha canlı görünür; beyaz astar yardımcı olur."
+    },
+    "best-sp-elite-transparan-boya": {
+      "ozet": "Best Elite Transparan Boya, 200 ml şeffaf renkli sprey boyadır (mavi, siyah, kırmızı, turuncu). Yüzeyin altındaki deseni gizlemeden renk verir.",
+      "kullanim": [
+        "Cam, akrilik ve far gibi şeffaf yüzeylere renk tonu verme",
+        "Dekoratif ve aydınlatma uygulamaları"
+      ]
+    },
+    "best-elite-traktor-sp-boya": {
+      "ozet": "Best Elite Traktör Boyaları, tarım makinelerinin orijinal renklerine uygun sprey boyalardır: Ferguson kırmızı, John Deere yeşil, New Holland gri, jant beyazı, kök gri, mavi, turuncu, kahve, kiremit, siyah ve smoke gri.",
+      "kullanim": [
+        "Traktör ve tarım makinelerinde rötuş ve komple boyama",
+        "Jant, şasi ve gövde parçalarının renk yenilemesi"
+      ],
+      "ipucu": "Pas ve eski boya kalıntılarını temizleyip gerekirse astar uygulayın."
+    },
+    "best-elite-ozel-boyalar": {
+      "ozet": "Best Elite özel boyalar; pütür (dokulu), tampon ve radyatör boyalarını kapsar.",
+      "kullanim": [
+        "Tampon ve plastik aksamda dokulu veya mat kaplama",
+        "Radyatör ve benzeri metal yüzeylerin boyanması"
+      ]
+    },
+    "best-elite-yuk-isi-boya": {
+      "ozet": "Best Elite Yüksek Isı Boya, sıcağa maruz kalan yüzeyler için üretilmiş sprey boyadır. Gümüş ve kırmızı gibi renkleri vardır.",
+      "kullanim": [
+        "Egzoz, soba, baca, kazan ve motor parçaları",
+        "Sıcağa maruz kalan metal yüzeylerin korunması ve renklendirilmesi"
+      ],
+      "ipucu": "Dayanabildiği sıcaklık seviyesi için ürün etiketine bakın; yüzey temiz ve yağsız olmalıdır."
+    },
+    "best-elite-eko-isi-boya": {
+      "ozet": "Best Elite Eko Isı Boya, orta düzey ısıya maruz kalan yüzeyler için ekonomik sprey boya serisidir.",
+      "kullanim": [
+        "Soba, baca, radyatör ve ısınan metal yüzeyler"
+      ],
+      "ipucu": "Çok yüksek sıcaklık için Yüksek Isı Boya serisini tercih edin."
+    },
+    "best-elite-selulozik-vernik": {
+      "ozet": "Best Elite Selülozik Vernik, ahşap yüzeylere ceviz, meşe ve renksiz tonlarında koruyucu ve dekoratif vernik katmanı veren spreydir.",
+      "kullanim": [
+        "Ahşap mobilya, kapı, çerçeve ve el işlerinde vernik uygulaması",
+        "Renk tonunu yenileme ve yüzey koruma"
+      ]
+    },
+    "best-yolhan-best-elite-akrilik-vernik": {
+      "ozet": "Best Elite Akrilik Vernik, parlak ve mat seçenekleriyle boyalı yüzeyleri koruyan şeffaf sprey vernik.",
+      "kullanim": [
+        "Boyanmış yüzeylerin üzerine koruyucu şeffaf kat",
+        "Dekoratif ve el işi parçalarda parlaklık veya mat görünüm"
+      ]
+    },
+    "best-astarlar": {
+      "ozet": "Best Astar Spreyleri; selülozik ve plastik yüzeyler için hazırlanan astar spreydir. Boyanın yüzeye tutunmasını artırır.",
+      "kullanim": [
+        "Boya öncesi yüzey hazırlığı",
+        "Plastik ve metal yüzeylerde tutunmayı artırma"
+      ]
+    },
+    "best-kalip-ayirici": {
+      "ozet": "Best Kalıp Ayırıcı Sprey (KA 1000, KA 2000, KA 571 silikonsuz), kalıptan çıkan parçaların kalıba yapışmasını önler.",
+      "kullanim": [
+        "Plastik enjeksiyon, kauçuk ve döküm kalıpları",
+        "Silikonsuz seçenek, sonradan boya veya yapıştırma yapılacak parçalar için"
+      ],
+      "ipucu": "Boyanacak veya yapıştırılacak parçalarda silikonsuz modeli (KA 571) seçin."
+    },
+    "best-kalip-bakim": {
+      "ozet": "Best Kalıp Koruyucu (MP 61) ve Kalıp Temizleyici (MP 62), kalıpların temizliği ve korunması için sprey ürünlerdir.",
+      "kullanim": [
+        "Kalıp yüzeylerinde kir, kalıntı ve yağ temizliği",
+        "Kalıp depolama sırasında yüzey koruma"
+      ]
+    },
+    "best-gazalti-kaynak": {
+      "ozet": "Best Gazaltı Kaynak Spreyleri (GK serisi), gazaltı kaynağında kaynak sıçramalarının parçaya ve torç ucuna yapışmasını azaltır.",
+      "kullanim": [
+        "Gazaltı (MIG/MAG) kaynak atölyeleri",
+        "Torç ucu ve kaynak çevresi koruma, parça temizliğini kolaylaştırma"
+      ],
+      "ipucu": "Silikonsuz (free silikon) seçenek, kaynak sonrası boyanacak parçalar için uygundur."
+    },
+    "best-pas-sokucu": {
+      "ozet": "Best Pas Sökücü Sprey (LU 100, LU 250), paslanmış ve sıkışmış cıvata, somun ve mafsalları gevşetmeye yarayan nüfuz edici spreydir.",
+      "kullanim": [
+        "Paslanmış cıvata ve somunların sökülmesi",
+        "Sıkışmış menteşe, kilit ve mekanik parçalar"
+      ]
+    },
+    "best-catlak-arayici": {
+      "ozet": "Best Çatlak Arayıcı Set (SP 88 temizleyici, SP 89 penetrant, SP 90 developer), sıvı penetrant yöntemiyle metal ve kaynak yüzeylerindeki çatlakları görünür hale getirir.",
+      "kullanim": [
+        "Kaynak dikişi ve döküm parçalarda yüzey çatlağı kontrolü",
+        "Bakım ve kalite kontrol işleri"
+      ],
+      "ipucu": "Kullanım sırası: önce temizleyici, sonra penetrant, ardından developer."
+    },
+    "best-yaglayicilar": {
+      "ozet": "Best Yağlayıcı Spreyler; zincir yağlayıcı, mum sprey, kesme yağı ve koşu bandı yağlayıcı gibi sprey yağlama ürünlerini kapsar.",
+      "kullanim": [
+        "Zincir, dişli ve mafsal yağlama",
+        "Kesme ve delme işlerinde soğutma ve yağlama",
+        "Koşu bandı ve benzeri makinelerin bakımı"
+      ]
+    },
+    "best-yolhan-best-sivi-gres": {
+      "ozet": "Best Sıvı Gres (LU 500, kauçuklu LU 1000), akışkan yapıda uzun süre yağlama sağlayan gres sprey ürünlerdir.",
+      "kullanim": [
+        "Rulman, zincir, kızak ve mafsal yağlama",
+        "Kauçuk ve plastik parçaların bakımı (kauçuklu model)"
+      ]
+    },
+    "best-kir-yag-sokucu": {
+      "ozet": "Best Kir, Yağ, Katran ve Etiket Sökücü ürünleri; inox temizleyici, ağır kir ve yağ sökücü gibi sprey temizlik çözümlerini kapsar.",
+      "kullanim": [
+        "Makine, atölye ve zemin yağ ve kir temizliği",
+        "Paslanmaz yüzey temizliği",
+        "Etiket ve katran kalıntılarının sökülmesi"
+      ]
+    },
+    "best-balata-motor-temizleyici": {
+      "ozet": "Best Motor, Balata ve Fren Temizleyici (CR serisi), fren balatası ve motor parçalarındaki yağ ve kiri hızlı çözen sprey temizleyicilerdir.",
+      "kullanim": [
+        "Fren sistemi ve balata temizliği",
+        "Motor ve mekanik parçalarda yağ alma"
+      ]
+    },
+    "best-devre-temizleyici": {
+      "ozet": "Best Devre Temizleyici (EL 100 yağlı, EL 200 yağsız), elektronik kart ve elektrik kontaklarının temizliği için sprey üründür.",
+      "kullanim": [
+        "Elektronik kart, kontak ve konnektör temizliği",
+        "Pano ve elektrik bakım işleri"
+      ],
+      "ipucu": "Uygulamadan önce enerjiyi kesin."
+    },
+    "best-6-faktor-sprey": {
+      "ozet": "Best 6 Faktör Performans Spreyi, 200 ml ve 400 ml boylarında çok amaçlı bakım spreyidir.",
+      "kullanim": [
+        "Pas çözme, yağlama ve koruma gerektiren genel bakım işleri"
+      ]
+    },
+    "best-silikon-tup": {
+      "ozet": "Best Silikon Tüp, 50 g şeffaf ve beyaz renkte tüp silikondur.",
+      "kullanim": [
+        "Küçük çaplı sızdırmazlık ve yapıştırma işleri",
+        "Cam, seramik ve metal birleşimlerinde dolgu"
+      ]
+    },
+    "best-sivi-conta": {
+      "ozet": "Best Sıvı Conta, 45 g tüpte kırmızı ve siyah seçenekleriyle flanş ve kapak yüzeylerinde conta yerine kullanılan sızdırmazlık macunudur.",
+      "kullanim": [
+        "Motor, şanzıman ve pompa kapaklarında sızdırmazlık",
+        "Flanş birleşimleri"
+      ]
+    },
+    "best-mdf-yapistirici": {
+      "ozet": "Best MDF Yapıştırıcı, MDF ve benzeri panellerin yapıştırılmasında kullanılan yapıştırıcı setidir (400 ml + 100 g ve 200 ml + 50 g boylarında).",
+      "kullanim": [
+        "MDF ve ahşap panel montajı",
+        "Atölye ve mobilya imalatı"
+      ]
+    },
+    "best-bybest-ken-yuk-kuv-yuk-isi-by-020": {
+      "ozet": "BY-020, yüksek kuvvetli ve yüksek ısıya dayanıklı anaerobik kenetleyicidir (10 ml ve 250 ml). Silindirik parçaları (burç, rulman, mil) birbirine sabitler.",
+      "kullanim": [
+        "Rulman ve burçların mile sabitlenmesi",
+        "Sıkı geçme birleşimlerde ek tutunma"
+      ]
+    },
+    "best-civata-sab-dusuk-kuv-by-022": {
+      "ozet": "BY-022, düşük kuvvetli anaerobik cıvata sabitleyicidir (50 ml, 250 ml). Küçük cıvataların titreşimle gevşemesini engeller, el aletleriyle kolay sökülebilir.",
+      "kullanim": [
+        "Küçük vida ve cıvatalarda titreşim emniyeti",
+        "Sonradan sökülmesi gereken bağlantılar"
+      ]
+    },
+    "best-bybest-ken-yuk-kuv-by-038": {
+      "ozet": "BY-038, yüksek kuvvetli anaerobik kenetleyicidir (50 ml, 250 ml). Yataklı ve geçmeli parçaların sabitlenmesinde kullanılır.",
+      "kullanim": [
+        "Rulman, burç ve mil birleşimleri"
+      ]
+    },
+    "best-civata-sab-orta-kuv-by-042": {
+      "ozet": "BY-042, orta kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Cıvata ve saplamaları titreşime karşı sabitler; el aletleriyle sökülebilir.",
+      "kullanim": [
+        "Genel amaçlı cıvata ve somun emniyeti",
+        "Bakımda sökülmesi gereken bağlantılar"
+      ]
+    },
+    "best-civata-sab-orta-yuk-by-043": {
+      "ozet": "BY-043, orta-yüksek kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Daha çok tutunma gereken büyük cıvata ve saplamalarda kullanılır.",
+      "kullanim": [
+        "Büyük çaplı cıvata ve saplama bağlantıları",
+        "Yoğun titreşimli makine parçaları"
+      ]
+    },
+    "best-civata-sab-yuk-kuv-by-070": {
+      "ozet": "BY-070, yüksek kuvvetli anaerobik cıvata sabitleyicidir (10 ml, 250 ml). Kalıcı sabitleme gereken bağlantılarda kullanılır; sökmek için ısı gerekebilir.",
+      "kullanim": [
+        "Kalıcı cıvata ve saplama sabitleme",
+        "Ağır makine ve ekipman bağlantıları"
+      ]
+    },
+    "best-civata-sab-yuk-kuv-yuk-isi-by-072": {
+      "ozet": "BY-072, yüksek kuvvetli ve yüksek ısıya dayanıklı anaerobik cıvata sabitleyicidir (50 ml, 250 ml). Sıcak çalışan bağlantılar için uygundur.",
+      "kullanim": [
+        "Motor, egzoz ve ısınan makine parçalarındaki cıvata bağlantıları"
+      ]
+    },
+    "best-teflon-boru-sizdirmazi-by-077": {
+      "ozet": "BY-077, dişli boru bağlantıları için teflon esaslı anaerobik sızdırmazlık macunudur (50 ml, 250 ml). Boru ve fitting dişlerini sızdırmaz hale getirir.",
+      "kullanim": [
+        "Metal dişli boru ve fitting bağlantıları",
+        "Hidrolik ve pnömatik hat bağlantıları"
+      ]
+    },
+    "best-yuk-basinc-sizdirmazlik-by-142": {
+      "ozet": "BY-142, yüksek basınca dayanıklı anaerobik sızdırmazlık macunudur (10 ml, 250 ml). Dişli bağlantılarda sızıntıyı önler.",
+      "kullanim": [
+        "Yüksek basınçlı hidrolik ve pnömatik hat bağlantıları"
+      ]
+    },
+    "selsil-silikon-kartus": {
+      "ozet": "Silikon Kartuş, Selsil markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-silikonize-mastik": {
+      "ozet": "Silikonize Mastik, Selsil markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-pu-mastik-40-kartus": {
+      "ozet": "PU Mastik Kartuş, Selsil markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-pu-mastik-40-sosis": {
+      "ozet": "PU Mastik Sosis, Selsil markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-kopuk": {
+      "ozet": "PU ve Mantolama Köpüğü, Selsil markasının dolgu, yalıtım ve montaj için poliüretan köpüktür.",
+      "kullanim": [
+        "Kapı ve pencere kasası montajı, boşluk doldurma, mantolama yapıştırma"
+      ],
+      "ipucu": "Boşlukları tamamen doldurmayın; köpük genleşir."
+    },
+    "derby-yapistirici": {
+      "ozet": "Derby Yapıştırıcı, Derby markasının yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "derby-yapistirici-teneke-dizayn": {
+      "ozet": "Yapıştırıcı Teneke ( Dizayn), Derby markasının yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "derby-yapistirici-galon-dizayn": {
+      "ozet": "Yapıştırıcı Galon ( Dizayn), Derby markasının yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "polikor-supersoft-pol-macun": {
+      "ozet": "Supersoft Polikor Macun, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-93-pol-macun": {
+      "ozet": "93 Polikor Macun, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-pu-0114-kaplama": {
+      "ozet": "PU 0114 Kaplama, Polikor markasının oto, mobilya ve yüzey işleri için macun, astar veya cila ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-super-pol-macun": {
+      "ozet": "Super Polikor Macun, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "dekor-yolhan-serit-metre": {
+      "ozet": "Şerit Metre, Dekor markasının ölçüm için şerit metredir.",
+      "kullanim": [
+        "Şantiye, tadilat ve atölye ölçümü"
+      ]
+    },
+    "dekor-yolhan-serit-metre-seffaf": {
+      "ozet": "Şerit Metre / Şeffaf, Dekor markasının ölçüm için şerit metredir.",
+      "kullanim": [
+        "Şantiye, tadilat ve atölye ölçümü"
+      ]
+    },
+    "dekor-yolhan-epoksi-zimpara-malasi-kecesi": {
+      "ozet": "Epoksi Zımpara Malası & Keçesi, Dekor markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "made-ayar-pensesi": {
+      "ozet": "Ayar Pensesi, Made markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "made-celik-civili-krose": {
+      "ozet": "Çelik Çivili Kroşe, Made markasının askı ve bağlantı için çelik çivili kroşedir.",
+      "kullanim": [
+        "Tavan ve duvar tesisat askıları"
+      ]
+    },
+    "bantex-maskeleme-bandi-80-c": {
+      "ozet": "Maskeleme Bandı 80 Derece, Bantex markasının boya ve kaplama işlerinde yüzey korumak için maskeleme ürünüdür.",
+      "kullanim": [
+        "Boyama sırasında yüzey ve kenar koruma"
+      ]
+    },
+    "bantex-folyo-duz": {
+      "ozet": "Folyo Düz, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-folyo-takv": {
+      "ozet": "Folyo Takviyeli, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-cift-trf-kop-bant": {
+      "ozet": "Çift Taraflı Köpük Bant, Bantex markasının iki yüzeyi birbirine yapıştıran çift taraflı banttır.",
+      "kullanim": [
+        "Montaj, ayna ve süs yapıştırma"
+      ]
+    },
+    "bantex-yer-is-bandi": {
+      "ozet": "Yer İşaretleme Bandı, Bantex markasının uyarı ve işaretleme bandıdır.",
+      "kullanim": [
+        "Zemin işaretleme, uyarı ve güvenlik"
+      ]
+    },
+    "bantex-merd-kayd-bant": {
+      "ozet": "Merdiven Kaydırmaz Bant, Bantex markasının uyarı ve işaretleme bandıdır.",
+      "kullanim": [
+        "Zemin işaretleme, uyarı ve güvenlik"
+      ]
+    },
+    "bantex-pvc-bant": {
+      "ozet": "PVC Bant, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-cift-trf-kopuklu-bant": {
+      "ozet": "Çift Taraflı Köpük Bant, Bantex markasının iki yüzeyi birbirine yapıştıran çift taraflı banttır.",
+      "kullanim": [
+        "Montaj, ayna ve süs yapıştırma"
+      ]
+    },
+    "bantex-pvc-otocam-bandi": {
+      "ozet": "PVC Otocam Bandı, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "made-akrilik-silikonize-cift-trf-bant": {
+      "ozet": "Akrilik Silikonize Çift Taraflı Bant, Made markasının iki yüzeyi birbirine yapıştıran çift taraflı banttır.",
+      "kullanim": [
+        "Montaj, ayna ve süs yapıştırma"
+      ]
+    },
+    "dekor-macun-spatula-ahsap-sapli": {
+      "ozet": "Macun Spatula Ahşap Saplı, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-tirfil-mala-kisa": {
+      "ozet": "Tırfıl Mala Kısa, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-derz-mala-kucuk": {
+      "ozet": "Derz Mala Küçük, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-malalar": {
+      "ozet": "Mala, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-yolhan-sivaci-kuregi": {
+      "ozet": "Sıvacı Küreği, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-alci-malasi-pls-sapli": {
+      "ozet": "Alçı Malası Pls. Saplı, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-seramik-malasi": {
+      "ozet": "Seramik Malası, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-yolhan-macun-kuregi-standart-model": {
+      "ozet": "Macun Küreği / Standart Model, Dekor markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "yilsan-ahsap-sapli-yagli-b-firca": {
+      "ozet": "Ahşap Saplı Yağlı Boya Fırça, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-pls-sapli-yagli-b-firca": {
+      "ozet": "Pls. Saplı Yağlı Boya Fırça, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-yolhan-smart-kestirme-fircasi": {
+      "ozet": "Smart Kestirme Fırçası, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-robot-boya-firca-luks": {
+      "ozet": "Lüks Robot Boya Fırça, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-yolhan-robot-boya-fircasi-ekonomik-plastik-sap": {
+      "ozet": "Robot Boya Fırçası/ Ekonomik Plastik Sap, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-pls-sapli-luks-kest-firca": {
+      "ozet": "Lüks Kestirme Fırça, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-eko-kest-firc": {
+      "ozet": "Ekonomik Kestirme Fırça, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-kest-firc-super-ahsap-sapli": {
+      "ozet": "Kestirme Fırça Süper Ahşap Saplı, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-kest-firc-super-pls-sapli": {
+      "ozet": "Kestirme Fırça Süper Plastik Saplı, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-yolhan-luks-kestirme-firca-plastik-sap": {
+      "ozet": "Lüks Kestirme Fırça / Plastik Sap, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-kalorifer-firc": {
+      "ozet": "Kalorifer Fırça, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-yolhan-kalem-fircalar-ahsap-sap": {
+      "ozet": "Kalem Fırçalar / Ahşap Sap, Yılsan markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "yilsan-ic-cephe-rulosu": {
+      "ozet": "İç Cephe Rulosu, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-dis-cephe-rulosu": {
+      "ozet": "Dış Cephe Rulosu, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-polyamid-saten-rulo-super": {
+      "ozet": "Polyamid (Saten) Rulo Süper, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-yolhan-parmak-rulolar-saten-ve-yagli": {
+      "ozet": "Parmak Rulolar / Saten ve Yağlı, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-parmak-rulo-yedegi-normal": {
+      "ozet": "Parmak Rulo Yedeği Normal, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-yolhan-rulo-yedekleri": {
+      "ozet": "Rulo Yedekleri, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-yolhan-oto-yikama-fircalari": {
+      "ozet": "Oto Yıkama Fırçaları, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-yolhan-plastik-badana-fircalari": {
+      "ozet": "Plastik Badana Fırçaları, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-yolhan-ahsap-badana-fircalari": {
+      "ozet": "Ahşap Badana Fırçaları, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-ahsap-fircalar": {
+      "ozet": "Badana ve Tahta Fırçaları, Yılsan markasının boya ve badana işleri için fırçadır.",
+      "kullanim": [
+        "Duvar, ahşap ve metal yüzeyleri boyama",
+        "Kenar ve ince işler"
+      ]
+    },
+    "yilsan-yolhan-plastik-taban-yer-fircalari": {
+      "ozet": "Plastik Taban Yer Fırçaları, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-celik-tel-ahsap-sapli-firc": {
+      "ozet": "Çelik Tel Ahşap Saplı Fırça, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-pls-sapli-celik-tel-firc": {
+      "ozet": "Pls. Saplı Çelik Tel Fırça, Yılsan markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "yilsan-pls-cali-firc": {
+      "ozet": "Plastik Çalı Fırça, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-yolhan-plastik-tuylu-cali-fircasi": {
+      "ozet": "Plastik Tüylü Çalı Fırçası, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-yolhan-plastik-ekonomik-cali-firca": {
+      "ozet": "Plastik Ekonomik Çalı Fırça, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-ahsap-sapli-cali-firc": {
+      "ozet": "Ahşap Saplı Çalı Fırça, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "yilsan-kaucuk-yersil": {
+      "ozet": "Kauçuk Yersil, Yılsan markasının su toplama ve cam silme için aparattır.",
+      "kullanim": [
+        "Cam ve zemin silme"
+      ]
+    },
+    "yilsan-normal-yersil": {
+      "ozet": "Normal Yersil, Yılsan markasının su toplama ve cam silme için aparattır.",
+      "kullanim": [
+        "Cam ve zemin silme"
+      ]
+    },
+    "yilsan-metal-yersil": {
+      "ozet": "Metal Yersil, Yılsan markasının su toplama ve cam silme için aparattır.",
+      "kullanim": [
+        "Cam ve zemin silme"
+      ]
+    },
+    "yilsan-camsil": {
+      "ozet": "Camsil, Yılsan markasının su toplama ve cam silme için aparattır.",
+      "kullanim": [
+        "Cam ve zemin silme"
+      ]
+    },
+    "yilsan-sirik-macun-kazima-spatula-sap-takilabilir": {
+      "ozet": "Sırık Macun Kazıma Spatula ( Sap Takılabilir ), Yılsan markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "yilsan-malalar": {
+      "ozet": "Mala, Yılsan markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "yilsan-pls-sapli-alci-mala": {
+      "ozet": "Pls. Saplı Alçı Mala, Yılsan markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "yilsan-pls-sapli-seramik-mala": {
+      "ozet": "Pls. Saplı Seramik Mala, Yılsan markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "yilsan-kurek-spatula": {
+      "ozet": "Küreği ve Spatula, Yılsan markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "yilsan-rulo-aksesuar": {
+      "ozet": "Rulo Aksesuarları, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "yilsan-sirik": {
+      "ozet": "Sırık, Yılsan markasının boya ve temizlik ekipmanının aksesuarıdır.",
+      "kullanim": [
+        "Rulo ve fırça uzatma ve takma"
+      ]
+    },
+    "yilsan-kazima-spatula": {
+      "ozet": "Kazıma Spatula, Yılsan markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-sungerli-mala": {
+      "ozet": "Süngerli Mala, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-siva-malasi-ahs-sapli": {
+      "ozet": "Sıva Malası Ahş.Saplı, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-yolhan-duvarci-malasi": {
+      "ozet": "Duvarcı Malası, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-alci-malasi-paslanmaz-pls-sapli": {
+      "ozet": "Alçı Malası Paslanmaz Pls. Saplı, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "yilsan-hisir-ortu": {
+      "ozet": "Hışır Örtü, Yılsan markasının boya ve tadilatta zemin ve eşya korumak için örtüdür.",
+      "kullanim": [
+        "Boya ve tadilat sırasında koruma"
+      ]
+    },
+    "dekor-genis-spatula": {
+      "ozet": "Geniş Spatula, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-alci": {
+      "ozet": "Alçı Aletleri, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "bantex-koruyucu-ortu-pratik-maskeleme-ortusu": {
+      "ozet": "Koruyucu Örtü (Pratik Maskeleme Örtüsü), Bantex markasının boya ve kaplama işlerinde yüzey korumak için maskeleme ürünüdür.",
+      "kullanim": [
+        "Boyama sırasında yüzey ve kenar koruma"
+      ]
+    },
+    "yilsan-kalin-ortu": {
+      "ozet": "Kalın Örtü, Yılsan markasının boya ve tadilatta zemin ve eşya korumak için örtüdür.",
+      "kullanim": [
+        "Boya ve tadilat sırasında koruma"
+      ]
+    },
+    "dekor-spatulalar": {
+      "ozet": "Spatula, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-yolhan-egri-sapli-ispatula-ahsap-sap": {
+      "ozet": "Eğri Saplı Ispatula / Ahşap Sap, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-profesyonel-spatula": {
+      "ozet": "Profesyonel Spatula, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-lastik-tokmak": {
+      "ozet": "Lastik Tokmak, Dekor markasının tokmaktır.",
+      "kullanim": [
+        "Montaj ve şantiye işleri"
+      ]
+    },
+    "made-takim-canta": {
+      "ozet": "Takım Çanta, Made markasının alet taşımak ve saklamak için çanta veya organizerdir.",
+      "kullanim": [
+        "Alet ve parça saklama"
+      ]
+    },
+    "muhtelif-arkadan-vidali-ayarlanabilir-baret": {
+      "ozet": "Arkadan Vidalı Ayarlanabilir Baret, baş koruma için baret ürünüdür.",
+      "kullanim": [
+        "Şantiye ve sanayide baş koruma"
+      ]
+    },
+    "ay-san-kalip-marka-boyasi": {
+      "ozet": "Kalıp Marka Boyası, Ay-San markasının kalıp ve parça işaretlemek için marka boyasıdır.",
+      "kullanim": [
+        "İmalat ve kalıp işaretleme"
+      ]
+    },
+    "tork-kablo": {
+      "ozet": "Kablo Bağı, Tork markasının kablo bağıdır.",
+      "kullanim": [
+        "Kablo toplama ve sabitleme"
+      ]
+    },
+    "made-yolhan-performance-dubel": {
+      "ozet": "Performance Dübel, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-gaz-beton-dubeli-100-lu-yeni": {
+      "ozet": "Gaz Beton Dübeli (100'lü), Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-plastik-dubel-500-lu": {
+      "ozet": "Plastik Dübel (500 Lü), Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "made-yolhan-dubeli-plastik-civi": {
+      "ozet": "Dübeli Plastik Çivi, Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "made-yolhan-kalibre-dubel": {
+      "ozet": "Kalibre Dübel, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-plastik-dubel-cesitleri": {
+      "ozet": "Plastik Dübel Çeşitleri, Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "made-celik-dubel-klipsli": {
+      "ozet": "Çelik Dübel Klipsli, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-kapali-kancali-celik-dubel": {
+      "ozet": "Kapalı Kancalı Çelik Dübel, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-hortum-kelepce": {
+      "ozet": "Hortum Kelepçe, Made markasının hortum ve boru bağlantılarını sıkan kelepçedir.",
+      "kullanim": [
+        "Su, hava ve yakıt hortumu sabitleme"
+      ]
+    },
+    "made-celik-dubel-gomlekli": {
+      "ozet": "Çelik Dübel Gömlekli, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-celik-dubel-cesitleri": {
+      "ozet": "Çelik Dübel Çeşitleri, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-acik-kancali-celik-dubel": {
+      "ozet": "Açık Kancalı Çelik Dübel, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-tugla-bosluk-dubeli-250-li": {
+      "ozet": "Tuğla Boşluk Dübeli (250 Li), Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "made-izolasyon-dubeli-siyah": {
+      "ozet": "İzolasyon Dübeli Siyah, Made markasının yalıtım levhalarını duvara sabitlemek için dübeldir.",
+      "kullanim": [
+        "Mantolama ve izolasyon levhalarının sabitlenmesi"
+      ]
+    },
+    "made-kanatli-alcipan-dubeli-250-li": {
+      "ozet": "Kanatlı Alçıpan Dübeli (250 Li), Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "selsil-mastik-silikon": {
+      "ozet": "Mastik, Silikon ve Yapıştırıcı, Selsil markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-yolhan-kopuk-temizleyici-sprey": {
+      "ozet": "Köpük Temizleyici Sprey, Selsil markasının poliüretan köpük tabancası ve köpük artıklarını temizleyen spreydir.",
+      "kullanim": [
+        "Köpük tabancası ve uygulama sonrası artık temizliği"
+      ]
+    },
+    "astel-cift-trf-bant": {
+      "ozet": "Astel Çift Taraflı Bant, Astel markasının iki yüzeyi birbirine yapıştıran çift taraflı banttır.",
+      "kullanim": [
+        "Montaj, ayna ve süs yapıştırma"
+      ]
+    },
+    "bantex-izole-bant": {
+      "ozet": "İzole Bant, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-duck-bant": {
+      "ozet": "Duck Bant, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "atlas-su-zimp": {
+      "ozet": "Su Zımparası, Atlas markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "atlas-2-tarafli": {
+      "ozet": "2 Taraflı, Atlas markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "atlas-4-tarafli": {
+      "ozet": "4 Taraflı, Atlas markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "tekno-kimyasal-dubel": {
+      "ozet": "Kimyasal Dubel, Tekno markasının kimyasal dübel (kimyasal ankraj) ürünüdür.",
+      "kullanim": [
+        "Beton ve dolu yapı malzemelerine ankraj, donatı ve saplama bağlama",
+        "Yüksek çekme yükü taşıyan bağlantılar"
+      ]
+    },
+    "polikor-yolhan-polikor-ince-pasta-beyaz": {
+      "ozet": "İnce Pasta (Beyaz), Polikor markasının oto, mobilya ve yüzey işleri için macun, astar veya cila ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "yilsan-junior-king": {
+      "ozet": "Junıor Kıng, Yılsan markasının boya ve temizlik ekipmanının aksesuarıdır.",
+      "kullanim": [
+        "Rulo ve fırça uzatma ve takma"
+      ]
+    },
+    "dekor-macun-kuregi-ahs-sapli-paslanmaz": {
+      "ozet": "Macun Küreği Ahş.Saplı Paslanmaz, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "polikor-diamond-oto-polish": {
+      "ozet": "Diamond Oto Polish, Polikor markasının oto, mobilya ve yüzey işleri için macun, astar veya cila ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-darbe-kor-putur": {
+      "ozet": "Darbe Koruma Pütür, Polikor markasının oto, mobilya ve yüzey işleri için macun, astar veya cila ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-polifibro-elyafli-pol-macun": {
+      "ozet": "Polifibro Elyaflı Polikor Macun, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "made-yolhan-oluklu-derz-artisi": {
+      "ozet": "Oluklu Derz Artısı, Made markasının fayans ve seramik döşemede derz aralığı bırakmak için artıdır.",
+      "kullanim": [
+        "Fayans, seramik döşeme",
+        "Eşit derz aralığı"
+      ]
+    },
+    "made-duz-derz-artisi-500-lu-yeni": {
+      "ozet": "Düz Derz Artısı (500'lü), Made markasının fayans ve seramik döşemede derz aralığı bırakmak için artıdır.",
+      "kullanim": [
+        "Fayans, seramik döşeme",
+        "Eşit derz aralığı"
+      ]
+    },
+    "made-seviye-derz-artisi-100-lu-yeni": {
+      "ozet": "Seviye Derz Artısı (100'lü), Made markasının fayans ve seramik döşemede derz aralığı bırakmak için artıdır.",
+      "kullanim": [
+        "Fayans, seramik döşeme",
+        "Eşit derz aralığı"
+      ]
+    },
+    "made-celik-turbolet": {
+      "ozet": "Çelik Turbolet, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "made-kornis-montaj": {
+      "ozet": "Korniş Montaj Ürünleri, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "made-baca-menfez": {
+      "ozet": "Baca Kapağı ve Menfez, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "made-duz-derz-artisi-500-lu": {
+      "ozet": "Düz Derz Artısı (500'lü), Made markasının fayans ve seramik döşemede derz aralığı bırakmak için artıdır.",
+      "kullanim": [
+        "Fayans, seramik döşeme",
+        "Eşit derz aralığı"
+      ]
+    },
+    "made-yapisk-bant-kablo-kanali": {
+      "ozet": "Yapışkanlı Bant Kablo Kanalı, Made markasının kablo bağıdır.",
+      "kullanim": [
+        "Kablo toplama ve sabitleme"
+      ]
+    },
+    "made-yolhan-zamak-turbolet-dubeli": {
+      "ozet": "Zamak Turbolet Dübeli, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "dekor-fayans-rasp": {
+      "ozet": "Fayans Tarağı ve Duvar Raspası, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-elastik-kova": {
+      "ozet": "Elastik Kova, Dekor markasının şantiye ve boya işleri için kova veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Malzeme taşıma ve karıştırma"
+      ]
+    },
+    "dekor-tirfil-mala-uzun": {
+      "ozet": "Tırfıl Mala Uzun, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "dekor-yolhan-kaucuklu-mala-buyuk-gozenekli": {
+      "ozet": "Kauçuklu Mala / Büyük Gözenekli, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "made-yolhan-organizer-12-slim": {
+      "ozet": "Organizer 12\" Slim, Made markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "kenito-sunta-kesme-testeresi": {
+      "ozet": "Sunta Kesme Testeresi, Kenito markasının kesme işleri için testeredir.",
+      "kullanim": [
+        "Ahşap, alüminyum veya yapı malzemesi kesme"
+      ]
+    },
+    "kenito-aluminyum-testere": {
+      "ozet": "Alüminyum Testere, Kenito markasının kesme işleri için testeredir.",
+      "kullanim": [
+        "Ahşap, alüminyum veya yapı malzemesi kesme"
+      ]
+    },
+    "yilsan-pls-sapli-gida-fircasi": {
+      "ozet": "Plastik Saplı Gıda Fırçası, Yılsan markasının temizlik ve yüzey işleri için fırçadır.",
+      "kullanim": [
+        "Zemin, araç, kalorifer petekleri ve genel temizlik"
+      ]
+    },
+    "made-makarali-kablo": {
+      "ozet": "Makaralı Kablo 3 × 2,5 mm, Made markasının uzatma kablolu makaradır.",
+      "kullanim": [
+        "Atölye ve şantiyede elektrik uzatma"
+      ]
+    },
+    "yilsan-seramik-mala-kare-dis": {
+      "ozet": "Seramik Mala Kare Diş, Yılsan markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "made-tamponlar": {
+      "ozet": "Tamponlar, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "dekor-yolhan-celik-sistre": {
+      "ozet": "Çelik Sistre, Dekor markasının sıva, alçı, seramik ve fayans işleri için mala veya takımdır.",
+      "kullanim": [
+        "Sıva, alçı ve fayans uygulama"
+      ]
+    },
+    "hais-somun-sikma": {
+      "ozet": "Akülü Darbeli Somun Sıkma, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-matkap": {
+      "ozet": "Akülü Matkap, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-taslama": {
+      "ozet": "Akülü Taşlama, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "dekor-macun-kuregi-yay-celigi": {
+      "ozet": "Macun Küreği Yay Çeliği, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "dekor-macun-kuregi-pls-sapli": {
+      "ozet": "Macun Küreği Pls. Saplı, Dekor markasının macun, alçı ve boya hazırlığı için spatula veya kürektir.",
+      "kullanim": [
+        "Macun çekme, boya kazıma ve yüzey hazırlama"
+      ]
+    },
+    "made-yolhan-alcipan-aski-dubel": {
+      "ozet": "Alçıpan Askı Dübel, Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "hais-vidalama": {
+      "ozet": "Akülü Torklu Vidalama, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-kirici-delici": {
+      "ozet": "Akülü Kırıcı Delici Matkap, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-set": {
+      "ozet": "Akülü El Aletleri Setleri, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-kesme": {
+      "ozet": "Akülü Kesme Makineleri, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "hais-aydinlatma": {
+      "ozet": "Akülü Taşınabilir Aydınlatma, Haıs markasının çalışma ve aydınlatma ürünüdür.",
+      "kullanim": [
+        "Atölye ve şantiye aydınlatması"
+      ]
+    },
+    "made-ikaz-bandi": {
+      "ozet": "İkaz Bandı, Made markasının uyarı ve işaretleme bandıdır.",
+      "kullanim": [
+        "Zemin işaretleme, uyarı ve güvenlik"
+      ]
+    },
+    "hais-diger": {
+      "ozet": "Diğer Akülü Aletler, Haıs markasının akülü elektrikli el aleti veya aksesuarıdır.",
+      "kullanim": [
+        "Şantiye, atölye ve bakım işlerinde kablosuz çalışma"
+      ]
+    },
+    "gfb-mekanik-kumpaslar": {
+      "ozet": "Mekanik Kumpaslar, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-mekanik-kumpas-tek-cene": {
+      "ozet": "Mekanik Kumpas Tek Çene, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-monoblok-super-kumpas": {
+      "ozet": "Monoblok Süper Kumpas, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-derinlik-kumpasi": {
+      "ozet": "Derinlik Kumpası, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-uzun-cift-ceneli-kumpas": {
+      "ozet": "Uzun Çift Çeneli Kumpas, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-dijital-kumpas-buyuk-ekran": {
+      "ozet": "Dijital Kumpas Büyük Ekran, GFB markasının dijital göstergeli kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap, derinlik ve uzunluk ölçümü",
+        "Atölye, kalite kontrol ve imalat"
+      ],
+      "ipucu": "Ölçüme başlamadan önce sıfırlama yapın."
+    },
+    "gfb-dijital-kumpas-metal-ekran": {
+      "ozet": "Dijital Kumpas Metal Ekran, GFB markasının dijital göstergeli kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap, derinlik ve uzunluk ölçümü",
+        "Atölye, kalite kontrol ve imalat"
+      ],
+      "ipucu": "Ölçüme başlamadan önce sıfırlama yapın."
+    },
+    "gfb-dijital-kumpas-mitutoyo-model": {
+      "ozet": "Dijital Kumpas Mitutoyo Model, GFB markasının dijital göstergeli kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap, derinlik ve uzunluk ölçümü",
+        "Atölye, kalite kontrol ve imalat"
+      ],
+      "ipucu": "Ölçüme başlamadan önce sıfırlama yapın."
+    },
+    "gfb-dijital-derinlik-kumpasi": {
+      "ozet": "Dijital Derinlik Kumpası, GFB markasının dijital göstergeli kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap, derinlik ve uzunluk ölçümü",
+        "Atölye, kalite kontrol ve imalat"
+      ],
+      "ipucu": "Ölçüme başlamadan önce sıfırlama yapın."
+    },
+    "gfb-saatli-kumpas": {
+      "ozet": "Saatli Kumpas, GFB markasının hassas uzunluk, çap ve derinlik ölçümü için kumpastır.",
+      "kullanim": [
+        "Parça dış/iç çap ve derinlik ölçümü",
+        "Atölye, tornacılık ve kalite kontrol"
+      ]
+    },
+    "gfb-dis-cap-mikrometresi": {
+      "ozet": "Dış Çap Mikrometresi, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-mikrometre-setleri": {
+      "ozet": "Mikrometre Setleri ve Dişli Mikrometre, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-numaratorlu-mikrometre": {
+      "ozet": "Numaratörlü Mikrometre, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-dijital-dis-cap-mikrometresi": {
+      "ozet": "Dijital Dış Çap Mikrometresi, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-ic-cap-mikrometresi": {
+      "ozet": "İç Çap Mikrometresi, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-derinlik-mikrometresi": {
+      "ozet": "Derinlik Mikrometresi, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-delik-ici-uzatma-mikrometre": {
+      "ozet": "Delik İçi - Uzatma Mikrometre, GFB markasının hassas ölçüm için mikrometredir.",
+      "kullanim": [
+        "Küçük toleranslı parçaların çap, kalınlık ve derinlik ölçümü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-mercekli-yukseklik-mihengiri": {
+      "ozet": "Mercekli Yükseklik Mihengiri, GFB markasının yükseklik ölçme ve işaretleme için mihengirdir.",
+      "kullanim": [
+        "Tezgah üzerinde parça yüksekliği ölçümü ve çizgi işaretleme",
+        "Kalite kontrol ve imalat"
+      ]
+    },
+    "gfb-saatli-yukseklik-mihengiri-cift-kolonlu": {
+      "ozet": "Saatli Yükseklik Mihengiri (Çift Kolonlu), GFB markasının yükseklik ölçme ve işaretleme için mihengirdir.",
+      "kullanim": [
+        "Tezgah üzerinde parça yüksekliği ölçümü ve çizgi işaretleme",
+        "Kalite kontrol ve imalat"
+      ]
+    },
+    "gfb-dijital-yukseklik-mihengiri-cift-kolonlu": {
+      "ozet": "Dijital Yükseklik Mihengiri (Çift Kolonlu), GFB markasının yükseklik ölçme ve işaretleme için mihengirdir.",
+      "kullanim": [
+        "Tezgah üzerinde parça yüksekliği ölçümü ve çizgi işaretleme",
+        "Kalite kontrol ve imalat"
+      ]
+    },
+    "gfb-komparator-saati": {
+      "ozet": "Komparatör Saati, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-komparator-saati-uzun-cubuklu": {
+      "ozet": "Komparatör Saati (Uzun Çubuklu), GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-salgi-komparator-saati": {
+      "ozet": "Salgı Komparatör Saati, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-dijital-komparator-saati": {
+      "ozet": "Dijital Komparatör Saati, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-cep-tipi-kalinlik-komparatoru": {
+      "ozet": "Kalınlık Komparatörü, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-ic-cap-komparatoru": {
+      "ozet": "İç Çap Komparatörü, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-silindir-komparator-takimi": {
+      "ozet": "Silindir Komparatör Takımı, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-radius-mastari": {
+      "ozet": "Radius Mastarı, GFB markasının ölçü ve kontrol mastarıdır.",
+      "kullanim": [
+        "Radius, diş ve aralık kontrolü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-dis-taragi-metrik-ve-inch": {
+      "ozet": "Diş Tarağı (Metrik ve İnch), GFB markasının ölçü ve kontrol mastarıdır.",
+      "kullanim": [
+        "Radius, diş ve aralık kontrolü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-manyetik-ayak-v-yatagi": {
+      "ozet": "Manyetik Ayak ve V Yatağı, GFB markasının ölçüm ve tezgah kurulumunda kullanılan yardımcı ekipmandır.",
+      "kullanim": [
+        "Torna, freze ve ölçüm tezgahında parça tutma ve ayar"
+      ]
+    },
+    "gfb-sentil-filler-cakisi": {
+      "ozet": "Sentil Filler Çakısı, GFB markasının ölçü ve kontrol mastarıdır.",
+      "kullanim": [
+        "Radius, diş ve aralık kontrolü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-prop": {
+      "ozet": "Prop, GFB markasının ölçüm ve tezgah kurulumunda kullanılan yardımcı ekipmandır.",
+      "kullanim": [
+        "Torna, freze ve ölçüm tezgahında parça tutma ve ayar"
+      ]
+    },
+    "gfb-acili-gonye": {
+      "ozet": "Açılı Gönye, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-kil-gonye-din-875-1": {
+      "ozet": "Kıl Gönye - DIN 875/1, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-sapkasiz-gonye-din-875-1": {
+      "ozet": "Şapkasız Gönye - DIN 875/1, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-sapkali-gonye-din-875-1": {
+      "ozet": "Şapkalı Gönye - DIN 875/1, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-paslanmaz-celik-cetvel": {
+      "ozet": "Çelik Cetvel, GFB markasının çelik cetveldir.",
+      "kullanim": [
+        "Hassas ölçüm ve çizim",
+        "Atölye ve imalat"
+      ]
+    },
+    "gfb-z-sifirlama-saati": {
+      "ozet": "Z Sıfırlama Saati ve Dijital Z Sıfırlama, GFB markasının ölçüm ve tezgah kurulumunda kullanılan yardımcı ekipmandır.",
+      "kullanim": [
+        "Torna, freze ve ölçüm tezgahında parça tutma ve ayar"
+      ]
+    },
+    "gfb-hassas-su-terazi": {
+      "ozet": "Hassas Su Terazi, GFB markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "gfb-hss-matkap-ucu-siyah-beyaz-din-338": {
+      "ozet": "HSS Matkap Ucu Siyah / Beyaz - DIN 338, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-matkap-ucu-titanyum-kapli-din-338": {
+      "ozet": "HSS Matkap Ucu Titanyum Kaplı - DIN 338, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-super-matkap-ucu-din-338-fully-ground": {
+      "ozet": "HSS Süper Matkap Ucu DIN 338 (Fully Ground), GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-e-co-altin-seri-matkap-ucu-din338-5-kobaltli": {
+      "ozet": "HSS - E Co Altın Seri Matkap Ucu DIN338 (%5 Kobaltlı), GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-matkap-ucu-uzun-din-340": {
+      "ozet": "HSS Matkap Ucu Uzun DIN 340, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-fully-ground-taslanmis-uzun-matkap-ucu-beyaz-din-340": {
+      "ozet": "HSS Fully Ground Taşlanmış Uzun Matkap Ucu Beyaz - DIN 340, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-gt-100-parabolik-hss-matkap-ucu-din1869-1": {
+      "ozet": "GT 100 Parabolik HSS Matkap Ucu DIN1869 - 1, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-gt-100-parabolik-hss-matkap-ucu-din1869-3": {
+      "ozet": "GT 100 Parabolik HSS Matkap Ucu DIN1869 - 3, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-matkap-ucu-seti-siyah-beyaz": {
+      "ozet": "Matkap Ucu Seti (Siyah - Beyaz), GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-matkap-ucu-seti-fully-ground-beyaz": {
+      "ozet": "Matkap Ucu Seti (Fully Ground - Beyaz), GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-hss-morslu-konik-matkap-ucu-din-345": {
+      "ozet": "HSS Morslu Konik Matkap Ucu - DIN 345, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-sds-plus-matkap-ucu-2-elmasli": {
+      "ozet": "SDS Plus Matkap Ucu - 2 Elmaslı, GFB markasının beton, taş ve tuğla delmek için SDS saplı matkap ucudur.",
+      "kullanim": [
+        "Kırıcı delici matkapla beton, taş, tuğla ve duvar delme",
+        "Dübel ve montaj delikleri"
+      ],
+      "ipucu": "SDS Plus ve SDS Max sap ölçüleri farklıdır; makinenizin mandrenine uygun ucu seçin."
+    },
+    "gfb-4-elmasli-sds-plus-matkap-ucu": {
+      "ozet": "4 Elmaslı SDS Plus Matkap Ucu, GFB markasının beton, taş ve tuğla delmek için SDS saplı matkap ucudur.",
+      "kullanim": [
+        "Kırıcı delici matkapla beton, taş, tuğla ve duvar delme",
+        "Dübel ve montaj delikleri"
+      ],
+      "ipucu": "SDS Plus ve SDS Max sap ölçüleri farklıdır; makinenizin mandrenine uygun ucu seçin."
+    },
+    "gfb-sds-max-matkap-ucu-4-elmasli": {
+      "ozet": "SDS Max Matkap Ucu - 4 Elmaslı, GFB markasının beton, taş ve tuğla delmek için SDS saplı matkap ucudur.",
+      "kullanim": [
+        "Kırıcı delici matkapla beton, taş, tuğla ve duvar delme",
+        "Dübel ve montaj delikleri"
+      ],
+      "ipucu": "SDS Plus ve SDS Max sap ölçüleri farklıdır; makinenizin mandrenine uygun ucu seçin."
+    },
+    "gfb-sds-plus-keski-murc": {
+      "ozet": "SDS Plus Keski ve Murç, GFB markasının kırıcı ve delici makineler için keski veya murç uçtur.",
+      "kullanim": [
+        "Beton ve duvar kırma, yarma ve kanal açma"
+      ]
+    },
+    "gfb-sds-max-keski": {
+      "ozet": "SDS Max Keski, GFB markasının kırıcı ve delici makineler için keski veya murç uçtur.",
+      "kullanim": [
+        "Beton ve duvar kırma, yarma ve kanal açma"
+      ]
+    },
+    "gfb-sds-max-murc": {
+      "ozet": "SDS Max Murç, GFB markasının kırıcı ve delici makineler için keski veya murç uçtur.",
+      "kullanim": [
+        "Beton ve duvar kırma, yarma ve kanal açma"
+      ]
+    },
+    "gfb-sds-max-genis-keski": {
+      "ozet": "SDS Max Geniş Keski, GFB markasının kırıcı ve delici makineler için keski veya murç uçtur.",
+      "kullanim": [
+        "Beton ve duvar kırma, yarma ve kanal açma"
+      ]
+    },
+    "gfb-16-kg-kirici-keski-murc": {
+      "ozet": "16 Kg Kırıcılar İçin Keski ve Murç, GFB markasının kırıcı ve delici makineler için keski veya murç uçtur.",
+      "kullanim": [
+        "Beton ve duvar kırma, yarma ve kanal açma"
+      ]
+    },
+    "gfb-sds-agac-delme-matkap": {
+      "ozet": "SDS Ağaç Delme Matkap, GFB markasının SDS saplı özel matkap ucudur.",
+      "kullanim": [
+        "SDS matkaplarla ahşap veya kalıp işlerinde delme"
+      ]
+    },
+    "gfb-sds-kalipci-matkap-ucu": {
+      "ozet": "SDS Kalıpçı Matkap Ucu, GFB markasının SDS saplı özel matkap ucudur.",
+      "kullanim": [
+        "SDS matkaplarla ahşap veya kalıp işlerinde delme"
+      ]
+    },
+    "gfb-cam-seramik-delme-universal-matkap-ucu": {
+      "ozet": "Cam - Seramik Delme Üniversal Matkap Ucu, GFB markasının cam, seramik ve fayans delmek için üniversal matkap ucudur.",
+      "kullanim": [
+        "Fayans, seramik, cam ve mermer yüzeylerde delme"
+      ],
+      "ipucu": "Düşük devirde, hafif baskıyla çalışın."
+    },
+    "gfb-ahsap-dekupaj-agzi-5-li-paket": {
+      "ozet": "Ahşap Dekupaj Ağzı (5’li Paket), GFB markasının kesme işleri için testere ağzıdır.",
+      "kullanim": [
+        "Ahşap, metal veya yapı malzemelerinde kesme"
+      ]
+    },
+    "gfb-metal-dekupaj-agzi-5-li-paket": {
+      "ozet": "Metal Dekupaj Ağzı (5’li Paket), GFB markasının kesme işleri için testere ağzıdır.",
+      "kullanim": [
+        "Ahşap, metal veya yapı malzemelerinde kesme"
+      ]
+    },
+    "gfb-tilki-kuyrugu-5-li": {
+      "ozet": "Tilki Kuyruğu (5’li Paket), GFB markasının kesme işleri için testere ağzıdır.",
+      "kullanim": [
+        "Ahşap, metal veya yapı malzemelerinde kesme"
+      ]
+    },
+    "gfb-ytong-tugla-kesmetilki-kuyrugu-1-li-paket": {
+      "ozet": "Ytong Tuğla KesmeTilki Kuyruğu (1’li Paket), GFB markasının kesme işleri için testere ağzıdır.",
+      "kullanim": [
+        "Ahşap, metal veya yapı malzemelerinde kesme"
+      ]
+    },
+    "gfb-yaprak-matkap-ucu-hex-sapli": {
+      "ozet": "Yaprak Matkap Ucu Hex Saplı, GFB markasının ahşap ve panel işleri için özel matkap ucudur.",
+      "kullanim": [
+        "Mobilya ve panel işlerinde geniş delik ve menteşe yeri açma"
+      ]
+    },
+    "gfb-ahsap-freze-uc-seti-12-parcali": {
+      "ozet": "Ahşap Freze Uç Seti - 12 Parçalı, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-temizleme-bicagi": {
+      "ozet": "Temizleme Bıçağı, GFB markasının kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "gfb-mentese-yeri-acma-ucu": {
+      "ozet": "Menteşe Yeri Açma Ucu, GFB markasının ahşap ve panel işleri için özel matkap ucudur.",
+      "kullanim": [
+        "Mobilya ve panel işlerinde geniş delik ve menteşe yeri açma"
+      ]
+    },
+    "gfb-hss-havsa-matkap-ucu": {
+      "ozet": "HSS Havşa Matkap Ucu, GFB markasının metal ve genel delme işleri için HSS (yüksek hız çeliği) matkap ucudur.",
+      "kullanim": [
+        "Çelik, dökme demir, alüminyum ve ahşapta delme",
+        "Atölye, bakım ve imalat"
+      ],
+      "ipucu": "Delme sırasında soğutma sıvısı veya kesme yağı kullanmak uç ömrünü uzatır."
+    },
+    "gfb-aluminyum-freze-ucu-tum": {
+      "ozet": "Alüminyum Freze Ucu, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-soketli-elmas-beton-mermer-kesici": {
+      "ozet": "Soketli Elmas Beton - Mermer Kesici, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-turbo-elmas-mermer-granit-kesici": {
+      "ozet": "Turbo Elmas Mermer - Granit Kesici, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-surekli-turbo-elmas-mermer-granit-kesici": {
+      "ozet": "Sürekli Turbo Elmas Mermer - Granit Kesici, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-granit-kesme-testere-lazer-kaynakli-sessiz-kesim": {
+      "ozet": "Granit Kesme Testere Lazer Kaynaklı (Sessiz Kesim), GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-hassas-kesim-ince-turbo-elmas-seramik-fayans-kesici": {
+      "ozet": "Hassas Kesim İnce Turbo Elmas Seramik - Fayans Kesici, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-beton-kesme-testere-lazer-kaynakli": {
+      "ozet": "Beton Kesme Testere Lazer Kaynaklı, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-asfalt-kesme-testere-lazer-kaynakli": {
+      "ozet": "Asfalt Kesme Testere Lazer Kaynaklı, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-turbo-elmasli-taslama-diski": {
+      "ozet": "Turbo Elmaslı Taşlama Diski, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-elmasli-taslama-diski-cift-segmentli": {
+      "ozet": "Elmaslı Taşlama Diski Çift Segmentli, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-elektrolize-elmas-testere-cift-yuzey-kapli-m14-flansli": {
+      "ozet": "Elektrolize Elmas Testere Çift Yüzey Kaplı, GFB markasının beton, mermer, granit, seramik veya asfalt kesmek ve taşlamak için elmas disktir.",
+      "kullanim": [
+        "Taş, beton, seramik ve asfalt kesme",
+        "Taşlama ve yüzey hazırlama"
+      ],
+      "ipucu": "Kesilecek malzemeye uygun segment tipini seçin."
+    },
+    "gfb-zirkonyum-flap-disk-zimpara-zk": {
+      "ozet": "Zirkonyum Flap Disk Zımpara ZK, GFB markasının taşlama ve yüzey düzeltme için flap disktir.",
+      "kullanim": [
+        "Metal yüzeylerde taşlama, pas ve boya alma, kaynak yeri temizleme"
+      ]
+    },
+    "gfb-aluminyum-flap-disk-zimpara-nk": {
+      "ozet": "Alüminyum Flap Disk Zımpara NK, GFB markasının taşlama ve yüzey düzeltme için flap disktir.",
+      "kullanim": [
+        "Metal yüzeylerde taşlama, pas ve boya alma, kaynak yeri temizleme"
+      ]
+    },
+    "gfb-115mm-cirtli-disk-zimpara-mermer-sc-silicone-carbide": {
+      "ozet": "115mm Cırtlı Disk Zımpara Mermer SC (Silicone Carbide), GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-115mm-cirtli-disk-zimpara-deliksiz-nk-aluminyum-oksit": {
+      "ozet": "115mm Cırtlı Disk Zımpara Deliksiz NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-150mm-cirtli-disk-zimpara-deliksiz-nk-aluminyum-oksit": {
+      "ozet": "150mm Cırtlı Disk Zımpara Deliksiz NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-150mm-cirtli-disk-zimpara-6-delikli-nk-aluminyum-oksit": {
+      "ozet": "150mm Cırtlı Disk Zımpara 6 Delikli NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-180mm-cirtli-disk-zimpara-deliksiz-nk-aluminyum-oksit": {
+      "ozet": "180mm Cırtlı Disk Zımpara Deliksiz NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-230mm-cirtli-disk-zimpara-8-delikli-nk-aluminyum-oksit": {
+      "ozet": "230MM Cırtlı Disk Zımpara 8 Delikli NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-cirt-zimpara-tabani-m14": {
+      "ozet": "Cırt Zımpara Tabanı, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-inox-kesici-tas": {
+      "ozet": "INOX Kesici Taş, GFB markasının metal kesme ve taşlama diskidir.",
+      "kullanim": [
+        "Açılı taşlama makineleriyle metal ve inox kesme ve taşlama"
+      ],
+      "ipucu": "Disk üzerindeki devir sınırını aşmayın ve koruyucu siperlik kullanın."
+    },
+    "gfb-metal-kesme-tas": {
+      "ozet": "Metal Kesme Taş, GFB markasının metal kesme ve taşlama diskidir.",
+      "kullanim": [
+        "Açılı taşlama makineleriyle metal ve inox kesme ve taşlama"
+      ],
+      "ipucu": "Disk üzerindeki devir sınırını aşmayın ve koruyucu siperlik kullanın."
+    },
+    "gfb-metal-taslama-tasi": {
+      "ozet": "Metal Taşlama Taşı, GFB markasının metal kesme ve taşlama diskidir.",
+      "kullanim": [
+        "Açılı taşlama makineleriyle metal ve inox kesme ve taşlama"
+      ],
+      "ipucu": "Disk üzerindeki devir sınırını aşmayın ve koruyucu siperlik kullanın."
+    },
+    "gfb-elmasli-beton-delme-panc-adaptorlu": {
+      "ozet": "Elmaslı Beton Delme Panç (Adaptörlü), GFB markasının beton, mermer ve granit delmek için elmaslı panç (karot ucu) dur.",
+      "kullanim": [
+        "Beton, mermer, granit ve seramikte geniş çaplı delik açma"
+      ],
+      "ipucu": "Su ile soğutarak kullanmak ömrü artırır."
+    },
+    "gfb-elmasli-beton-delme-panc-adaptorsuz": {
+      "ozet": "Elmaslı Beton Delme Panç (Adaptörsüz), GFB markasının beton, mermer ve granit delmek için elmaslı panç (karot ucu) dur.",
+      "kullanim": [
+        "Beton, mermer, granit ve seramikte geniş çaplı delik açma"
+      ],
+      "ipucu": "Su ile soğutarak kullanmak ömrü artırır."
+    },
+    "gfb-sds-plus-sds-max-panc-adap": {
+      "ozet": "SDS Plus - SDS Max Panç Adap, GFB markasının panç ve delik açma işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Panç montajı, merkezleme ve adaptasyonu"
+      ]
+    },
+    "gfb-bi-metal-panc": {
+      "ozet": "Bi - Metal Panç, GFB markasının metal ve sac delmek için kullanılan panç (delik açma testeresi) dir.",
+      "kullanim": [
+        "Sac, boru ve profillerde geniş çaplı delik açma",
+        "Pano, kanal ve tesisat işleri"
+      ],
+      "ipucu": "Panç adaptörünü kullandığınız makineye uygun saplı seçin."
+    },
+    "gfb-bi-metal-panc-adaptoru-hex": {
+      "ozet": "Bi - Metal Panç Adaptörü - HEX, GFB markasının metal ve sac delmek için kullanılan panç (delik açma testeresi) dir.",
+      "kullanim": [
+        "Sac, boru ve profillerde geniş çaplı delik açma",
+        "Pano, kanal ve tesisat işleri"
+      ],
+      "ipucu": "Panç adaptörünü kullandığınız makineye uygun saplı seçin."
+    },
+    "gfb-bi-metal-panc-adaptoru-sds": {
+      "ozet": "Bi - Metal Panç Adaptörü - SDS, GFB markasının metal ve sac delmek için kullanılan panç (delik açma testeresi) dir.",
+      "kullanim": [
+        "Sac, boru ve profillerde geniş çaplı delik açma",
+        "Pano, kanal ve tesisat işleri"
+      ],
+      "ipucu": "Panç adaptörünü kullandığınız makineye uygun saplı seçin."
+    },
+    "gfb-buat-acma-panc-seti": {
+      "ozet": "Buat Açma Panç Seti, GFB markasının panç ve delik açma işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Panç montajı, merkezleme ve adaptasyonu"
+      ]
+    },
+    "gfb-panc-merkezleme-ucu": {
+      "ozet": "Panç Merkezleme Ucu, GFB markasının panç ve delik açma işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Panç montajı, merkezleme ve adaptasyonu"
+      ]
+    },
+    "gfb-tct-metal-delme-panc": {
+      "ozet": "TCT Metal Delme Panç, GFB markasının metal ve sac delmek için kullanılan panç (delik açma testeresi) dir.",
+      "kullanim": [
+        "Sac, boru ve profillerde geniş çaplı delik açma",
+        "Pano, kanal ve tesisat işleri"
+      ],
+      "ipucu": "Panç adaptörünü kullandığınız makineye uygun saplı seçin."
+    },
+    "gfb-vakumlu-mermer-granit-delme-panc": {
+      "ozet": "Vakumlu Mermer - Granit Delme Panç, GFB markasının beton, mermer ve granit delmek için elmaslı panç (karot ucu) dur.",
+      "kullanim": [
+        "Beton, mermer, granit ve seramikte geniş çaplı delik açma"
+      ],
+      "ipucu": "Su ile soğutarak kullanmak ömrü artırır."
+    },
+    "gfb-mermer-granit-panc-m14": {
+      "ozet": "Mermer - Granit Panç - M14, GFB markasının beton, mermer ve granit delmek için elmaslı panç (karot ucu) dur.",
+      "kullanim": [
+        "Beton, mermer, granit ve seramikte geniş çaplı delik açma"
+      ],
+      "ipucu": "Su ile soğutarak kullanmak ömrü artırır."
+    },
+    "gfb-mermer-granit-delme-panc-hex": {
+      "ozet": "Mermer -Granit Delme Panç - HEX, GFB markasının beton, mermer ve granit delmek için elmaslı panç (karot ucu) dur.",
+      "kullanim": [
+        "Beton, mermer, granit ve seramikte geniş çaplı delik açma"
+      ],
+      "ipucu": "Su ile soğutarak kullanmak ömrü artırır."
+    },
+    "gfb-kademeli-matkap-ucu-tekli": {
+      "ozet": "Kademeli Matkap Ucu, GFB markasının ince saç ve plastikte farklı çaplarda delik açan kademeli matkap ucudur.",
+      "kullanim": [
+        "Saç, plastik ve ince metal yüzeylerde delme ve genişletme"
+      ]
+    },
+    "gfb-pprc-su-boru-genisletme-seti-bits-sapli": {
+      "ozet": "PPRC Su Boru Genişletme Seti Bits Saplı, GFB markasının panç ve delik açma işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Panç montajı, merkezleme ve adaptasyonu"
+      ]
+    },
+    "gfb-burgulu-canak-firca": {
+      "ozet": "Burgulu Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-sacakli-canak-firca": {
+      "ozet": "Saçaklı Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-sacakli-daire-firca": {
+      "ozet": "Saçaklı Daire Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-pimli-daire-firca": {
+      "ozet": "Pimli Daire Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-pimli-kalem-firca": {
+      "ozet": "Pimli Kalem Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-pimli-canak-firca": {
+      "ozet": "Pimli Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-tel-firca-sapli": {
+      "ozet": "Tel Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-paslanmaz-burgulu-canak-firca": {
+      "ozet": "Paslanmaz Burgulu Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-paslanmaz-sacakli-canak-firca": {
+      "ozet": "Paslanmaz Saçaklı Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-paslanmaz-pimli-kalem-firca": {
+      "ozet": "Paslanmaz Pimli Kalem Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-paslanmaz-pimli-daire-firca": {
+      "ozet": "Paslanmaz Pimli Daire Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-paslanmaz-pimli-canak-firca": {
+      "ozet": "Paslanmaz Pimli Çanak Fırça, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-silikon-epoksi-kopuk-tabanca": {
+      "ozet": "Silikon, Epoksi, Sosis ve Köpük Tabancası, GFB markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "gfb-plastik-sapli-tokmak": {
+      "ozet": "Plastik Saplı Tokmak, GFB markasının tokmaktır.",
+      "kullanim": [
+        "Montaj ve şantiye işleri"
+      ]
+    },
+    "gfb-hava-boya-tabanca": {
+      "ozet": "Hava ve Boya Tabancası, GFB markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "gfb-mazot-gres": {
+      "ozet": "Mazot ve Gres Tabancası, GFB markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "gfb-lastik-kompresor": {
+      "ozet": "Lastik Şişirme ve Hava Kompresörü, GFB markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "gfb-hava-jaki": {
+      "ozet": "Hava Jakı, GFB markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "gfb-yayli-miknatis-50-cm": {
+      "ozet": "Yaylı Mıknatıs 50 cm, GFB markasının mıknatıslı yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölyede metal parça tutma ve toplama"
+      ]
+    },
+    "gfb-sari-su-terazisi-miknatisli": {
+      "ozet": "Sarı Su Terazisi Mıknatıslı, GFB markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "gfb-kirmizi-su-terazisi-miknatisli-profesyonel": {
+      "ozet": "Kırmızı Su Terazisi Mıknatıslı Profesyonel, GFB markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "gfb-dokum-su-terazi": {
+      "ozet": "Döküm Su Terazi, GFB markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "gfb-mini-cep-su-terazisi": {
+      "ozet": "Mini ve Cep Tipi Su Terazisi (Mıknatıslı), GFB markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "gfb-sari-marangoz-gonye": {
+      "ozet": "Sarı Marangoz Gönye, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-aluminyum-gonye-su-terazili": {
+      "ozet": "Alüminyum Gönye Su Terazili, GFB markasının dik açı kontrolü ve işaretleme için gönyedir.",
+      "kullanim": [
+        "Metal ve ahşap işlerinde dik açı kontrolü",
+        "Atölye ve montaj"
+      ]
+    },
+    "gfb-profesyonel-serit-metre": {
+      "ozet": "Profesyonel Şerit Metre, GFB markasının ölçüm için şerit metredir.",
+      "kullanim": [
+        "Şantiye, tadilat ve atölye ölçümü"
+      ]
+    },
+    "gfb-serit-metre": {
+      "ozet": "Şerit Metre, GFB markasının ölçüm için şerit metredir.",
+      "kullanim": [
+        "Şantiye, tadilat ve atölye ölçümü"
+      ]
+    },
+    "gfb-sarjli-led-lamba": {
+      "ozet": "Led Lamba, GFB markasının çalışma ve aydınlatma ürünüdür.",
+      "kullanim": [
+        "Atölye ve şantiye aydınlatması"
+      ]
+    },
+    "gfb-pvc-boru-kesme-makasi": {
+      "ozet": "PVC Boru Kesme Makası, GFB markasının PVC boruları kesmek için makastır.",
+      "kullanim": [
+        "Tesisat işlerinde PVC boru kesme"
+      ]
+    },
+    "gfb-kaynak-maske-cami": {
+      "ozet": "Kaynak Maskesi ve Camı, GFB markasının kaynak sırasında yüzü ve gözleri koruyan maskedir.",
+      "kullanim": [
+        "Elektrik ve MIG/MAG kaynak işleri"
+      ]
+    },
+    "gfb-metal-maket-bicagi-tum": {
+      "ozet": "Metal Maket Bıçağı, GFB markasının kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "gfb-plastik-maket-bicagi-tum": {
+      "ozet": "Plastik Maket Bıçağı, GFB markasının kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "gfb-maket-bicagi-yedekleri": {
+      "ozet": "Maket Bıçağı Yedekleri, GFB markasının kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "gfb-kare-yildiz-bits-uc": {
+      "ozet": "Kare Yıldız Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-kare-pozi-bits-uc": {
+      "ozet": "Kare Pozi Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-kare-duz-bits-uc": {
+      "ozet": "Kare Düz Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-kare-tork-bits-uc": {
+      "ozet": "Kare Tork Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-yuvarlak-yildiz-bits-uc": {
+      "ozet": "Yuvarlak Yıldız Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-yuvarlak-pozi-bits-uc": {
+      "ozet": "Yuvarlak Pozi Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-yuvarlak-tork-bits-uc": {
+      "ozet": "Yuvarlak Tork Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-1-2-tork-lokmali-bits-uc-kisa": {
+      "ozet": "1/2” Tork Lokmalı Bits Uç Kısa, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-allen-standart-bits-uc": {
+      "ozet": "Allen Standart Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-1-2-allen-lokmali-bits-uc-kisa": {
+      "ozet": "1/2” Allen Lokmalı Bits Uç Kısa, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-1-2-allen-lokmali-bits-uc-uzun": {
+      "ozet": "1/2” Allen Lokmalı Bits Uç Uzun, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-tork-otomotiv-bits-uc-kisa": {
+      "ozet": "Tork Otomotiv Bits Uç Kısa, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-tork-otomotiv-bits-uc-uzun": {
+      "ozet": "Tork Otomotiv Bits Uç Uzun, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-allen-otomotiv-bits-uc-kisa": {
+      "ozet": "Allen Otomotiv Bits Uç Kısa, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-allen-otomotiv-bits-uc-uzun": {
+      "ozet": "Allen Otomotiv Bits Uç Uzun, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-manyetik-bits-uzatma-adaptoru-cin": {
+      "ozet": "Manyetik Bits Uzatma Adaptörü (Çin), GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-bits-uzatma-adaptorler": {
+      "ozet": "Bits Uzatma ve Adaptörler, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-manyetik-somun-lokmasi-cin": {
+      "ozet": "Manyetik Somun Lokması (Çin), GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-manyetik-somun-lokmasi-taiwan": {
+      "ozet": "Manyetik Somun Lokması (Taiwan), GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-hex-lokma-adaptoru": {
+      "ozet": "HEX Lokma Adaptörü, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-sds-lokma-adaptoru": {
+      "ozet": "SDS Lokma Adaptörü, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-40-parcali-otomotiv-bits-uc-seti": {
+      "ozet": "40 Parçalı Otomotiv Bits Uç Seti, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-torna-aynasi-3-ayak": {
+      "ozet": "Torna Aynası 3 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-torna-aynasi-4-ayak": {
+      "ozet": "Torna Aynası 4 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-imalat-ayakli-torna-aynasi-3-ayak": {
+      "ozet": "İmalat Ayaklı Torna Aynası 3 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-imalat-ayakli-torna-aynasi-4-ayak": {
+      "ozet": "İmalat Ayaklı Torna Aynası 4 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-divizor-torna-aynasi-3-ayak": {
+      "ozet": "Divizör Torna Aynası 3 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-divizor-torna-aynasi-4-ayak": {
+      "ozet": "Divizör Torna Aynası 4 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-san-ou-cnc-hidrolik-ayna-3-ayak": {
+      "ozet": "SAN OU CNC Hidrolik Ayna 3 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-gfb-cnc-hidrolik-ayna-2-ayak": {
+      "ozet": "GFB CNC Hidrolik Ayna 2 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-gfb-cnc-hidrolik-ayna-3-ayak": {
+      "ozet": "GFB CNC Hidrolik Ayna 3 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-gfb-cnc-hidrolik-ayna-4-ayak": {
+      "ozet": "GFB CNC Hidrolik Ayna 4 Ayak, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-cnc-hidrolik-ayna-sert-ayak-takimi-3-ayakli": {
+      "ozet": "CNC Hidrolik Ayna Sert Ayak Takımı 3 Ayaklı, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-cnc-hidrolik-ayna-sert-ayak-takimi-4-ayakli": {
+      "ozet": "CNC Hidrolik Ayna Sert Ayak Takımı 4 Ayaklı, GFB markasının torna ve CNC tezgahlarında parça bağlamak için ayna ekipmanıdır.",
+      "kullanim": [
+        "Torna ve CNC tezgahlarında iş parçası bağlama"
+      ]
+    },
+    "gfb-3-ayak-duz-ters-takim": {
+      "ozet": "3 Ayak Düz - Ters Takım, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-4-ayak-duz-ters-takim": {
+      "ozet": "4 Ayak Düz - Ters Takım, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-pinyon": {
+      "ozet": "Pinyon, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-spiral-dislisi": {
+      "ozet": "Spiral Dişlisi, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-doner-punta": {
+      "ozet": "Döner Punta, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-cnc-doner-punta-ince-uclu": {
+      "ozet": "CNC Döner Punta İnce Uçlu, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-degisebilir-uclu-doner-punta-seti": {
+      "ozet": "Değişebilir Uçlu Döner Punta Seti, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hassas-boru-puntasi": {
+      "ozet": "Hassas Boru Puntası, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-elmas-uclu-sabit-punta-kesik-tip": {
+      "ozet": "Elmas Uçlu Sabit Punta Kesik Tip, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-mors-kovan": {
+      "ozet": "Mors Kovan, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-mors-konik": {
+      "ozet": "Mors Konik, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-anahtarli-mandren": {
+      "ozet": "Anahtarlı Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-supra-plastik-mandren": {
+      "ozet": "Supra Plastik Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-supra-kilitli-mandren": {
+      "ozet": "Supra Kilitli Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-supra-elle-sikma-mandren": {
+      "ozet": "Supra Elle Sıkma Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-konik-anahtarli-mandren": {
+      "ozet": "Konik Anahtarlı Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-mini-mandren": {
+      "ozet": "Mini Mandren, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-mandren-anahtari": {
+      "ozet": "Mandren Anahtarı, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-sds-plus-mandren-adaptoru": {
+      "ozet": "SDS Plus Mandren Adaptörü, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-somun-sikma-matkap-mandren-adaptoru": {
+      "ozet": "Somun Sıkma Matkap Mandren Adaptörü, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-er-8-pensler": {
+      "ozet": "ER 8 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-11-pensler": {
+      "ozet": "ER 11 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-16-pensler": {
+      "ozet": "ER 16 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-20-pensler": {
+      "ozet": "ER 20 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-25-pensler": {
+      "ozet": "ER 25 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-32-pensler": {
+      "ozet": "ER 32 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-40-pensler": {
+      "ozet": "ER 40 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-oz-25-pensler": {
+      "ozet": "OZ 25 Pensler, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-pens-setleri": {
+      "ozet": "Pens Setleri, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-bt-40-pens-basligi": {
+      "ozet": "BT 40 Pens Başlığı, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-bbt-40-pens-baslik-er-model": {
+      "ozet": "BBT 40 Pens Başlık ER Model, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-silindir-saftli-pens-tutucu": {
+      "ozet": "Silindir Şaftlı Pens Tutucu, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-tc312-emniyetli-tip-kilavuz-adaptor-19": {
+      "ozet": "TC312 Emniyetli Tip Kılavuz Adaptör Ø19, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-tc820-emniyetli-tip-kilavuz-adaptor-31": {
+      "ozet": "TC820 Emniyetli Tip Kılavuz Adaptör Ø31, GFB markasının lokma, adaptör ve uzatma ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve vidalama makinelerine farklı uç ve lokma takma"
+      ]
+    },
+    "gfb-elektrikli-kilavuz-cekme-makinesi": {
+      "ozet": "Elektrikli Kılavuz Çekme Makinesi, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-morslu-kilavuz-cekme-baslik": {
+      "ozet": "Morslu Kılavuz Çekme Başlık, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-nt-iso-40-kilavuz-cekme-baslik": {
+      "ozet": "NT - ISO 40 Kılavuz Çekme Başlık, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-pens-montaj-aparati-dokum-govde": {
+      "ozet": "Pens Montaj Aparatı, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-kapak-mini": {
+      "ozet": "ER Kapak Mini, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-kapak": {
+      "ozet": "ER Kapak, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-oz-kapak": {
+      "ozet": "OZ Kapak, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-cektirme-civatasi": {
+      "ozet": "Çektirme Civatası, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-anahtar": {
+      "ozet": "ER Anahtar, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-er-anahtar-mini": {
+      "ozet": "ER Anahtar Mini, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-hss-4-agizli-uzun-freze": {
+      "ozet": "HSS 4 Ağızlı Uzun Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-hss-4-agizli-standart-freze": {
+      "ozet": "HSS 4 Ağızlı Standart Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-hss-4-agizli-kabatalas-freze": {
+      "ozet": "HSS 4 Ağızlı Kabatalaş Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-hss-4-agizli-titan-kapli-freze": {
+      "ozet": "HSS 4 Ağızlı Titan Kaplı Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-hss-2-agizli-freze": {
+      "ozet": "HSS 2 Ağızlı Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-4-agizli-karbur-elmas-freze": {
+      "ozet": "4 Ağızlı Karbür Elmas Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-4-agizli-karbur-kuresel-elmas-freze": {
+      "ozet": "4 Ağızlı Karbür Küresel Elmas Freze, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-hss-trapez-keski-kalemi-zavyeli": {
+      "ozet": "HSS Trapez Keski Kalemi (Zavyeli), GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-torna-kalemi-4-koseli": {
+      "ozet": "HSS Torna Kalemi - 4 Köşeli, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-torna-keski-kalemi-yassi": {
+      "ozet": "HSS Torna Keski Kalemi - Yassı, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-patograf-kalemi-yuvarlak": {
+      "ozet": "HSS Patograf Kalemi (Yuvarlak), GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-havsa-freze-90-derece": {
+      "ozet": "HSS Havşa Freze 90 Derece, GFB markasının havşa açmak için kullanılan uçtur.",
+      "kullanim": [
+        "Vida başının yüzeyle aynı seviyede kalmasını sağlayan havşa açma"
+      ]
+    },
+    "gfb-hss-punta-ucu": {
+      "ozet": "HSS Punta Ucu, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-punta-ucu-uzun": {
+      "ozet": "HSS Punta Ucu Uzun, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-hss-punta-curutme": {
+      "ozet": "HSS Punta Çürütme, GFB markasının torna ve işleme tezgahlarında kullanılan kesici kalem veya punta ucudur.",
+      "kullanim": [
+        "Torna tezgahında metal işleme"
+      ]
+    },
+    "gfb-a-silindir-duz": {
+      "ozet": "A - Silindir Düz, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-b-silindir-alin-kesmeli": {
+      "ozet": "B -Silindir Alın Kesmeli, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-c-silindir-oval-basli": {
+      "ozet": "C - Silindir Oval Başlı, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-d-kure-basli": {
+      "ozet": "D - Küre Başlı, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-e-oval-govdeli": {
+      "ozet": "E - Oval Gövdeli, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-f-kure-uclu-cam": {
+      "ozet": "F - Küre Uçlu Çam, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-g-sivri-cam": {
+      "ozet": "G - Sivri Çam, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-h-alev": {
+      "ozet": "H - Alev, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-l-konik-yuvarlak": {
+      "ozet": "L - Konik Yuvarlak, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-m-konik-sivri": {
+      "ozet": "M - Konik Sivri, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-hss-3-lu-metrik-el-takim-kilavuzu-din-352": {
+      "ozet": "HSS 3’lü Metrik El Takım Kılavuzu DIN 352, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-duz-ince-dis-makine-kilavuzu-din-371-376": {
+      "ozet": "HSS Titanyum Düz İnce Diş Makine Kılavuzu - DIN 371 / 376, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-duz-makine-kilavuzu-din-371-376": {
+      "ozet": "HSS Titanyum Düz Makine Kılavuzu DIN 371 / 376, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-helis-makine-kilavuzu-din-371-c-376-35-derece": {
+      "ozet": "HSS Titanyum Helis Makine Kılavuzu DIN 371/C - 376 35 Derece, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-3-lu-el-takim-kilavuzu-din-351": {
+      "ozet": "HSS 3’lü El Takım Kılavuzu - DIN 351, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-3-lu-el-takim-ince-dis-kilavuz-din-351": {
+      "ozet": "HSS 3’lü El Takım İnce Diş Kılavuz DIN 351, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-tekli-son-kilavuz-din-352": {
+      "ozet": "HSS Tekli Son Kılavuz - DIN 352, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-helikol-kilavuz-din-8141": {
+      "ozet": "HSS Helikol Kılavuz - DIN 8141, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-duz-makine-kilavuzu-din-371-376-2": {
+      "ozet": "HSS Titanyum Düz Makine Kılavuzu DIN - 371 / 376, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-e-kobalt-duz-makine-kilavuzu-din-371-c-376": {
+      "ozet": "HSS E Kobalt Düz Makine Kılavuzu DIN 371/C - 376, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-40-parcali-kilavuz-pafta-seti": {
+      "ozet": "40 Parçalı Kılavuz - Pafta Seti, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-gaz-dis-2-li-el-takim-kilavuzu-din-5157": {
+      "ozet": "HSS Gaz Diş 2’li El Takım Kılavuzu DIN 5157, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-gaz-dis-tekli-makine-kilavuzu-din-5156": {
+      "ozet": "HSS Gaz Diş Tekli Makine Kılavuzu DIN 5156, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-metrik-pafta": {
+      "ozet": "HSS Metrik Pafta, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-metrik-ince-dis-pafta": {
+      "ozet": "HSS Metrik İnce Diş Pafta, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-gaz-dis-pafta-din-5158": {
+      "ozet": "HSS Gaz Diş Pafta - DIN 5158, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-ters-kilavuz-seti": {
+      "ozet": "Ters Kılavuz Seti, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-ters-musluk-kilavuzu": {
+      "ozet": "Ters Musluk Kılavuzu, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-celik-kilavuz-kolu": {
+      "ozet": "Çelik Kılavuz Kolu, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-circirli-kilavuz-kolu-kisa": {
+      "ozet": "Cırcırlı Kılavuz Kolu (Kısa), GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-circirli-kilavuz-kolu-uzun": {
+      "ozet": "Cırcırlı Kılavuz Kolu (Uzun), GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-kilavuz-kolu": {
+      "ozet": "Kılavuz Kolu, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-pafta-kolu": {
+      "ozet": "Pafta Kolu, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-helicoil-dis-tamir-seti": {
+      "ozet": "Helicoil Diş Tamir Seti, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-helicoil-yaylar": {
+      "ozet": "Helicoil Yaylar, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-capak-alma-raspasi": {
+      "ozet": "Çapak Alma Raspası, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-capak-alma-yedek-bicak": {
+      "ozet": "Çapak Alma Yedek Bıçak, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-elmas-canak-tas-disk": {
+      "ozet": "Elmas Çanak Taş Disk, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-elmas-canak-tas-konik": {
+      "ozet": "Elmas Çanak Taş Konik, GFB markasının torna ve işleme tezgahları için aksesuar veya yedek parçadır.",
+      "kullanim": [
+        "Torna aynası ve tezgah bakım, yedek parça işleri"
+      ]
+    },
+    "gfb-tas-duzeltme-elmasi-1-mors-konik": {
+      "ozet": "Taş Düzeltme Elması 1 Mors Konik, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-coklu-tas-duzeltme-elmasi-1-mors-konik": {
+      "ozet": "Çoklu Taş Düzeltme Elması 1 Mors Konik, GFB markasının matkap mandreni veya bağlantı ekipmanıdır.",
+      "kullanim": [
+        "Matkap ve tezgahlarda uç bağlama"
+      ]
+    },
+    "gfb-celik-rakam-takimi": {
+      "ozet": "Çelik Rakam Takımı, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-celik-harf-takimi": {
+      "ozet": "Çelik Harf Takımı, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-karbur-uclu-metal-cizgi-kalemi-150mm": {
+      "ozet": "Karbür Uçlu Metal Çizgi Kalemi 150mm, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-manyetik-kaldirac": {
+      "ozet": "Manyetik Kaldıraç, GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-qgg-vidali-hassas-mengene": {
+      "ozet": "QGG Vidalı Hassas Mengene, GFB markasının hassas iş parçası bağlamak için mengenedir.",
+      "kullanim": [
+        "Freze, taşlama ve CNC işlerinde parça sabitleme"
+      ]
+    },
+    "gfb-qkg-pimli-hassas-mengene": {
+      "ozet": "QKG Pimli Hassas Mengene, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "gfb-zxqgg-acili-vidali-hassas-mengene": {
+      "ozet": "ZXQGG Açılı Vidalı Hassas Mengene, GFB markasının hassas iş parçası bağlamak için mengenedir.",
+      "kullanim": [
+        "Freze, taşlama ve CNC işlerinde parça sabitleme"
+      ]
+    },
+    "gfb-zxqkg-acili-pimli-hassas-mengene": {
+      "ozet": "ZXQKG Açılı Pimli Hassas Mengene, GFB markasının pas, boya ve kir temizlemek için çelik tel fırçadır.",
+      "kullanim": [
+        "Metal yüzeylerde pas, kaynak cürufu ve boya temizleme",
+        "Taşlama ve el motoru işlerinde yüzey hazırlama"
+      ],
+      "ipucu": "Paslanmaz seçeneği, inox yüzeylerde kullanılır."
+    },
+    "xpro-darbeli-yildiz": {
+      "ozet": "Darbeli Yıldız Tornavida Ucu (PH), GFB XPRO markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "xpro-darbeli-pozi": {
+      "ozet": "Darbeli Poz Tornavida Ucu (PZ), GFB XPRO markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "xpro-darbeli-tork": {
+      "ozet": "Darbeli Tork Tornavida Ucu (T), GFB XPRO markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "xpro-bits-uzatma-adaptor": {
+      "ozet": "Bits Uzatma ve Somun Adaptörü, GFB XPRO markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "xpro-darbeli-uc-setleri": {
+      "ozet": "Darbeli Tornavida Uç Setleri, GFB XPRO markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-silindir-komparator-takimi-mitutoyo-model": {
+      "ozet": "Silindir Komparatör Takımı Mitutoyo Model, GFB markasının parçalardaki sapma ve salgıyı ölçen komparatör saatidir.",
+      "kullanim": [
+        "Tezgah ve mil salgı kontrolü",
+        "Parça yüzey ve ayar kontrolü"
+      ]
+    },
+    "gfb-johnson-mastar-seti": {
+      "ozet": "Johnson Mastar Seti, GFB markasının ölçü ve kontrol mastarıdır.",
+      "kullanim": [
+        "Radius, diş ve aralık kontrolü",
+        "İmalat ve kalite kontrol"
+      ]
+    },
+    "gfb-125mm-cirtli-disk-zimpara-deliksiz-nk-aluminyum-oksit": {
+      "ozet": "125mm Cırtlı Disk Zımpara Deliksiz NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-125mm-cirtli-disk-zimpara-8-delikli-nk-aluminyum-oksit": {
+      "ozet": "125mm Cırtlı Disk Zımpara 8 Delikli NK Aluminyum Oksit, GFB markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "gfb-yuvarlak-duz-bits-uc": {
+      "ozet": "Yuvarlak Düz Bits Uç, GFB markasının vidalama için bits uç ve ek parçalardır.",
+      "kullanim": [
+        "Akülü tornavida ve matkaplarla vidalama",
+        "Montaj ve otomotiv işleri"
+      ],
+      "ipucu": "Vida başının tipine (yıldız, pozi, tork, allen, düz) uygun uç seçin."
+    },
+    "gfb-bt-40-kilavuz-cekme-baslik": {
+      "ozet": "BT 40 Kılavuz Çekme Başlık, GFB markasının CNC ve freze tezgahlarında takım bağlamak için pens ve bağlantı ekipmanıdır.",
+      "kullanim": [
+        "CNC freze ve tezgahlarda kesici takım bağlama"
+      ]
+    },
+    "gfb-hss-titanyum-ince-dis-duz-makine-kilavuzu-din-371-376": {
+      "ozet": "HSS Titanyum İnce Diş Düz Makine Kılavuzu - DIN 371/376, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-helis-makine-kilavuzu-din-371-376-35-derece": {
+      "ozet": "HSS Titanyum Helis Makine Kılavuzu - DIN 371 / 376 - 35 Derece, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-titanyum-ince-dis-helis-makine-kilavuzu-din-371-376-35-derece": {
+      "ozet": "HSS Titanyum İnce Diş Helis Makine Kılavuzu DIN - 371 / 376 - 35 Derece, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-e-kobalt-helis-makine-kilavuzu-din-371-c-376-35-derece": {
+      "ozet": "HSS E Kobalt Helis Makine Kılavuzu DIN 371 / C - 376 35 Derece, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-unc-kalin-dis-pafta": {
+      "ozet": "HSS UNC Kalın Diş Pafta, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-hss-unf-ince-dis-pafta": {
+      "ozet": "HSS UNF İnce Diş Pafta, GFB markasının diş açma ve diş tamiri için kılavuz, pafta veya yardımcı ekipmandır.",
+      "kullanim": [
+        "Metal parçalarda iç (kılavuz) ve dış (pafta) diş açma",
+        "Diş tamiri ve bakım işleri"
+      ],
+      "ipucu": "Diş açarken kesme yağı kullanın."
+    },
+    "gfb-kalip-baglama-seti-52-parcali": {
+      "ozet": "Kalıp Bağlama Seti (52 Parçalı), GFB markasının metal işleme ve atölye işleri için yardımcı ekipmandır.",
+      "kullanim": [
+        "Atölye, kalıp ve imalat işleri"
+      ]
+    },
+    "gfb-super-hassas-cnc-tezgah-mengenesi": {
+      "ozet": "Süper Hassas CNC Tezgah Mengenesi, GFB markasının hassas iş parçası bağlamak için mengenedir.",
+      "kullanim": [
+        "Freze, taşlama ve CNC işlerinde parça sabitleme"
+      ]
+    },
+    "gfb-freze-mengenesi": {
+      "ozet": "Freze Mengenesi, GFB markasının freze ve talaşlı imalat için kesici takımdır.",
+      "kullanim": [
+        "Torna ve freze tezgahlarında metal ve ahşap işleme"
+      ]
+    },
+    "gfb-iki-acili-mengene": {
+      "ozet": "İki Açılı Mengene, GFB markasının hassas iş parçası bağlamak için mengenedir.",
+      "kullanim": [
+        "Freze, taşlama ve CNC işlerinde parça sabitleme"
+      ]
+    },
+    "kupa-asma-kilit": {
+      "ozet": "Asma Kilit, Kupa markasının asma kilittir.",
+      "kullanim": [
+        "Kapı, depo, dolap ve ekipman kilitleme"
+      ]
+    },
+    "kupa-su-terazisi-miknatisli": {
+      "ozet": "Alüminyum Mıknatıslı Su Terazisi, Kupa markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "kupa-su-terazisi-sari": {
+      "ozet": "Su Terazisi Sarı, Kupa markasının yüzey ve montaj düzgünlüğünü kontrol etmek için su terazisidir.",
+      "kullanim": [
+        "Raf, kapı, pencere ve makine montajında düzlük kontrolü",
+        "İnşaat, tadilat ve atölye"
+      ]
+    },
+    "kupa-kablolu-makara": {
+      "ozet": "Kablolu Makara, Kupa markasının uzatma kablolu makaradır.",
+      "kullanim": [
+        "Atölye ve şantiyede elektrik uzatma"
+      ]
+    }
   },
   "gruplar": {
     "Sprey Boya": "Best sprey boyalar, metal, ahşap, plastik ve diğer yüzeylerde dekoratif ve koruyucu boyama için hazırlanmış 250 ml, 400 ml ve 500 ml sprey ürünlerdir.",
     "Teknik Sprey": "Best teknik spreyler; yağlama, pas sökme, temizleme, kalıp ayırma, kaynak ve ısıya dayanıklı boya gibi sanayi ve atölye işleri için üretilmiş sprey ürünlerdir.",
     "Anaerobik Yapıştırıcı ve Sıvı Conta": "Anaerobik yapıştırıcı ve sızdırmazlık ürünleri; cıvata sabitleme, kenetleme ve boru bağlantısı sızdırmazlığı için kullanılan sıvı ürünlerdir."
+  },
+  "urunler": {
+    "delme-kesme-yagi-225-ml": {
+      "ozet": "Delme Kesme Yağı 225 ml, delme ve kesme işlerinde soğutma ve yağlama sağlayan kesme yağıdır.",
+      "kullanim": [
+        "Matkap, torna, freze ve kılavuz işlerinde soğutma ve yağlama"
+      ]
+    },
+    "forbix-cok-amacli-temizleyici-1-kg": {
+      "ozet": "Förbix Çok Amaçlı Temizleyici 1 kg, Förbix markasının temizlik amaçlı üründür.",
+      "kullanim": [
+        "Atölye, şantiye ve ev temizliği"
+      ]
+    },
+    "evobond-502-yapistirici": {
+      "ozet": "Evobond 502 Yapıştırıcı, Evobond markasının yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "selsil-pak-genel-amacli-temizleyici-500-g": {
+      "ozet": "Selsil Pak Genel Amaçlı Temizleyici 500 g, Selsil markasının temizlik amaçlı üründür.",
+      "kullanim": [
+        "Atölye, şantiye ve ev temizliği"
+      ]
+    },
+    "twin-gum-iran-yapistirici-jalasanj": {
+      "ozet": "Twin Gum İran Yapıştırıcı (Jalasanj), yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "selsil-2k-polyester-bazli-kimyasal-dubel-300-ml": {
+      "ozet": "Selsil 2K Polyester Bazlı Kimyasal Dubel 300 ml, Selsil markasının kimyasal dübel (kimyasal ankraj) ürünüdür.",
+      "kullanim": [
+        "Beton ve dolu yapı malzemelerine ankraj, donatı ve saplama bağlama",
+        "Yüksek çekme yükü taşıyan bağlantılar"
+      ]
+    },
+    "stern-silikon-kartus-seffaf-280-g": {
+      "ozet": "Stern Silikon Kartuş Şeffaf 280 g, Stern markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "stern-silikon-kartus-beyaz-280-g": {
+      "ozet": "Stern Silikon Kartuş Beyaz 280 g, Stern markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "stern-kopuk-600gr": {
+      "ozet": "Stern Köpük 600GR, Stern markasının dolgu, yalıtım ve montaj için poliüretan köpüktür.",
+      "kullanim": [
+        "Kapı ve pencere kasası montajı, boşluk doldurma, mantolama yapıştırma"
+      ],
+      "ipucu": "Boşlukları tamamen doldurmayın; köpük genleşir."
+    },
+    "stern-pu-kopuk-tabancali-750-ml": {
+      "ozet": "Stern PU Köpük Tabancalı 750 ml, Stern markasının atölye ve tesisat işlerinde kullanılan tabanca veya hava ekipmanıdır.",
+      "kullanim": [
+        "Silikon, gres, boya uygulama veya hava ile çalışma"
+      ]
+    },
+    "dekor-serit-metre-306-soft-model-5m-25mm": {
+      "ozet": "Dekor Şerit Metre 306 Soft Model 5M*25MM, Dekor markasının ölçüm için şerit metredir.",
+      "kullanim": [
+        "Şantiye, tadilat ve atölye ölçümü"
+      ]
+    },
+    "bantex-seffaf-akrilik-koli-bandi-45-100-m": {
+      "ozet": "Bantex Şeffaf Akrilik Koli Bandı 45*100 m, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-deko-klima-bandi-dar-sarim-50-mm-18-m": {
+      "ozet": "Bantex Deko. Klima Bandı Dar Sarım 50 MM*18 m, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-lifli-bant-enine-boyuna-50mm-50mt": {
+      "ozet": "Bantex Lifli Bant Enine Boyuna 50MM*50MT, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-lifli-bant-boyuna-50mm-50mt": {
+      "ozet": "Bantex Lifli Bant Boyuna 50MM*50MT, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "bantex-tuylu-bant-19mm-15-m-siyah": {
+      "ozet": "Bantex Tüylü Bant 19MM*15 m Siyah, Bantex markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "era-tool-teflon-bant-kucuk": {
+      "ozet": "Era Tool Teflon Bant Küçük, Era Tool markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "atlas-425-mermer-zimp-115-cap-320-kum": {
+      "ozet": "Atlas 425 Mermer Zımp. 115 Çap 320 Kum, Atlas markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "atlas-157-kirmizi-115-c-cirt-duz-120-kum": {
+      "ozet": "Atlas 157 Kırmızı 115 Ç. Cırt Düz 120 Kum, Atlas markasının cırt cırtlı zımpara diskidir.",
+      "kullanim": [
+        "Zımpara makinelerinde yüzey zımparalama"
+      ]
+    },
+    "essafe-kulak-tikaci": {
+      "ozet": "Essafe Kulak Tıkacı, Essafe markasının gürültüden korunmak için kulak tıkacıdır.",
+      "kullanim": [
+        "Yüksek gürültülü ortamlarda işitme koruma"
+      ]
+    },
+    "power-tirtikli-nitril-eldiven-turuncu-l-50-li-paket": {
+      "ozet": "Power Tırtıklı Nitril Eldiven Turuncu L (50 Lİ Paket), Power markasının el koruması için nitril eldivendir.",
+      "kullanim": [
+        "Kimyasal, yağ ve kirli işlerde el koruma",
+        "Atölye, bakım ve temizlik"
+      ]
+    },
+    "mg-nitril-pudrasiz-elmas-dokulu-muay-eld-siyah-xl-50-li": {
+      "ozet": "MG Nitril Pudrasız Elmas Dokulu Muay. Eld. Siyah XL (50'Lİ), MG markasının el koruması için nitril eldivendir.",
+      "kullanim": [
+        "Kimyasal, yağ ve kirli işlerde el koruma",
+        "Atölye, bakım ve temizlik"
+      ]
+    },
+    "mg-nitril-pudrasiz-elmas-dokulu-muay-eld-siyah-m-50-li": {
+      "ozet": "MG Nitril Pudrasız Elmas Dokulu Muay. Eld. Siyah M (50'Lİ), MG markasının el koruması için nitril eldivendir.",
+      "kullanim": [
+        "Kimyasal, yağ ve kirli işlerde el koruma",
+        "Atölye, bakım ve temizlik"
+      ]
+    },
+    "power-tirtikli-nitril-eldiven-turuncu-xl-50-li-paket": {
+      "ozet": "Power Tırtıklı Nitril Eldiven Turuncu XL (50 Lİ Paket), Power markasının el koruması için nitril eldivendir.",
+      "kullanim": [
+        "Kimyasal, yağ ve kirli işlerde el koruma",
+        "Atölye, bakım ve temizlik"
+      ]
+    },
+    "mg-nitril-pudrasiz-elmas-dokulu-muay-eld-siyah-l-50-li": {
+      "ozet": "MG Nitril Pudrasız Elmas Dokulu Muay. Eld. Siyah L (50'Lİ), MG markasının el koruması için nitril eldivendir.",
+      "kullanim": [
+        "Kimyasal, yağ ve kirli işlerde el koruma",
+        "Atölye, bakım ve temizlik"
+      ]
+    },
+    "made-tugla-bosluk-dubeli-12-120-mm-uzun-100-lu": {
+      "ozet": "Made Tuğla Boşluk Dübeli 12*120 mm Uzun 100 LÜ, Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "selsil-epoksi-genel-amacli-yap-siringa-28-g": {
+      "ozet": "Selsil Epoksi Genel Amaçlı Yap. Şırınga 28 g, Selsil markasının iki bileşenli epoksi yapıştırıcıdır.",
+      "kullanim": [
+        "Metal, seramik, ahşap ve plastik parçaların yapıştırılması"
+      ]
+    },
+    "selsil-epoksi-metal-yapistirici-siringa-28-g": {
+      "ozet": "Selsil Epoksi Metal Yapıştırıcı Şırınga 28 g, Selsil markasının iki bileşenli epoksi yapıştırıcıdır.",
+      "kullanim": [
+        "Metal, seramik, ahşap ve plastik parçaların yapıştırılması"
+      ]
+    },
+    "cuval-60-90": {
+      "ozet": "Çuval 60*90, çuvaldır.",
+      "kullanim": [
+        "Moloz ve malzeme taşıma, saklama"
+      ]
+    },
+    "zimak-3-6-150-siyah-kablo": {
+      "ozet": "Zimak 3,6*150 Siyah Kablo, Zimak markasının kablo bağıdır.",
+      "kullanim": [
+        "Kablo toplama ve sabitleme"
+      ]
+    },
+    "astel-seffaf-koli-bandi-45-100": {
+      "ozet": "Astel Şeffaf Koli Bandı 45*100, Astel markasının yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "made-plastik-dolap-aski-elemani-beyaz-1-20": {
+      "ozet": "Made Plastik Dolap Askı Elemanı Beyaz 1,20, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "dekor-318-poliuretan-dizlik-14-cm": {
+      "ozet": "Dekor 318 Poliüretan Dizlik 14 cm, Dekor markasının yere çalışırken dizleri koruyan dizliktir.",
+      "kullanim": [
+        "Fayans, parke ve zemin işleri"
+      ]
+    },
+    "polikor-88-pol-macun-sari-2700-g": {
+      "ozet": "Polikor 88 Pol. Macun Sarı 2700 g, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "made-sabitleme-takozu-eko-100-lu-yeni": {
+      "ozet": "Made Sabitleme Takozu Eko 100 LÜ Yeni, Made markasının duvara vida ve çivi sabitlemek için plastik dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve alçıpan duvarlara hafif ve orta yük bağlama",
+        "Askı, raf ve aksesuar montajı"
+      ]
+    },
+    "polikor-polyester-astar-gri-1-50-kg": {
+      "ozet": "Polikor Polyester Astar Gri 1,50 kg, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "made-122-cam-menfez": {
+      "ozet": "Made 122 Cam Menfez, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "made-wc-matik-cift-kapakli": {
+      "ozet": "Made WC Matik Çift Kapaklı, Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "zimak-zmk-1400-metal-maket-bicagi-gold": {
+      "ozet": "Zimak ZMK-1400 Metal Maket Bıçağı Gold, Zimak markasının kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "made-stand-159-44-23": {
+      "ozet": "Made Stand (159*44*23), Made markasının yapı ve montaj işleri için aksesuardır.",
+      "kullanim": [
+        "Tadilat ve montaj işleri"
+      ]
+    },
+    "kupa-kup8206-cam-kazima-bicagi": {
+      "ozet": "Kupa KUP8206 Cam Kazıma Bıçagı, kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "polikor-politherm-pol-macun-aluminyum-1675-g": {
+      "ozet": "Polikor Politherm Pol. Macun (Alüminyum) 1675 g, Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "polikor-diamond-sivi-pasta-1-l-1-1": {
+      "ozet": "Polikor Diamond Sıvı Pasta 1 L (1/1), Polikor markasının macun, astar, kaplama ve cila gibi yüzey işleri ürünüdür.",
+      "kullanim": [
+        "Karoser, mobilya ve yüzey düzeltme",
+        "Boya öncesi hazırlık ve cilalama"
+      ]
+    },
+    "atlas-green-tiger-rulo-sunger-zimp-115-25m-60-kum-yeni": {
+      "ozet": "Atlas Green Tiger Rulo Sünger Zımp. 115*25M 60 Kum (Yeni), Atlas markasının yüzey zımparalamak için zımparadır.",
+      "kullanim": [
+        "Ahşap, boya, macun ve metal yüzeyi pürüzsüzleştirme"
+      ],
+      "ipucu": "Sıralı kum numaraları (düşükten yükseğe) ile çalışın."
+    },
+    "made-agir-yuk-dubeli-16mm": {
+      "ozet": "Made Ağır Yük Dübeli 16MM, Made markasının ağır yük taşıyan bağlantılar için çelik veya metal dübeldir.",
+      "kullanim": [
+        "Beton, tuğla ve gaz betonda ağır yük bağlama",
+        "Raf, korkuluk ve tesisat askıları"
+      ]
+    },
+    "era-tool-koli-bantlama-makinasi": {
+      "ozet": "Era Tool Koli Bantlama Makinası, yapıştırma, sızdırmazlık veya paketleme için banttır.",
+      "kullanim": [
+        "Paketleme, yalıtım ve genel tamir işleri"
+      ]
+    },
+    "selsil-ninja-mdf-400-ml-100-g": {
+      "ozet": "Selsil Ninja MDF 400 ML+100 g, Selsil markasının yapıştırıcıdır.",
+      "kullanim": [
+        "Genel yapıştırma ve montaj işleri"
+      ]
+    },
+    "dekor-319-tekerlekli-dizlik-aparati-dizliksiz": {
+      "ozet": "Dekor 319 Tekerlekli Dizlik Aparatı ( Dizliksiz ), Dekor markasının yere çalışırken dizleri koruyan dizliktir.",
+      "kullanim": [
+        "Fayans, parke ve zemin işleri"
+      ]
+    },
+    "ikom-ffp2-toz-maskesi": {
+      "ozet": "Ikom FFP2 Toz Maskesi, toz ve partiküllere karşı koruyucu maskedir.",
+      "kullanim": [
+        "Toz yoğun ortamlarda solunum koruma"
+      ]
+    },
+    "eratool-maket-bicagi-yedek-uc-0-50-mm-genis": {
+      "ozet": "Eratool Maket Bıçağı Yedek UÇ 0,50 mm Geniş, kesme ve kazıma işleri için bıçaktır.",
+      "kullanim": [
+        "Karton, plastik, boya ve cam yüzeylerde kesme ve kazıma"
+      ]
+    },
+    "stern-high-tack-kartus-290-ml": {
+      "ozet": "Stern High Tack Kartuş 290 ml, Stern markasının yüksek ilk tutunmalı yapıştırıcı mastiktir.",
+      "kullanim": [
+        "Yapıştırma ve montaj işleri"
+      ]
+    },
+    "stern-pu-kopuk-manuel-750-ml": {
+      "ozet": "Stern PU Köpük Manuel 750 ml, Stern markasının dolgu, yalıtım ve montaj için poliüretan köpüktür.",
+      "kullanim": [
+        "Kapı ve pencere kasası montajı, boşluk doldurma, mantolama yapıştırma"
+      ],
+      "ipucu": "Boşlukları tamamen doldurmayın; köpük genleşir."
+    },
+    "yilsan-yls-m300-331-moher-kadife-parmak-rulo-10-cm": {
+      "ozet": "Yılsan Yls M300/331 Moher KADiFE Parmak Rulo 10 cm, Yılsan markasının boya uygulamak için rulodur.",
+      "kullanim": [
+        "İç ve dış cephe duvar ve tavan boyama",
+        "Ev ve profesyonel boya işleri"
+      ]
+    },
+    "kupa-kup8174-kilifli-budama-testeresi-300-mm": {
+      "ozet": "Kupa KUP8174 Kılıflı Budama Testeresi 300 mm, Kupa markasının kesme işleri için testeredir.",
+      "kullanim": [
+        "Ahşap, alüminyum veya yapı malzemesi kesme"
+      ]
+    },
+    "stern-akrilik-mastik-beyaz-450gr": {
+      "ozet": "Stern Akrilik Mastik Beyaz 450GR, Stern markasının derz, çatlak ve birleşim yerlerini doldurmak ve sızdırmaz hale getirmek için mastik veya silikondur.",
+      "kullanim": [
+        "Cam, doğrama, banyo, mutfak ve cephe derzleri",
+        "Yapı ve tadilat işleri"
+      ],
+      "ipucu": "Uygulama yüzeyi kuru ve temiz olmalıdır."
+    },
+    "selsil-water-stop-liquid-membrane-14-kg": {
+      "ozet": "Selsil Water Stop Lıquıd Membrane 14 kg, Selsil markasının su yalıtımı için sıvı membran ürünüdür.",
+      "kullanim": [
+        "Teras, banyo ve ıslak hacim su yalıtımı"
+      ]
+    },
+    "tekno-kimyasal-dubel-ucu-nozzle-mikser": {
+      "ozet": "Tekno Kimyasal Dübel Ucu Nozzle Mikser, Tekno markasının kimyasal dübel (kimyasal ankraj) ürünüdür.",
+      "kullanim": [
+        "Beton ve dolu yapı malzemelerine ankraj, donatı ve saplama bağlama",
+        "Yüksek çekme yükü taşıyan bağlantılar"
+      ]
+    },
+    "tekno-epoksi-akrilat-kimyasal-dubel-300-ml": {
+      "ozet": "Tekno Epoksi Akrilat Kimyasal Dubel 300 ml, Tekno markasının kimyasal dübel (kimyasal ankraj) ürünüdür.",
+      "kullanim": [
+        "Beton ve dolu yapı malzemelerine ankraj, donatı ve saplama bağlama",
+        "Yüksek çekme yükü taşıyan bağlantılar"
+      ]
+    }
+  },
+  "markalar": {
+    "Selsil": "Selsil ürünleri silikon, mastik, köpük ve yapıştırıcı gibi yapı kimyasalları sunar.",
+    "NP1": "NP1 ürünleri MS polimer yapıştırıcı ve mastik ile kimyasal dübel çözümlerini kapsar.",
+    "Stern": "Stern ürünleri silikon, köpük ve mastik gibi yapı kimyasalları sunar.",
+    "Polikor": "Polikor ürünleri macun, astar, kaplama ve cila gibi yüzey işleri çözümleri sunar.",
+    "Derby": "Derby, yapıştırıcı ürün grubunu sunar.",
+    "Made": "Made ürünleri dübel, kelepçe, bağlantı elemanı ve montaj aksesuarlarını kapsar.",
+    "Bantex": "Bantex ürünleri maskeleme, koli, çift taraflı, izole ve işaretleme bantları sunar.",
+    "Yılsan": "Yılsan ürünleri boya fırçası, rulo, mala ve temizlik fırçaları sunar.",
+    "Dekor": "Dekor ürünleri mala, spatula, şerit metre ve inşaat el aletleri sunar.",
+    "Atlas": "Atlas ürünleri zımpara ve yüzey işleme ürünleri sunar.",
+    "GFB": "GFB ürünleri ölçü aletleri, matkap uçları, panç, elmas kesici ve CNC kesici takımları kapsar.",
+    "GFB XPRO": "GFB XPRO, darbeli tornavida uçları ve bits uzatma ürünlerini sunar.",
+    "Tork": "Tork, kablo bağı ürünlerini sunar.",
+    "Haıs": "Haıs, akülü el aletleri ve aksesuarlarını sunar.",
+    "Kupa": "Kupa; kilit, su terazisi ve el aleti ürünlerini sunar."
   }
 }

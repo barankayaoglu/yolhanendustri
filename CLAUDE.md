@@ -44,4 +44,4 @@ Ham çekimler `fotograflar-ham/` (depoya girmez). Web sürümleri `medya/*.webp`
 
 - Veri: `katalog/veri/urunler.json` → `node araclar/urun-verisi.mjs` → `icerik/urunler.json` (fiyatsız) + `medya/urun/*.webp` + `medya/marka/`. Katalogda ürün değişince bu komutu çalıştırıp commit et. **Fiyat alanları siteye girmez.**
 - Şablonlar `sablon/urunler.mjs` (liste 48'lik sayfalar, marka, `urun/<slug>.html`). Süzgeç `statik/js/urunler.js`, stiller `statik/css/urunler.css`.
-- Elle yazılmış ürün ailesi açıklamaları `icerik/aciklamalar.json` (aile id → ozet/kullanim/ipucu; grup yedekleri). Şu an yalnız Best aileleri var; diğer markalar şablon metni kullanır.
+- Elle yazılmış ürün ailesi açıklamaları `icerik/aciklamalar.json` (aile id → ozet/kullanim/ipucu; grup yedekleri). Best aileleri elle yazıldı; diğer markalar `node araclar/aciklama-uret.mjs` (kural tablosu, ürün türüne göre) ile üretilir ve aynı dosyaya eklenir.
