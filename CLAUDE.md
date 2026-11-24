@@ -39,3 +39,9 @@ Ham çekimler `fotograflar-ham/` (depoya girmez). Web sürümleri `medya/*.webp`
 ## Yerel önizleme
 
 `claudecalisma/.claude/launch.json` → `yolhanendustri` (port 5530, `dist/`'i sunar). Önce derle.
+
+## Ürünlerimiz / Markalarımız / ürün sayfaları
+
+- Veri: `katalog/veri/urunler.json` → `node araclar/urun-verisi.mjs` → `icerik/urunler.json` (fiyatsız) + `medya/urun/*.webp` + `medya/marka/`. Katalogda ürün değişince bu komutu çalıştırıp commit et. **Fiyat alanları siteye girmez.**
+- Şablonlar `sablon/urunler.mjs` (liste 48'lik sayfalar, marka, `urun/<slug>.html`). Süzgeç `statik/js/urunler.js`, stiller `statik/css/urunler.css`.
+- Elle yazılmış ürün ailesi açıklamaları `icerik/aciklamalar.json` (aile id → ozet/kullanim/ipucu; grup yedekleri). Şu an yalnız Best aileleri var; diğer markalar şablon metni kullanır.

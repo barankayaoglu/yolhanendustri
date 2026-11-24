@@ -51,3 +51,7 @@
 .urn-cesit a { display: flex; justify-content: space-between; gap: 10px; padding: 10px 12px; border: 1px solid var(--cizgi); background: #fff; text-decoration: none; color: var(--metin); font-size: .9rem; }
 .urn-cesit a[aria-current] { border-color: var(--sari); background: #fff8dd; }
 .urn-cesit span { color: var(--metin-2); font-size: .8rem; white-space: nowrap; }
+.urn-hakkinda { max-width: 760px; }
+.urn-hakkinda p, .urn-hakkinda li { line-height: 1.65; }
+.urn-alt { font-size: 1.05rem; margin: 18px 0 8px; }
+.urn-ipucu { padding: 12px 14px; background: #fff8dd; border-left: 3px solid var(--sari); }

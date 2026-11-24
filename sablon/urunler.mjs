@@ -25,9 +25,10 @@ function aciklamaYaz(c, u, v, kardesler) {
   const f = c.firma;
   const cesit = u.v ? ` Çeşit/ölçü: ${u.v.replace(/\s*·\s*/g, ", ")}.` : "";
   const ral = u.ral ? ` RAL ${u.ral} renk koduyla sunulan bu sprey boya, metal, ahşap ve plastik yüzeylerde dekoratif ve koruyucu boyama için kullanılır.` : "";
+  const fa = v.acik && v.acik.aileler && v.acik.aileler[u.fa];
   const kisa = `${u.a}, ${u.m} markasının ${kucuk(u.g)} grubundaki ürünüdür (ürün kodu ${u.k}).${cesit}${ral}`;
   const kurum = `${f.ad}, ${u.m} ürünlerini İzmir'de Bornova merkez deposundan ve Konak şubesinden işletmelere, ustalara ve bayilere tedarik eder. Güncel fiyat ve stok bilgisi için bizi arayın veya bayi hesabıyla B2B sistemimizden bakın.`;
-  return { kisa, kurum };
+  return { kisa, kurum, fa, grupMetni: v.acik && v.acik.gruplar && v.acik.gruplar[u.g] };
 }
 
 /* ---------- Ürünlerimiz (sayfalı liste + süzgeç) ---------- */
@@ -113,7 +114,7 @@ ${bayiBandi(c)}`;
 export function urunSayfasi(c, v, u, kardesler, benzerler) {
   const f = c.firma;
   const dosya = urunYolu(u);
-  const { kisa, kurum } = aciklamaYaz(c, u, v, kardesler);
+  const { kisa, kurum, fa, grupMetni } = aciklamaYaz(c, u, v, kardesler);
   const mesaj = `Merhaba, ${u.a} (kod: ${u.k}) ürünü hakkında bilgi almak istiyorum.`;
   const gorsel = u.f
     ? `<img src="medya/${esc(u.f)}" alt="${esc(u.a)}" width="560" height="560" decoding="async">`
@@ -123,6 +124,12 @@ export function urunSayfasi(c, v, u, kardesler, benzerler) {
   const kardesHtml = kardesler.length ? `
       <section class="urn-ek"><h2 class="baslik-3">${esc(aile || u.m)} çeşitleri</h2>
         <ul class="urn-cesit">${kardesler.map((k) => `<li><a href="${urunYolu(k)}"${k.s === u.s ? ' aria-current="page"' : ""}><b>${esc(k.v ? k.v.replace(/\s*·\s*/g, ", ") : k.a)}</b><span>${esc(k.k)}</span></a></li>`).join("")}</ul>
+      </section>` : "";
+  const hakkinda = fa || grupMetni ? `
+      <section class="urn-ek urn-hakkinda"><h2 class="baslik-3">${esc(aile || u.g)} hakkında</h2>
+        <p>${esc(fa ? fa.ozet : grupMetni)}</p>${fa && fa.kullanim ? `
+        <h3 class="urn-alt">Kullanım alanları</h3><ul>${fa.kullanim.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}${fa && fa.ipucu ? `
+        <p class="urn-ipucu"><b>İpucu:</b> ${esc(fa.ipucu)}</p>` : ""}
       </section>` : "";
   const benzerHtml = benzerler.length ? `
       <section class="urn-ek"><h2 class="baslik-3">Benzer ürünler</h2><ul class="urn-izgara">${benzerler.map(kart).join("")}</ul></section>` : "";
@@ -144,18 +151,18 @@ export function urunSayfasi(c, v, u, kardesler, benzerler) {
               <a class="dugme dugme--cizgi-koyu dugme--b" href="${telHref(f.telefon)}">${ikon("phone", "i--k")}${esc(f.telefon)}</a>
             </div>
           </div>
-        </div>${kardesHtml}${benzerHtml}
+        </div>${hakkinda}${kardesHtml}${benzerHtml}
       </div>
     </section>`;
   const urunLd = {
     "@context": "https://schema.org", "@type": "Product", name: u.a, sku: u.k, mpn: u.k, category: u.g,
-    brand: { "@type": "Brand", name: u.m }, description: kisa,
+    brand: { "@type": "Brand", name: u.m }, description: fa ? `${u.a}. ${fa.ozet}` : kisa,
     ...(u.f ? { image: `${SITE}medya/${u.f}` } : {}), url: SITE + dosya,
   };
   return iskelet(c, {
     dosya,
     baslik: `${u.a} (${u.k}) — ${u.m} | ${f.ad}`.slice(0, 160),
-    aciklama: `${u.a}, ürün kodu ${u.k}. ${u.m} ${kucuk(u.g)} ürünü İzmir'de ${f.ad} Bornova ve Konak'tan toptan tedarik. Fiyat için B2B giriş.`.slice(0, 300),
+    aciklama: `${u.a}, ürün kodu ${u.k}. ${fa ? fa.ozet.split(". ")[0] + ". " : ""}${u.m} ${kucuk(u.g)} ürünü İzmir'de ${f.ad} Bornova ve Konak'tan toptan tedarik. Fiyat için B2B giriş.`.slice(0, 300),
     govde, css: ["css/urunler.css"],
     jsonLd: ldBlok(urunLd) + ldBlok(ekmek([["Ana sayfa", ""], ["Ürünlerimiz", "urunlerimiz.html"], [u.m, `urunlerimiz.html?marka=${encodeURIComponent(u.m)}`], [u.a, dosya]])),
   });

@@ -18,6 +18,8 @@ await mkdir(DIST, { recursive: true });
 let urunVerisi = null;
 try { urunVerisi = JSON.parse(await readFile(path.join(KOK, "icerik/urunler.json"), "utf8")); } catch (e) { if (e.code !== "ENOENT") throw e; }
 
+if (urunVerisi) { try { urunVerisi.acik = JSON.parse(await readFile(path.join(KOK, "icerik/aciklamalar.json"), "utf8")); } catch (e) { if (e.code !== "ENOENT") throw e; } }
+
 const TUM = [...SAYFALAR, ...grupSayfalari(icerik), ...(urunVerisi ? urunSayfalari(urunVerisi) : [])];
 for (const { dosya, olustur } of TUM) {
   await mkdir(path.dirname(path.join(DIST, dosya)), { recursive: true });
