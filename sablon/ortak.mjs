@@ -30,11 +30,13 @@ const SAYFALAR = [
   ["index.html", "anaSayfa"],
   ["hakkimizda.html", "hakkimizda"],
   ["urun-gruplari.html", "urunGruplari"],
+  ["urunlerimiz.html", "urunlerimiz"],
+  ["markalarimiz.html", "markalarimiz"],
   ["e-katalog.html", "ekatalog"],
   ["iletisim.html", "iletisim"],
 ];
 
-const ETIKET_YEDEK = { ekatalog: "E-Katalog" }; // site.json'da menü adı yoksa
+const ETIKET_YEDEK = { ekatalog: "E-Katalog", urunlerimiz: "Ürünlerimiz", markalarimiz: "Markalarımız" }; // site.json'da menü adı yoksa
 
 function ustBolum(c, aktif) {
   const m = c.menu, f = c.firma;
@@ -105,7 +107,13 @@ function altBolum(c) {
 }
 
 /** Tam sayfa iskeleti */
-export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [] }) {
+export function iskelet(c, o) {
+  const html = iskeletHam(c, o);
+  // urun/ gibi alt klasördeki sayfalarda göreli adresleri kökten çöz
+  return o.dosya.includes("/") ? html.replace(/(href|src)="(?!https?:|\/\/|mailto:|tel:|data:|#|\/|\.\.\/)/g, '$1="../') : html;
+}
+
+function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [] }) {
   const url = SITE + (dosya === "index.html" ? "" : dosya);
   return `<!doctype html>
 <html lang="tr">
@@ -146,7 +154,7 @@ export function iskelet(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = 
 <body data-sayfa="${dosya.replace(".html", "")}">
   <a class="atla" href="#ana">İçeriğe geç</a>
   <div class="perde" aria-hidden="true"><div class="perde__serit"></div><img class="perde__isaret" src="img/isaret-512.png" alt="" width="96" height="96"></div>
-  ${ustBolum(c, dosya.startsWith("urun-") ? "urun-gruplari.html" : dosya)}
+  ${ustBolum(c, dosya.startsWith("urun/") || /^urunlerimiz-\d+\.html$/.test(dosya) ? "urunlerimiz.html" : dosya.startsWith("urun-") ? "urun-gruplari.html" : dosya)}
   <main id="ana">
     <div class="yol" aria-hidden="true"></div>
 ${govde}

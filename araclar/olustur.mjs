@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { SAYFALAR, grupSayfalari } from "../sablon/sayfalar.mjs";
 import { SITE } from "../sablon/ortak.mjs";
+import { urunSayfalari } from "../sablon/urunler.mjs";
 
 const KOK = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(KOK, "dist");
@@ -14,10 +15,14 @@ const icerik = JSON.parse(await readFile(path.join(KOK, "icerik/site.json"), "ut
 await rm(DIST, { recursive: true, force: true });
 await mkdir(DIST, { recursive: true });
 
-const TUM = [...SAYFALAR, ...grupSayfalari(icerik)];
+let urunVerisi = null;
+try { urunVerisi = JSON.parse(await readFile(path.join(KOK, "icerik/urunler.json"), "utf8")); } catch (e) { if (e.code !== "ENOENT") throw e; }
+
+const TUM = [...SAYFALAR, ...grupSayfalari(icerik), ...(urunVerisi ? urunSayfalari(urunVerisi) : [])];
 for (const { dosya, olustur } of TUM) {
+  await mkdir(path.dirname(path.join(DIST, dosya)), { recursive: true });
   await writeFile(path.join(DIST, dosya), olustur(icerik), "utf8");
-  console.log("sayfa:", dosya);
+  if (!dosya.startsWith("urun/")) console.log("sayfa:", dosya);
 }
 
 // Sabit dosyalar ve panel
