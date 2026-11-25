@@ -60,9 +60,7 @@ export function anaSayfaYeni(c) {
 <main id="top">
   <section class="hero" id="hero" data-tema="koyu">
     <div class="hero__fotolar">
-      ${(g.gorseller || []).map((x, i) => i === 0
-        ? img(x, { sinif: "slide", yukle: "eager", oncelik: true })
-        : `<img class="slide" data-src="${esc(x.src)}" alt="" aria-hidden="true" decoding="async">`).join("")}
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="${esc(film.poster)}" aria-label="${esc(film.baslik)}" disablepictureinpicture><source src="${esc(film.src)}" type="video/mp4"></video>
       <div class="hero__golge"></div>
     </div>
     <div class="txt"><h1>${br(g.baslik)}</h1></div>
@@ -92,11 +90,6 @@ export function anaSayfaYeni(c) {
       </div>
     </div>
   </section>
-
-  <section class="film" id="film" data-tema="koyu"><div class="wrap center">
-    <h2 data-reveal>${esc(film.baslik)}</h2>
-    <video controls preload="none" playsinline poster="${esc(film.poster)}" aria-label="${esc(film.baslik)}"><source src="${esc(film.src)}" type="video/mp4"></video>
-  </div></section>
 
   <section class="markalar" id="markalar" data-tema="koyu"><div class="wrap center">
     <h2 data-reveal>${br(a.markalar.baslik)}</h2>
