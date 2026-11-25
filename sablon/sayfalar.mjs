@@ -2,7 +2,7 @@
    Derleme aracı ve panel önizlemesi aynı fonksiyonları kullanır. */
 import {
   esc, br, satirlar, ikon, gorsel, telHref, waHref, haritaHref,
-  iskelet, sayfaGiris, bayiBandi, yasalMetin, SITE,
+  iskelet, sayfaGiris, yasalMetin, SITE,
 } from "./ortak.mjs";
 import { anaSayfaYeni } from "./ana-yeni.mjs";
 
@@ -96,8 +96,7 @@ export function hakkimizda(c) {
 
     <section class="galeri" aria-label="Depo ve mağazadan kareler">
       ${(h.galeri || []).map((x, i) => `<figure class="galeri__${i + 1}">${gorsel(x, { boyutlar: "(min-width: 900px) 40vw, 90vw" })}</figure>`).join("")}
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, { dosya: "hakkimizda.html", baslik: h.seoBaslik, aciklama: h.seoAciklama, govde });
 }
 
@@ -113,8 +112,7 @@ export function vizyonMisyon(c) {
         <div class="hikaye__metin"><p class="buyuk">${br(m)}</p></div>
       </div>
     </section>`;
-  const govde = `${sayfaGiris(v)}${blok(v.vizyonBaslik, v.vizyon)}${blok(v.misyonBaslik, v.misyon)}
-${bayiBandi(c)}`;
+  const govde = `${sayfaGiris(v)}${blok(v.vizyonBaslik, v.vizyon)}${blok(v.misyonBaslik, v.misyon)}`;
   return iskelet(c, { dosya: "vizyon-misyon.html", baslik: v.seoBaslik, aciklama: v.seoAciklama, govde });
 }
 
@@ -136,8 +134,7 @@ export function medya(c) {
         <h2 class="baslik-2">${esc(m.galeriBaslik)}</h2>
         <div class="medya-galeri">${gorseller.map((x) => `<figure>${gorsel(x, { boyutlar: "(min-width: 900px) 30vw, 90vw" })}</figure>`).join("")}</div>
       </div>
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, { dosya: "medya.html", baslik: m.seoBaslik, aciklama: m.seoAciklama, govde });
 }
 
@@ -180,8 +177,7 @@ export function urunGruplari(c) {
         </div>
         <ul class="marka-kartlari">${markaKartlari}</ul>
       </div>
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, { dosya: "urun-gruplari.html", baslik: u.seoBaslik, aciklama: u.seoAciklama, govde,
     jsonLd: ldBlok(ekmek([["Ana sayfa", ""], [c.menu.urunGruplari || "Ürün Grupları", "urun-gruplari.html"]])) });
 }
@@ -213,8 +209,7 @@ export function grupSayfasi(c, g) {
         <div class="bolum-bas"><h2 class="baslik-2">Diğer ürün gruplarımız</h2></div>
         <ul class="etiketler">${digerleri}</ul>
       </div>
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, {
     dosya,
     baslik: `${g.ad} — İzmir'de Tedarik | ${f.ad}`,
@@ -248,11 +243,8 @@ export function eKatalog(c) {
   const f = c.firma;
   const govde = `
     <section class="ekat" data-ekatalog aria-label="${esc(e.baslik.replace(/\n/g, " "))}">
-      <div class="ekat__ust kap">
-        <p class="ekat__ustsatir">${esc(e.ustSatir)}</p>
-        <h1 class="ekat__baslik">${satirlar(e.baslik)}</h1>
-        <p class="ekat__aciklama">${br(e.aciklama)} <span class="ekat__tarih" data-tarih></span></p>
-      </div>
+      <h1 class="gizli">${esc(e.baslik.replace(/\n/g, " "))}</h1>
+      <span data-tarih hidden></span>
 
       <div class="ekat__sahne">
         <button class="ekat__ok ekat__ok--geri" type="button" data-geri aria-label="Önceki sayfa">${EK_IKON.geri}</button>
@@ -293,57 +285,57 @@ export function eKatalog(c) {
       </aside>
 
       <noscript><p class="ekat__nojs">Katalog sayfalarını görmek için JavaScript gerekir. Güncel ürün ve fiyat bilgisi için <a href="${esc(f.b2bAdres)}">B2B sistemimizi</a> kullanabilir ya da bizi arayabilirsiniz: <a href="${telHref(f.telefon)}">${esc(f.telefon)}</a>.</p></noscript>
-    </section>
-
-    <section class="ekat-not bolum bolum--gece">
-      <div class="kap ekat-not__ic">
-        <div>
-          <h2 class="baslik-3">${br(e.notBaslik)}</h2>
-          <p>${br(e.notMetin)}</p>
-        </div>
-        <div class="dugmeler">
-          <a class="dugme dugme--sari dugme--b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(e.notButon1)}${ikon("external", "i--k")}</a>
-          <a class="dugme dugme--cizgi dugme--b" href="${waHref(f.whatsapp, e.whatsappMesaji)}" target="_blank" rel="noopener">${ikon("chat", "i--k")}${esc(e.notButon2)}</a>
-        </div>
-      </div>
     </section>`;
   return iskelet(c, { dosya: "e-katalog.html", baslik: e.seoBaslik, aciklama: e.seoAciklama, govde, css: ["css/ekatalog.css"], js: ["js/ekatalog.js"] });
+}
+
+/* ---------- Bayi başvuru formu ---------- */
+
+// Statik sitede sunucu yok: form FormSubmit (formsubmit.co) üzerinden firma e-postasına gider.
+// İlk gönderimde info@ adresine bir onay e-postası gelir; bağlantıya tıklanınca form açılır.
+const alanF = (ad, etiket, o = {}) => `
+        <label class="bf-alan${o.genis ? " bf-alan--genis" : ""}"><span>${esc(etiket)}${o.zorunlu ? ' <i aria-hidden="true">*</i>' : ""}</span>${
+  o.tip === "uzun"
+    ? `<textarea name="${ad}" rows="4"${o.zorunlu ? " required" : ""} maxlength="1500"></textarea>`
+    : o.tip === "sec"
+      ? `<select name="${ad}"${o.zorunlu ? " required" : ""}><option value="">Seçiniz</option>${o.secenekler.map((x) => `<option>${esc(x)}</option>`).join("")}</select>`
+      : `<input name="${ad}" type="${o.tip || "text"}"${o.zorunlu ? " required" : ""}${o.oto ? ` autocomplete="${o.oto}"` : ""}${o.kalip ? ` pattern="${o.kalip}"` : ""}${o.ipucu ? ` placeholder="${esc(o.ipucu)}"` : ""} maxlength="200">`}</label>`;
+
+export function bayiBasvuru(c) {
+  const b = c.bayiBasvuru, f = c.firma;
+  const govde = `${sayfaGiris(b)}
+
+    <section class="bolum bolum--beton">
+      <div class="kap bf-kap">
+        <form class="bf" data-bayi-form action="https://formsubmit.co/${esc(f.eposta)}" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Yeni bayi başvurusu — ${esc(SITE.replace(/^https?:\/\//, "").replace(/\/$/, ""))}">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="${SITE}bayi-basvuru.html?gonderildi=1">
+          <input class="bf-bal" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="bf-izgara">${alanF("Firma adı", "Firma / işletme adı", { zorunlu: true, oto: "organization" })}${alanF("Yetkili", "Yetkili adı soyadı", { zorunlu: true, oto: "name" })}${alanF("Telefon", "Telefon", { zorunlu: true, tip: "tel", oto: "tel", kalip: "[\\d\\s\\+\\(\\)\\-]{10,20}", ipucu: "05xx xxx xx xx" })}${alanF("email", "E-posta", { zorunlu: true, tip: "email", oto: "email" })}${alanF("İl / ilçe", "İl / ilçe", { zorunlu: true })}${alanF("Vergi numarası", "Vergi numarası", { ipucu: "İsteğe bağlı" })}${alanF("İşletme türü", "İşletme türü", { tip: "sec", genis: true, zorunlu: true, secenekler: b.isletmeTurleri })}${alanF("Mesaj", "Eklemek istedikleriniz", { tip: "uzun", genis: true })}
+          </div>
+          <label class="bf-onay"><input type="checkbox" name="KVKK onayı" value="Evet" required><span>${esc(b.onayMetni)} <a href="kvkk-aydinlatma-metni.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a></span></label>
+          <p class="bf-durum" data-bf-durum role="status" aria-live="polite" hidden></p>
+          <div class="dugmeler"><button class="dugme dugme--sari dugme--b" type="submit">${esc(b.gonder)}</button></div>
+          <p class="bf-not">${esc(b.not)} <a href="${telHref(f.telefon)}">${esc(f.telefon)}</a></p>
+        </form>
+        <p class="bf-tesekkur" data-bf-tesekkur role="status" hidden><b>${esc(b.basariBaslik)}</b><span>${esc(b.basariMetin)}</span></p>
+      </div>
+    </section>`;
+  return iskelet(c, { dosya: "bayi-basvuru.html", baslik: b.seoBaslik, aciklama: b.seoAciklama, govde });
 }
 
 /* ---------- İletişim ---------- */
 
 export function iletisim(c) {
-  const i = c.iletisim, f = c.firma;
-  const kart = (href, ik, etiket, deger, dis) => `
-          <a class="iletisim-kart" href="${href}"${dis ? ' target="_blank" rel="noopener"' : ""}>
-            <span class="iletisim-kart__ikon">${ikon(ik)}</span><span class="iletisim-kart__etiket">${etiket}</span><span class="iletisim-kart__deger">${esc(deger)}</span>
-          </a>`;
+  const i = c.iletisim;
   const govde = `${sayfaGiris(i)}
 
-    <section class="bolum">
-      <div class="kap"><div class="iletisim-kartlari">
-        ${kart(telHref(f.telefon), "phone", "Telefon", f.telefon)}
-        ${kart(waHref(f.whatsapp), "chat", "WhatsApp", f.whatsapp, true)}
-        ${kart("mailto:" + esc(f.eposta), "mail", "E-posta", f.eposta)}
-        <div class="iletisim-kart"><span class="iletisim-kart__ikon">${ikon("clock")}</span><span class="iletisim-kart__etiket">Çalışma saatleri</span><span class="iletisim-kart__deger">${esc(f.calismaSaatleri)}</span></div>
-      </div></div>
-    </section>
-
-    <section class="bolum bolum--beton">
+    <section class="bolum bolum--beton" id="subeler">
       <div class="kap">
         <div class="bolum-bas"><h2 class="baslik-2">${esc(i.subelerBaslik)}</h2></div>
         <div class="sube-izgara">${subeKartlari(c, { harita: true })}</div>
-      </div>
-    </section>
-
-    <section class="bolum bolum--gece bayilik" id="bayilik">
-      <div class="kap bayilik__ic">
-        <h2 class="baslik-2">${br(i.bayilikBaslik)}</h2>
-        <p class="buyuk">${br(i.bayilikMetin)}</p>
-        <div class="dugmeler">
-          <a class="dugme dugme--sari dugme--b" href="${waHref(f.whatsapp, f.bayilikMesaji)}" target="_blank" rel="noopener">${ikon("chat", "i--k")}WhatsApp'tan yazın</a>
-          <a class="dugme dugme--cizgi dugme--b" href="${telHref(f.telefon)}">${ikon("phone", "i--k")}${esc(f.telefon)}</a>
-        </div>
       </div>
     </section>`;
   return iskelet(c, { dosya: "iletisim.html", baslik: i.seoBaslik, aciklama: i.seoAciklama, govde });
@@ -391,6 +383,7 @@ export const SAYFALAR = [
   { dosya: "medya.html", olustur: medya },
   { dosya: "urun-gruplari.html", olustur: urunGruplari },
   { dosya: "e-katalog.html", olustur: eKatalog },
+  { dosya: "bayi-basvuru.html", olustur: bayiBasvuru },
   { dosya: "iletisim.html", olustur: iletisim },
   { dosya: "kvkk-aydinlatma-metni.html", olustur: kvkk },
   { dosya: "gizlilik-politikasi.html", olustur: gizlilik },

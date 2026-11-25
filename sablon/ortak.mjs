@@ -37,7 +37,6 @@ export function menuVeri(c) {
     kurumsal: [
       ["hakkimizda.html", M.hakkimizda || "Hakkımızda"],
       ["vizyon-misyon.html", M.vizyon || "Vizyonumuz ve Misyonumuz"],
-      ["iletisim.html#bayilik", M.bayimizOlun || "Bayimiz Olun"],
     ],
     duz: [
       ["urunlerimiz.html", M.urunlerimiz || "Ürünlerimiz"],
@@ -77,7 +76,7 @@ export function ustHtml(c, dosya = "index.html", tema = "koyu") {
   </nav>
   <div class="right">
     <a class="btn btn--b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener"><span>${esc(m.b2b)}</span></a>
-    <a class="btn chip btn--bayi" href="iletisim.html#bayilik">${esc(m.bayi)}</a>
+    <a class="btn chip btn--bayi" href="bayi-basvuru.html">${esc(m.bayi)}</a>
     <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç">Menü</button>
   </div>
 </header>
@@ -87,24 +86,46 @@ export function ustHtml(c, dosya = "index.html", tema = "koyu") {
   ${m.kurumsal.map(([href, ad]) => `<a class="menu__alt" href="${href}">${esc(ad)}</a>`).join("")}
   ${m.duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}
   <a class="menu__b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2b)}</a>
-  <a href="iletisim.html#bayilik">${esc(m.bayi)}</a>
+  <a href="bayi-basvuru.html">${esc(m.bayi)}</a>
 </div>`;
 }
 
+/** Sosyal medya simgeleri (kendi çizimimiz, tek renk) */
+export const SOSYAL_IKON = {
+  instagram: '<rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>',
+  youtube: '<rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/>',
+  facebook: '<path d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.9c0-.9.4-1.6 1.7-1.6h1.6V3.4c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.4H7.5V13h2.8v8z" fill="currentColor"/>',
+  linkedin: '<rect x="4" y="9.5" width="3.2" height="10" fill="currentColor"/><circle cx="5.6" cy="5.8" r="1.9" fill="currentColor"/><path d="M10 9.5h3v1.4c.5-.9 1.6-1.6 3.1-1.6 2.9 0 3.9 1.8 3.9 4.6v5.6h-3.2v-5c0-1.3-.4-2.2-1.6-2.2-1.3 0-1.9.9-1.9 2.2v5H10z" fill="currentColor"/>',
+  whatsapp: '<path d="M4 20l1.2-4.1A8 8 0 1 1 8.2 19z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.2 8.6c.3 2.6 2.6 5 5.3 5.6l1.1-1.3-1.9-1-.8.7c-.9-.4-1.7-1.2-2.1-2.1l.7-.8-1-1.9z" fill="currentColor"/>',
+};
+
+export const WA_MESAJ = "Merhaba, Yolhan Endüstri hakkında bilgi almak istiyorum.";
+
 export function altHtml(c) {
   const m = menuVeri(c), f = c.firma, M = c.menu || {};
-  const harfler = "YOLHAN".split("").map((x) => `<span>${x}</span>`).join("");
+  const sosyal = [
+    ["instagram", "Instagram", f.instagram],
+    ["youtube", "YouTube", f.youtube],
+    ["facebook", "Facebook", f.facebook],
+    ["linkedin", "LinkedIn", f.linkedin],
+    ["whatsapp", "WhatsApp", f.whatsapp ? waHref(f.whatsapp, WA_MESAJ) : ""],
+  ].filter((x) => x[2]);
   return `
 <footer data-tema="koyu">
-  <div class="mega" aria-hidden="true">${harfler}</div>
+  <div class="mega" aria-hidden="true"><svg viewBox="0 0 1000 352" preserveAspectRatio="xMidYMid meet" focusable="false"><defs><linearGradient id="mega-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6d6"/><stop offset=".55" stop-color="#f9d65a"/><stop offset="1" stop-color="#f2a900"/></linearGradient></defs><text x="0" y="349" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="url(#mega-g)">YOLHAN</text></svg></div>
+  <div class="fmark">
+    <a class="flogo" href="index.html" aria-label="${esc(f.ad)} ana sayfa"><img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy"></a>
+    <ul class="sosyal" aria-label="Sosyal medya">${sosyal.map(([k, ad, href]) => `<li><a href="${esc(href)}" target="_blank" rel="noopener" aria-label="${ad}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">${SOSYAL_IKON[k]}</svg></a></li>`).join("")}</ul>
+  </div>
   <div class="fcols">
-    <div><a class="flogo" href="index.html"><img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy"></a><p class="copy" style="text-align:left;margin-top:12px">${esc(f.unvan)}</p></div>
-    <div><h3>${esc(m.kurumsalAd)}</h3>${m.kurumsal.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
+    <h2 class="gizli">Site bağlantıları ve iletişim</h2>
+    <div><h3>${esc(m.kurumsalAd)}</h3>${m.kurumsal.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}<a href="bayi-basvuru.html">${esc(m.bayi)}</a></div>
     <div><h3>Sayfalar</h3>${m.duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
-    <div><h3>${esc(M.iletisim || "İletişim")}</h3><a href="${telHref(f.telefon)}">${esc(f.telefon)}</a><a href="${waHref(f.whatsapp)}" target="_blank" rel="noopener">WhatsApp ${esc(f.whatsapp)}</a><a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a><span class="copy" style="text-align:left;display:block">${esc(f.calismaSaatleri)}</span></div>
+    <div><h3>${esc(M.iletisim || "İletişim")}</h3><a href="${telHref(f.telefon)}">${esc(f.telefon)}</a><a href="${waHref(f.whatsapp, WA_MESAJ)}" target="_blank" rel="noopener">WhatsApp asistanı ${esc(f.whatsapp)}</a><a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a><span class="copy" style="text-align:left;display:block">${esc(f.calismaSaatleri)}</span></div>
   </div>
   <p class="copy">© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)} · <a href="kvkk-aydinlatma-metni.html">${esc(M.kvkk || "KVKK Aydınlatma Metni")}</a> · <a href="gizlilik-politikasi.html">${esc(M.gizlilik || "Gizlilik Politikası")}</a></p>
 </footer>
+<aside aria-label="WhatsApp yapay zekâ asistanı"><a class="wa-bot" href="${waHref(f.whatsapp, WA_MESAJ)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">${SOSYAL_IKON.whatsapp}</svg><span class="wa-bot__yaz"><b>WhatsApp botumuza sorun</b><small>Yapay zekâ asistanı · 7/24</small></span><i class="wa-bot__ai" aria-hidden="true">AI</i></a></aside>
 <button class="top" id="top-btn" type="button" aria-label="En üste çık" hidden><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`;
 }
 
@@ -143,7 +164,8 @@ function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], 
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="img/isaret-512.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
   <script>
     (function (d) {
       d.classList.add("js");
@@ -194,23 +216,6 @@ export function sayfaGiris({ baslik, aciklama, gorsel: g }) {
       <div class="kap sayfa-giris__ic">
         <h1 class="sayfa-giris__baslik">${satirlar(baslik)}</h1>
         <p class="sayfa-giris__aciklama">${br(aciklama)}</p>
-      </div>
-    </section>`;
-}
-
-/** Bayi çağrısı bandı (birçok sayfada) */
-export function bayiBandi(c) {
-  const b = c.anaSayfa.bayi, f = c.firma;
-  return `
-    <section class="bayi">
-      <div class="bayi__gorsel">${gorsel(b.gorsel)}</div>
-      <div class="kap bayi__ic">
-        <h2 class="baslik-2">${br(b.baslik)}</h2>
-        <p>${br(b.metin)}</p>
-        <div class="dugmeler">
-          <a class="dugme dugme--sari dugme--b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(b.buton1)}${ikon("external", "i--k")}</a>
-          <a class="dugme dugme--cizgi dugme--b" href="${waHref(f.whatsapp, f.bayilikMesaji)}" target="_blank" rel="noopener">${ikon("chat", "i--k")}${esc(b.buton2)}</a>
-        </div>
       </div>
     </section>`;
 }

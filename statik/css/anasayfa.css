@@ -14,10 +14,10 @@ section{padding:112px 0}
 
 /* ---- hero (sabitlenir; fotoğraflar kayar, Türkiye şekline daralıp sarı panele dönüşür) ---- */
 .hero{position:relative;height:100svh;padding:0;overflow:hidden;background:var(--accent);display:grid;place-items:center;text-align:center}
-.hero__fotolar{position:absolute;inset:0;will-change:mask-size,-webkit-mask-size}
+.hero__fotolar{position:absolute;inset:0;will-change:opacity}
 .hero__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#0a1630}
-.hero__golge{position:absolute;inset:0;background:linear-gradient(rgba(10,22,48,.5),rgba(10,22,48,.72));pointer-events:none}
-.kapak{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.hero__golge{position:absolute;inset:0;background:radial-gradient(ellipse 46% 34% at 9% 6%,rgba(0,0,0,.82),rgba(0,0,0,.5) 45%,transparent 75%),linear-gradient(rgba(10,22,48,.5),rgba(10,22,48,.72));pointer-events:none}
+.kapak{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;transform:translateZ(0)}
 .kapak path{fill:var(--accent)}
 
 /* ---- sarı istatistik paneli + 3B çubuk harita ---- */
@@ -29,23 +29,19 @@ section{padding:112px 0}
 .stat b{display:block;font-size:clamp(48px,7vw,88px);line-height:1;font-weight:900;letter-spacing:-.04em}
 .stat span{display:block;margin-top:8px;font-size:14px;font-weight:600}
 
-/* ---- hakkımızda (açık) ---- */
-.about{padding:0}
-.about__izgara{display:grid;grid-template-columns:1fr 1fr;min-height:100svh}
-.about__metin{padding:112px max(24px,5vw) 112px max(24px,calc((100vw - 1280px)/2 + 24px));display:flex;flex-direction:column;justify-content:center;gap:20px}
-.about__metin h2{font-size:clamp(18px,1.6vw,22px);letter-spacing:.14em;font-weight:700}
-.about__metin p{color:var(--ink-muted);max-width:52ch}
-.about__yil{margin-top:24px;display:flex;align-items:center;gap:24px}
-.about__yil span{font-weight:700;font-size:clamp(20px,2vw,28px);line-height:1.15;max-width:7ch}
-.about__yil b{font-size:clamp(64px,9vw,128px);line-height:.9;font-weight:900;letter-spacing:-.04em;color:var(--brand)}
-.ok{color:var(--brand);font-weight:700;letter-spacing:.04em}
-.about__foto{position:relative;min-height:60svh;background:var(--surface)}
-.about__foto .fs{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s var(--ease)}
+/* ---- hakkımızda: tam ekran fotoğraflar (kaydırdıkça yumuşakça değişir), yazı ortada ---- */
+.about{position:relative;min-height:100svh;padding:0;overflow:hidden;display:grid;place-items:center;text-align:center;color:#fff;background:var(--bg)}
+.about__foto{position:absolute;inset:0}
+.about__foto .fs{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;will-change:opacity,transform}
 .about__foto .fs.on{opacity:1}
+.about::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(10,22,48,.78),rgba(10,22,48,.5) 70%);pointer-events:none}
+.about__metin{position:relative;z-index:2;max-width:780px;padding:112px 24px;display:flex;flex-direction:column;align-items:center;gap:20px;text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.about__metin h2{font-size:clamp(30px,4.6vw,60px);letter-spacing:-.01em}
+.about__metin p{color:#fff;font-size:clamp(16px,1.6vw,20px);max-width:60ch}
+.ok{color:var(--accent);font-weight:700;letter-spacing:.04em}
 .ctl{display:flex;gap:12px}
 .ctl button{width:44px;height:44px;border-radius:50%;border:0;background:var(--accent);color:var(--on-accent);font-size:22px;line-height:1;cursor:pointer}
 .ctl button:disabled{opacity:.35;cursor:default}
-.about__foto .ctl{position:absolute;right:20px;bottom:20px;z-index:2}
 
 /* ---- film ---- */
 .film video{display:block;width:100%;max-width:1100px;margin:48px auto 0;aspect-ratio:16/9;background:#000;border-radius:var(--r-lg);box-shadow:0 20px 60px rgba(0,0,0,.5)}
@@ -64,9 +60,12 @@ section{padding:112px 0}
 /* ---- ürün grupları karuseli ---- */
 .cases h2{text-align:center}
 .cases .lead{text-align:center}
-.embla{overflow:hidden;margin-top:56px;outline-offset:-2px}
-.embla__c{display:flex;gap:24px}
-.card{position:relative;flex:0 0 min(400px,78vw);background:var(--light);color:var(--ink);border-radius:var(--r-lg);overflow:hidden;transform:scale(.94);transition:transform .35s var(--ease)}
+.cases{padding:96px 0 72px}
+/* yeterince yüksek ekranlarda bölüm sabitlenir (motion.ts); kartlar ekrana sığacak boyda */
+@media(min-height:740px){.cases{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:76px 0 64px}.card{flex-basis:min(400px,78vw,34svh)}}
+.embla{overflow:hidden;margin-top:28px;outline-offset:-2px}
+.embla__c{display:flex}
+.card{position:relative;flex:0 0 min(400px,78vw);margin-right:24px;background:var(--light);color:var(--ink);border-radius:var(--r-lg);overflow:hidden;transform:scale(.94);transition:transform .35s var(--ease)}
 .card.is-on{transform:none}
 .card .img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
 .card:not(.is-on) .img{opacity:.55}
@@ -77,24 +76,7 @@ section{padding:112px 0}
 .card p{color:var(--ink-muted);font-size:15px;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .stretch::after{content:"";position:absolute;inset:0}
 .card:hover h3{color:var(--brand)}
-.cases .ctl{justify-content:center;margin-top:32px}
-
-/* ---- şubeler / harita ---- */
-.trharita{position:relative;max-width:1000px;margin:56px auto 0}
-.trharita svg{display:block;width:100%;height:auto}
-.trharita path{fill:var(--surface2);stroke:var(--border-in);stroke-width:1.2;stroke-linejoin:round}
-.trharita .dot{position:absolute;width:16px;height:16px;border-radius:50%;background:var(--accent);transform:translate(-50%,-50%);box-shadow:0 0 0 6px rgba(242,183,5,.25);animation:nabiz 2.2s ease-out infinite}
-.trharita .dot::after{content:attr(data-l);position:absolute;left:50%;bottom:26px;transform:translateX(-50%);white-space:nowrap;background:#fff;color:var(--ink);padding:4px 10px;border-radius:var(--r-sm);font-size:12px;font-weight:700}
-@keyframes nabiz{0%{box-shadow:0 0 0 0 rgba(242,183,5,.55)}100%{box-shadow:0 0 0 22px rgba(242,183,5,0)}}
-.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:56px;text-align:left}
-.bcard{display:block;background:var(--surface);border-radius:var(--r-lg);overflow:hidden;transition:transform .35s var(--ease)}
-.bcard:hover{transform:translateY(-4px)}
-.bcard img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
-.bcard div{padding:24px}
-.bcard b{display:block;font-size:20px;text-transform:uppercase}
-.bcard small{display:block;color:var(--accent);font-weight:700;margin-bottom:8px}
-.bcard span{display:block;color:var(--muted);font-size:14px}
-.bcard em{display:block;margin-top:16px;font-style:normal;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
+.cases .ctl{justify-content:center;margin-top:20px}
 
 /* ---- ilkeler (açık) ---- */
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
@@ -102,9 +84,6 @@ section{padding:112px 0}
 .ilke h3{font-size:26px;text-transform:uppercase;font-weight:900;letter-spacing:-.01em;margin-bottom:12px;color:var(--brand)}
 .ilke p{color:var(--ink-muted)}
 
-/* ---- bayi bandı ---- */
-.bayi{background:var(--brand)}
-.bayi .lead{color:#fff}
 
 /* ---- giriş animasyonları ---- */
 [data-reveal]{opacity:0;transform:translateY(32px)}
@@ -112,13 +91,10 @@ section{padding:112px 0}
 .az-hareket .serit__akis{animation:none;flex-wrap:wrap;justify-content:center;padding:0}
 .az-hareket .serit__satir{flex-wrap:wrap}
 .az-hareket .serit__akis[aria-hidden]{display:none}
-.az-hareket .trharita .dot{animation:none}
 
 @media(max-width:900px){
   section{padding:72px 0}
-  .about__izgara{grid-template-columns:1fr}
-  .about__metin{padding:72px 24px}
-  .about__foto{min-height:56svh}
+  .about__metin{padding:96px 20px}
   .team{grid-template-columns:1fr}
   }
 

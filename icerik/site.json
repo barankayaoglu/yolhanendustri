@@ -4,11 +4,14 @@
     "unvan": "Yolhan Endüstri Hırdavat San. ve Tic. Ltd. Şti.",
     "kurulus": "2019",
     "telefon": "0232 458 30 12",
-    "whatsapp": "0542 368 24 12",
+    "whatsapp": "0232 458 30 12",
     "eposta": "info@yolhanendustri.com",
     "calismaSaatleri": "07:30 – 17:30",
     "b2bAdres": "https://b2b.yolhanendustri.com/",
-    "bayilikMesaji": "Merhaba, Yolhan Endüstri bayiliği hakkında bilgi almak istiyorum."
+    "instagram": "https://www.instagram.com/yolhanendustri/",
+    "youtube": "https://www.youtube.com/@yolhanendustriltd",
+    "facebook": "",
+    "linkedin": ""
   },
   "menu": {
     "anaSayfa": "Ana Sayfa",
@@ -98,20 +101,6 @@
       "baslik": "Çalıştığımız markalar",
       "aciklama": "Sahada kendini kanıtlamış markaların ürünlerini İzmir'deki iki noktamızdan sunuyoruz."
     },
-    "subeler": {
-      "baslik": "İzmir'de iki noktadayız.",
-      "aciklama": "Merkez depomuz Bornova'da, gıda şubemiz Konak Yenişehir'de."
-    },
-    "bayi": {
-      "baslik": "Bayimiz misiniz?",
-      "metin": "Güncel fiyatları, stok durumunu ve siparişlerinizi B2B sistemimizden takip edin. Henüz bayimiz değilseniz bize yazın, başvurunuzu birlikte tamamlayalım.",
-      "buton1": "B2B'ye giriş yapın",
-      "buton2": "Bayilik için yazın",
-      "gorsel": {
-        "src": "medya/depo-koliler.webp",
-        "alt": "Depoda sevkiyata hazır koliler"
-      }
-    },
     "film": {
       "baslik": "Tanıtım filmimiz",
       "src": "medya/tanitim-filmi.mp4",
@@ -178,28 +167,19 @@
   "ekatalog": {
     "seoBaslik": "E-Katalog — Yolhan Endüstri Ürün Kataloğu 2026",
     "seoAciklama": "Yolhan Endüstri ürün kataloğunu sayfaları çevirerek inceleyin: sprey boya, yapı kimyasalları, yapıştırıcı, zımpara, el aletleri, dübel, iş güvenliği ve daha fazlası.",
-    "ustSatir": "E-Katalog",
     "baslik": "Ürün kataloğunu\nsayfa sayfa gezin.",
-    "aciklama": "Binlerce ürün, 13 bölüm. Sayfaları sürükleyerek çevirin, ürün adıyla arayın.",
-    "ipucu": "Sayfayı sürükleyin ya da ok tuşlarını kullanın",
-    "notBaslik": "Güncel fiyat ve stok için\nbizimle iletişime geçin.",
-    "notMetin": "Katalogda fiyat yer almaz. Bayilerimiz güncel net fiyatları B2B sistemimizden görür.",
-    "notButon1": "B2B girişi",
-    "notButon2": "WhatsApp'tan yazın",
-    "whatsappMesaji": "Merhaba, e-katalogdaki ürünler için fiyat ve stok bilgisi almak istiyorum."
+    "ipucu": "Sayfayı sürükleyin ya da ok tuşlarını kullanın"
   },
   "iletisim": {
     "seoBaslik": "İletişim — Yolhan Endüstri",
-    "seoAciklama": "Yolhan Endüstri iletişim: 0232 458 30 12, WhatsApp 0542 368 24 12, info@yolhanendustri.com. Merkez Depo Bornova, Gıda Şube Konak / İzmir.",
+    "seoAciklama": "Yolhan Endüstri iletişim: 0232 458 30 12, info@yolhanendustri.com. Merkez Depo Bornova, Gıda Şube Konak / İzmir.",
     "baslik": "Bize ulaşın.",
-    "aciklama": "Ürün, stok ve fiyat sorularınız için arayın, WhatsApp'tan yazın ya da şubelerimize uğrayın.",
+    "aciklama": "Ürün, stok ve fiyat sorularınız için arayın, WhatsApp asistanımıza yazın ya da şubelerimize uğrayın.",
     "gorsel": {
       "src": "medya/merkez-depo-cephe.webp",
       "alt": "Merkez depo binası"
     },
-    "subelerBaslik": "Şubelerimiz",
-    "bayilikBaslik": "Bayimiz olun.",
-    "bayilikMetin": "İşletmenizin adını ve bulunduğunuz ilçeyi WhatsApp'tan yazın; temsilcimiz sizi arayıp bayilik koşullarını anlatsın."
+    "subelerBaslik": "Şubelerimiz"
   },
   "gruplar": [
     {
@@ -590,5 +570,28 @@
     },
     "filmBaslik": "Tanıtım filmimiz",
     "galeriBaslik": "Fotoğraflar"
+  },
+  "bayiBasvuru": {
+    "seoBaslik": "Bayi Başvuru Formu — Yolhan Endüstri",
+    "seoAciklama": "Yolhan Endüstri bayi olmak için başvuru formunu doldurun; temsilcimiz sizi arayıp bayilik koşullarını anlatsın.",
+    "baslik": "Bayi başvuru formu.",
+    "aciklama": "Bilgilerinizi bırakın, temsilcimiz sizi arayıp bayilik koşullarını anlatsın.",
+    "gorsel": {
+      "src": "medya/depo-koliler.webp",
+      "alt": "Depoda sevkiyata hazır koliler"
+    },
+    "isletmeTurleri": [
+      "Nalbur / hırdavat",
+      "Boya / yapı market",
+      "Sanayi / atölye",
+      "İnşaat / müteahhit",
+      "Toptancı / dağıtıcı",
+      "Diğer"
+    ],
+    "onayMetni": "Bilgilerimin başvurum kapsamında işlenmesini kabul ediyorum.",
+    "gonder": "Başvuruyu gönder",
+    "not": "Sorularınız için arayabilirsiniz:",
+    "basariBaslik": "Başvurunuz bize ulaştı.",
+    "basariMetin": "Temsilcimiz en kısa sürede sizi arayacak. Teşekkür ederiz."
   }
 }

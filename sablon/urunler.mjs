@@ -1,6 +1,6 @@
 /* Ürünlerimiz, Markalarımız ve tek tek ürün sayfaları.
    Veri: icerik/urunler.json (araclar/urun-verisi.mjs üretir; FİYAT İÇERMEZ). */
-import { esc, br, ikon, telHref, waHref, iskelet, sayfaGiris, bayiBandi, SITE } from "./ortak.mjs";
+import { esc, br, ikon, telHref, waHref, WA_MESAJ, SOSYAL_IKON, iskelet, sayfaGiris, SITE } from "./ortak.mjs";
 
 export const SAYFA_BOYUTU = 48;
 
@@ -23,11 +23,10 @@ export function kart(u) {
 
 function aciklamaYaz(c, u, v, kardesler) {
   const f = c.firma;
-  const cesit = u.v ? ` Çeşit/ölçü: ${u.v.replace(/\s*·\s*/g, ", ")}.` : "";
   const ral = u.ral ? ` RAL ${u.ral} renk koduyla sunulan bu sprey boya, metal, ahşap ve plastik yüzeylerde dekoratif ve koruyucu boyama için kullanılır.` : "";
   const fa = v.acik && ((v.acik.aileler && v.acik.aileler[u.fa]) || (v.acik.urunler && v.acik.urunler[u.s]));
-  const kisa = `${u.a}, ${u.m} markasının ${kucuk(u.g)} grubundaki ürünüdür (ürün kodu ${u.k}).${cesit}${ral}`;
-  const kurum = `${f.ad}, ${u.m} ürünlerini İzmir'de Bornova merkez deposundan ve Konak şubesinden işletmelere, ustalara ve bayilere tedarik eder. Güncel fiyat ve stok bilgisi için bizi arayın veya bayi hesabıyla B2B sistemimizden bakın.`;
+  const kisa = `${u.a}, ${u.m} markasının ${kucuk(u.g)} grubundaki ürünüdür (ürün kodu ${u.k}).${ral}`;
+  const kurum = `${f.ad}, ${u.m} ürünlerini İzmir'de Bornova merkez deposundan ve Konak şubesinden işletmelere, ustalara ve bayilere tedarik eder. Güncel fiyat ve stok bilgisi için bizi arayın veya WhatsApp asistanımıza sorun.`;
   return { kisa, kurum, fa, grupMetni: [v.acik && v.acik.markalar && v.acik.markalar[u.m], v.acik && v.acik.gruplar && v.acik.gruplar[u.g]].filter(Boolean).join(" ") };
 }
 
@@ -69,10 +68,9 @@ export function urunlerimizSayfasi(c, v, n) {
         <p class="urn-sonuc" data-urun-sonuc aria-live="polite">${v.urunler.length.toLocaleString("tr")} ürün · Sayfa ${n}/${toplam}</p>
         <ul class="urn-izgara" data-urun-izgara>${dilim.map(kart).join("")}</ul>
         ${sayfaNumaralari(n, toplam)}
-        <p class="urn-not">Fiyatlar yalnız bayilerimize açıktır. <a href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">B2B sistemine giriş yapın</a> ya da <a href="${waHref(f.whatsapp, f.bayilikMesaji)}" target="_blank" rel="noopener">WhatsApp ile yazın</a>.</p>
+        <p class="urn-not">Fiyatlar yalnız bayilerimize açıktır. <a href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">B2B sistemine giriş yapın</a> ya da <a href="${waHref(f.whatsapp, WA_MESAJ)}" target="_blank" rel="noopener">WhatsApp asistanımıza sorun</a>.</p>
       </div>
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, {
     dosya,
     baslik: n === 1 ? `Ürünlerimiz — Hırdavat, Yapı Kimyasalları, Sprey Boya | ${f.ad}` : `Ürünlerimiz, sayfa ${n} | ${f.ad}`,
@@ -98,8 +96,7 @@ export function markalarimizSayfasi(c, v) {
           </a></li>`).join("")}
         </ul>
       </div>
-    </section>
-${bayiBandi(c)}`;
+    </section>`;
   return iskelet(c, {
     dosya: "markalarimiz.html",
     baslik: `Markalarımız — Best, GFB, Selsil, NP1, Made, Yılsan | ${f.ad}`,
@@ -119,18 +116,18 @@ export function urunSayfasi(c, v, u, kardesler, benzerler) {
   const gorsel = u.f
     ? `<img src="medya/${esc(u.f)}" alt="${esc(u.a)}" width="560" height="560" decoding="async">`
     : `<span class="urn-kart__bos urn-kart__bos--buyuk" aria-hidden="true">${esc(u.m)}</span>`;
-  const satirlar = [["Ürün kodu", u.k], ["Marka", u.m], ["Ürün grubu", u.g], ...(u.ral ? [["RAL kodu", u.ral]] : []), ...(u.v ? [["Çeşit / ölçü", u.v.replace(/\s*·\s*/g, ", ")]] : [])];
+  const satirlar = [["Ürün kodu", u.k], ["Marka", u.m], ["Ürün grubu", u.g], ...(u.ral ? [["RAL kodu", u.ral]] : [])];
   const aile = v.aileAd[u.fa];
   const kardesHtml = kardesler.length ? `
       <section class="urn-ek"><h2 class="baslik-3">${esc(aile || u.m)} çeşitleri</h2>
-        <ul class="urn-cesit">${kardesler.map((k) => `<li><a href="${urunYolu(k)}"${k.s === u.s ? ' aria-current="page"' : ""}><b>${esc(k.v ? k.v.replace(/\s*·\s*/g, ", ") : k.a)}</b><span>${esc(k.k)}</span></a></li>`).join("")}</ul>
+        <ul class="urn-cesit">${kardesler.map((k) => `<li><a href="${urunYolu(k)}"${k.s === u.s ? ' aria-current="page"' : ""}><span class="urn-kart__gorsel">${k.f ? `<img src="medya/${esc(k.f)}" alt="" loading="lazy" decoding="async" width="160" height="160">` : `<span class="urn-kart__bos" aria-hidden="true">${esc(k.m)}</span>`}</span><b>${esc(k.a)}</b><span class="urn-cesit__kod">Kod: ${esc(k.k)}</span></a></li>`).join("")}</ul>
       </section>` : "";
   const hakkinda = fa || grupMetni ? `
-      <section class="urn-ek urn-hakkinda"><h2 class="baslik-3">${esc(aile || u.g)} hakkında</h2>
-        <p>${esc(fa ? fa.ozet : grupMetni)}</p>${fa && fa.kullanim ? `
-        <h3 class="urn-alt">Kullanım alanları</h3><ul>${fa.kullanim.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}${fa && fa.ipucu ? `
-        <p class="urn-ipucu"><b>İpucu:</b> ${esc(fa.ipucu)}</p>` : ""}
-      </section>` : "";
+            <section class="urn-hakkinda"><h2 class="urn-alt">${esc(aile || u.g)} hakkında</h2>
+              <p>${esc(fa ? fa.ozet : grupMetni)}</p>${fa && fa.kullanim ? `
+              <h3 class="urn-alt">Kullanım alanları</h3><ul>${fa.kullanim.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}${fa && fa.ipucu ? `
+              <p class="urn-ipucu"><b>İpucu:</b> ${esc(fa.ipucu)}</p>` : ""}
+            </section>` : "";
   const benzerHtml = benzerler.length ? `
       <section class="urn-ek"><h2 class="baslik-3">Benzer ürünler</h2><ul class="urn-izgara">${benzerler.map(kart).join("")}</ul></section>` : "";
   const govde = `
@@ -143,15 +140,13 @@ export function urunSayfasi(c, v, u, kardesler, benzerler) {
             <p class="urn-detay__marka">${esc(u.m)}</p>
             <h1 class="urn-detay__baslik">${esc(u.a)}</h1>
             <dl class="urn-ozellik">${satirlar.map(([a, b]) => `<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join("")}</dl>
-            <p>${esc(kisa)}</p>
-            <p>${esc(kurum)}</p>
+${hakkinda}
             <div class="dugmeler">
-              <a class="dugme dugme--sari dugme--b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">Fiyat için B2B giriş${ikon("external", "i--k")}</a>
-              <a class="dugme dugme--cizgi-koyu dugme--b" href="${waHref(f.whatsapp, mesaj)}" target="_blank" rel="noopener">${ikon("chat", "i--k")}WhatsApp ile sorun</a>
+              <a class="wa-bot wa-bot--satir" href="${waHref(f.whatsapp, mesaj)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">${SOSYAL_IKON.whatsapp}</svg><span class="wa-bot__yaz"><b>WhatsApp'ta sor</b><small>Yapay zekâ asistanı · 7/24</small></span><i class="wa-bot__ai" aria-hidden="true">AI</i></a>
               <a class="dugme dugme--cizgi-koyu dugme--b" href="${telHref(f.telefon)}">${ikon("phone", "i--k")}${esc(f.telefon)}</a>
             </div>
           </div>
-        </div>${hakkinda}${kardesHtml}${benzerHtml}
+        </div>${kardesHtml}${benzerHtml}
       </div>
     </section>`;
   const urunLd = {

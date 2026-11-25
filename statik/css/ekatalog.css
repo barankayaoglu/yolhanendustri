@@ -207,3 +207,9 @@
 /* ---------- Az hareket ---------- */
 .az-hareket .ekat *, .az-hareket .ekat::before { animation: none !important; transition: none !important; }
 @media (prefers-reduced-motion: reduce) { .ekat__cilt.girdi { animation: none; } }
+
+
+/* Sayfa açılınca katalog tüm ekranı kaplar; yalnız üst menü ve alt çubuk kalır */
+body[data-sayfa="e-katalog"] { overflow: hidden; }
+body[data-sayfa="e-katalog"] .ekat { position: fixed; inset: 0; z-index: 40; min-height: 0; padding: calc(var(--ust-y) + 4px) 0 clamp(10px, 1.6vw, 18px) 0; }
+body[data-sayfa="e-katalog"] .ekat__sahne { height: auto; min-height: 0; }

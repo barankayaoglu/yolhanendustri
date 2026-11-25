@@ -297,3 +297,26 @@ h1,h2,h3,.baslik-2,.baslik-3,.sayfa-giris__baslik{font-weight:800;letter-spacing
 .sayfa-giris__baslik{font-size:clamp(2.4rem,1.2rem + 5vw,5.5rem);line-height:1}
 .baslik-2{font-size:clamp(2rem,1.2rem + 3vw,3.75rem);line-height:1.04}
 .baslik-3{font-size:clamp(1.25rem,1rem + 1.2vw,1.75rem);line-height:1.15}
+
+
+/* ---- bayi başvuru formu ---- */
+.bf-kap{max-width:880px}
+.bf{display:grid;gap:22px;padding:clamp(20px,4vw,40px);background:#fff;border:1px solid var(--cizgi)}
+.bf-izgara{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:700px){.bf-izgara{grid-template-columns:1fr 1fr}.bf-alan--genis{grid-column:1/-1}}
+.bf-alan{display:grid;gap:6px;font-weight:700;font-size:.8125rem;color:var(--metin-2);text-transform:uppercase;letter-spacing:.04em}
+.bf-alan i{color:#c0392b;font-style:normal}
+.bf-alan input,.bf-alan select,.bf-alan textarea{min-height:48px;padding:10px 12px;border:1px solid var(--cizgi);background:#fff;font:inherit;font-weight:500;font-size:1rem;color:var(--metin);text-transform:none;letter-spacing:0;border-radius:0;width:100%}
+.bf-alan textarea{min-height:110px;resize:vertical}
+.bf-alan input:focus-visible,.bf-alan select:focus-visible,.bf-alan textarea:focus-visible{outline:2px solid var(--mavi);outline-offset:1px}
+.bf-alan :user-invalid{border-color:#c0392b}
+.bf-bal{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.bf-onay{display:flex;gap:12px;align-items:flex-start;font-size:.9375rem;line-height:1.5}
+.bf-onay input{flex:none;width:20px;height:20px;margin-top:2px}
+.bf-onay a{text-decoration:underline}
+.bf-durum{padding:12px 14px;background:#fdecea;border-left:3px solid #c0392b;font-weight:600}
+.bf-not{color:var(--metin-2);font-size:.9375rem}
+.bf-not a{font-weight:700;text-decoration:underline}
+.bf-tesekkur{display:grid;gap:6px;padding:clamp(24px,4vw,48px);background:#fff;border:1px solid var(--cizgi);border-left:4px solid var(--sari);font-size:1.0625rem}
+.bf-tesekkur b{font-size:1.5rem}
+.bf-tesekkur[hidden],.bf[hidden]{display:none}

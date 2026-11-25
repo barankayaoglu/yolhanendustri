@@ -1,9 +1,8 @@
 /* Yeni ana sayfa. İçerik icerik/site.json'dan gelir (panelden düzenlenir). Kendi (sade) iskeletini kullanır.
    Animasyonlar: statik/js/yeni.js  (kaynak: yolhan-site/src/scripts, `npm run paketle`).
-   Türkiye şekli: sablon/turkiye-harita.mjs (Natural Earth, kamu malı; yolhan-site/scripts/harita-uret.mjs). */
-import { esc, br, waHref, haritaHref, iskelet, ustHtml, altHtml } from "./ortak.mjs";
+   Şubeler artık İletişim sayfasında. */
+import { esc, br, iskelet, ustHtml, altHtml } from "./ortak.mjs";
 import { anaSayfaLd } from "./sayfalar.mjs";
-import { TR } from "./turkiye-harita.mjs";
 
 const FILM = { baslik: "Tanıtım filmimiz", src: "medya/tanitim-filmi.mp4", poster: "medya/tanitim-filmi.jpg" };
 
@@ -29,9 +28,8 @@ export function anaSayfaYeni(c) {
     ...(c._urunSayisi ? [{ v: c._urunSayisi, ek: "+", e: "Ürün çeşidi" }] : []),
   ];
 
-  const izmir = { x: (TR.izmir[0] / TR.w) * 100, y: (TR.izmir[1] / TR.h) * 100 };
   const mk = markaSerit(c);
-  const fotolar = (a.profil.gorseller || []).slice(0, 3);
+  const fotolar = (a.profil.gorseller || []).slice(0, 5);
 
   const govde = `
 ${ustHtml(c, "index.html", "ilk")}
@@ -55,18 +53,14 @@ ${ustHtml(c, "index.html", "ilk")}
     </div>
   </section>
 
-  <section class="about" id="hakkimizda" data-tema="acik">
-    <div class="about__izgara">
-      <div class="about__metin">
-        <h2 data-reveal>${br(h.baslik)}</h2>
-        ${(h.hikaye || []).slice(0, 2).map((p) => `<p data-reveal>${esc(p)}</p>`).join("")}
-        <a class="ok" href="hakkimizda.html" data-reveal>${esc(a.profil.baglanti)} →</a>
-        <div class="about__yil" data-reveal><span>Kuruluş yılımız</span><b>${esc(f.kurulus)}</b></div>
-      </div>
-      <div class="about__foto" role="region" aria-roledescription="carousel" aria-label="Fotoğraflar">
-        ${fotolar.map((x, i) => `<img class="fs${i === 0 ? " on" : ""}" src="${esc(x.src)}" alt="${esc(x.alt)}" loading="lazy" decoding="async">`).join("")}
-        ${fotolar.length > 1 ? `<div class="ctl"><button type="button" id="fprev" aria-label="Önceki fotoğraf">‹</button><button type="button" id="fnext" aria-label="Sonraki fotoğraf">›</button></div>` : ""}
-      </div>
+  <section class="about" id="hakkimizda" data-tema="koyu">
+    <div class="about__foto" role="region" aria-label="Fotoğraflar">
+      ${fotolar.map((x, i) => `<img class="fs${i === 0 ? " on" : ""}" src="${esc(x.src)}" alt="${esc(x.alt)}" loading="lazy" decoding="async">`).join("")}
+    </div>
+    <div class="about__metin">
+      <h2>${br(h.baslik)}</h2>
+      ${(h.hikaye || []).slice(0, 2).map((p) => `<p>${esc(p)}</p>`).join("")}
+      <a class="ok" href="hakkimizda.html">${esc(a.profil.baglanti)} →</a>
     </div>
   </section>
 
@@ -91,29 +85,11 @@ ${ustHtml(c, "index.html", "ilk")}
     <div class="ctl"><button id="prev" type="button" aria-label="Önceki">‹</button><button id="next" type="button" aria-label="Sonraki">›</button></div>
   </section>
 
-  <section id="subeler" data-tema="koyu"><div class="wrap center">
-    <h2 data-reveal>${br(a.subeler.baslik)}</h2>
-    <p class="lead" data-reveal>${br(a.subeler.aciklama)}</p>
-    <div class="trharita" data-reveal>
-      <svg viewBox="0 0 ${TR.w} ${TR.h}" role="img" aria-label="Türkiye haritası, İzmir işaretli"><path d="${TR.d}"/></svg>
-      <span class="dot" style="left:${izmir.x.toFixed(2)}%;top:${izmir.y.toFixed(2)}%" data-l="İzmir"></span>
-    </div>
-    <div class="branches">
-      ${(c.subeler || []).map((s) => `<a class="bcard" href="${haritaHref(s.haritaSorgu)}" target="_blank" rel="noopener" data-reveal>${img(s.gorsel)}<div><b>${esc(s.ad)}</b><small>${esc(s.ilce)}</small><span>${esc(String(s.adres).replace("\n", " "))}</span><em>HARİTADA AÇ ↗</em></div></a>`).join("")}
-    </div>
-  </div></section>
-
   <section id="ilkeler" data-tema="acik"><div class="wrap">
     <h2 class="center" data-reveal>${esc(h.ilkelerBaslik)}</h2>
     <div class="team">
       ${(h.ilkeler || []).map((t) => `<div class="ilke" data-reveal><h3>${esc(t.ad)}</h3><p>${esc(t.metin)}</p></div>`).join("")}
     </div>
-  </div></section>
-
-  <section class="bayi" data-tema="koyu"><div class="wrap center">
-    <h2 data-reveal>${br(a.bayi.baslik)}</h2>
-    <p class="lead" data-reveal>${br(a.bayi.metin)}</p>
-    <div class="cta" data-reveal><a class="btn" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(a.bayi.buton1)}</a><a class="btn chip" href="${waHref(f.whatsapp, f.bayilikMesaji)}" target="_blank" rel="noopener">${esc(a.bayi.buton2)}</a></div>
   </div></section>
 </main>
 ${altHtml(c)}`;
