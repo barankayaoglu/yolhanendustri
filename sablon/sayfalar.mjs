@@ -329,7 +329,7 @@ export function bayiBasvuru(c) {
 /* ---------- İletişim ---------- */
 
 export function iletisim(c) {
-  const i = c.iletisim;
+  const i = c.iletisim, sss = c.sss; // sss: icerik/sss.json (derlemede eklenir; panel önizlemesinde yoksa bölüm çıkmaz)
   const govde = `${sayfaGiris(i)}
 
     <section class="bolum bolum--beton" id="subeler">
@@ -337,8 +337,19 @@ export function iletisim(c) {
         <div class="bolum-bas"><h2 class="baslik-2">${esc(i.subelerBaslik)}</h2></div>
         <div class="sube-izgara">${subeKartlari(c, { harita: true })}</div>
       </div>
-    </section>`;
-  return iskelet(c, { dosya: "iletisim.html", baslik: i.seoBaslik, aciklama: i.seoAciklama, govde });
+    </section>${sss ? `
+
+    <section class="bolum" id="sss">
+      <div class="kap">
+        <div class="bolum-bas"><h2 class="baslik-2">${esc(sss.baslik)}</h2></div>
+        <div class="sss">${sss.sorular.map((q) => `<details><summary>${esc(q.s)}</summary><p>${esc(q.c)}</p></details>`).join("")}</div>
+      </div>
+    </section>` : ""}`;
+  const jsonLd = sss ? ldBlok({
+    "@context": "https://schema.org", "@type": "FAQPage",
+    mainEntity: sss.sorular.map((q) => ({ "@type": "Question", name: q.s, acceptedAnswer: { "@type": "Answer", text: q.c } })),
+  }) : "";
+  return iskelet(c, { dosya: "iletisim.html", baslik: i.seoBaslik, aciklama: i.seoAciklama, govde, jsonLd });
 }
 
 /* ---------- Yasal metinler (KVKK, gizlilik) ---------- */
