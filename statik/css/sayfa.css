@@ -326,3 +326,27 @@ h1,h2,h3,.baslik-2,.baslik-3,.sayfa-giris__baslik{font-weight:800;letter-spacing
 .sss details { background: var(--beton-acik); border-radius: 12px; padding: 18px 22px; }
 .sss summary { cursor: pointer; font-weight: 700; font-size: 1.0625rem; }
 .sss p { margin-top: 12px; color: var(--metin-2); }
+
+/* ---- rehber sayfaları ---- */
+.rehber__ic { max-width: 860px; margin: 0 auto; }
+.rehber__tarih { color: var(--metin-2); font-size: .9rem; margin: 8px 0 20px; }
+.rehber__kisa { background: var(--beton-acik); border-left: 4px solid var(--sari, #f2b705); border-radius: 12px; padding: 20px 24px; margin-bottom: 40px; }
+.rehber__kisa p { margin-top: 8px; }
+.rehber__bolum { margin-top: 48px; }
+.rehber__bolum > p, .rehber__bolum > ul { margin-top: 14px; max-width: 68ch; }
+.rehber__bolum ul { padding-left: 1.2em; list-style: disc; }
+.rehber__bolum li { margin-top: 8px; }
+.rehber__alt { font-weight: 800; font-size: 1.2rem; margin: 32px 0 10px; }
+.rehber-tablo { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: .95rem; }
+.rehber-tablo th, .rehber-tablo td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(16,32,63,.12); vertical-align: middle; }
+.rehber-tablo th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--metin-2); }
+.rehber-tablo img { display: block; width: 56px; height: 56px; object-fit: contain; border-radius: 8px; background: #fff; }
+.rehber__cta .dugmeler { margin-top: 18px; }
+.rehber__ilgili { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; padding: 0; }
+.rehber__ilgili a { text-decoration: underline; }
+.rehber__liste { display: grid; gap: 16px; list-style: none; padding: 0; }
+.rehber__liste a { display: grid; gap: 8px; background: var(--beton-acik); border-radius: 12px; padding: 22px 26px; }
+.rehber__liste b { font-size: 1.25rem; }
+.rehber__liste span { color: var(--metin-2); }
+@media (max-width: 640px) { .rehber-tablo { font-size: .85rem; } .rehber-tablo th, .rehber-tablo td { padding: 8px 6px; } }
+.rehber-renk { display: block; width: 28px; height: 28px; border-radius: 6px; border: 1px solid rgba(16,32,63,.25); }

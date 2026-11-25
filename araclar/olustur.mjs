@@ -6,6 +6,7 @@ import path from "node:path";
 import { SAYFALAR, grupSayfalari } from "../sablon/sayfalar.mjs";
 import { SITE } from "../sablon/ortak.mjs";
 import { urunSayfalari } from "../sablon/urunler.mjs";
+import { rehberSayfalari } from "../sablon/rehberler.mjs";
 
 const KOK = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIST = path.join(KOK, "dist");
@@ -16,6 +17,8 @@ await rm(DIST, { recursive: true, force: true });
 await mkdir(DIST, { recursive: true });
 
 icerik.sss = JSON.parse(await readFile(path.join(KOK, "icerik/sss.json"), "utf8"));
+icerik.rehberler = JSON.parse(await readFile(path.join(KOK, "icerik/rehberler.json"), "utf8"));
+icerik.ralRenk = JSON.parse(await readFile(path.join(KOK, "icerik/ral-renk.json"), "utf8"));
 
 let urunVerisi = null;
 try { urunVerisi = JSON.parse(await readFile(path.join(KOK, "icerik/urunler.json"), "utf8")); } catch (e) { if (e.code !== "ENOENT") throw e; }
@@ -27,7 +30,7 @@ if (urunVerisi) { // yeni ana sayfa: marka logoları ve ürün sayısı
   icerik._markaLogo = Object.fromEntries(urunVerisi.markalar.filter((m) => m.logo).map((m) => [m.ad, m.logo]));
 }
 
-const TUM = [...SAYFALAR, ...grupSayfalari(icerik), ...(urunVerisi ? urunSayfalari(urunVerisi) : [])];
+const TUM = [...SAYFALAR, ...grupSayfalari(icerik), ...(urunVerisi ? urunSayfalari(urunVerisi) : []), ...(urunVerisi ? rehberSayfalari(urunVerisi, icerik.rehberler) : [])];
 for (const { dosya, olustur } of TUM) {
   await mkdir(path.dirname(path.join(DIST, dosya)), { recursive: true });
   await writeFile(path.join(DIST, dosya), olustur(icerik), "utf8");
@@ -54,6 +57,8 @@ await writeFile(path.join(DIST, "llms.txt"), [
   `- [Ürünlerimiz](${SITE}urunlerimiz.html): ${icerik._urunSayisi || ""} ürün, fotoğraf ve kod (fiyat yok)`,
   `- [Markalarımız](${SITE}markalarimiz.html)`,
   `- [Ürün grupları](${SITE}urun-gruplari.html)`,
+  `- [Rehberler](${SITE}rehberler.html)`,
+  ...icerik.rehberler.map((g) => `  - [${g.baslik.replace(/\n/g, " ")}](${SITE}rehber/${g.slug}.html): ${g.ozet}`),
   `- [Hakkımızda](${SITE}hakkimizda.html)`,
   `- [İletişim ve sık sorulan sorular](${SITE}iletisim.html)`,
   `- [Bayi başvuru](${SITE}bayi-basvuru.html)`,

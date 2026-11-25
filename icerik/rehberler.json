@@ -1,0 +1,626 @@
+[
+  {
+    "slug": "ral-sprey-boya-secimi",
+    "baslik": "RAL sprey boya nasıl seçilir?",
+    "seoBaslik": "RAL Sprey Boya Seçimi: Kodlar, Renk Aileleri ve Stoktaki Renkler | Yolhan Endüstri",
+    "seoAciklama": "RAL kodu nasıl okunur, sprey boyada doğru renk nasıl seçilir? Renk aileleri, uygulama ipuçları ve Best Elite stoktaki 50'den fazla RAL rengi.",
+    "ozet": "RAL, dört haneli bir standart renk koduyla aynı tonu her yerde tekrar bulmanızı sağlar. İlk hane renk ailesini söyler (1 sarı, 5 mavi, 9 beyaz-siyah gibi). Rengi ekrandan değil, mevcut boyadaki koddan veya RAL kartelasından seçin, önce küçük bir yüzeyde deneyin.",
+    "tarih": "2026-11-25",
+    "gorsel": {
+      "src": "medya/depo-koridor.webp",
+      "alt": "Yolhan Endüstri merkez deposunda raf koridoru"
+    },
+    "bolumler": [
+      {
+        "id": "ral-nedir",
+        "baslik": "RAL kodu nedir?",
+        "paragraflar": [
+          "RAL, renkleri dört haneli bir kodla tanımlayan standart bir renk sistemidir. Örneğin 9010 beyaz, 7035 açık gri, 5015 gök mavisi tonudur. Aynı kodu taşıyan farklı üreticilerin boyaları aynı tonu hedefler. Bu yüzden sonradan aynı rengi tamamlamak, rötuş yapmak veya tekrar sipariş vermek kolaylaşır.",
+          "Kapı, doğrama, korkuluk, raf, makine ve ekipman boyamada müşteriler genellikle \"RAL 7016\" gibi bir kodla gelir. Kodu biliyorsanız ürün adında aynı kodu arayarak doğru sprey boyayı bulabilirsiniz."
+        ]
+      },
+      {
+        "id": "renk-aileleri",
+        "baslik": "İlk hane renk ailesini söyler",
+        "paragraflar": [
+          "RAL kodunun ilk hanesi rengin hangi aileye ait olduğunu gösterir. Aşağıdaki tabloda her ailenin kaç rengini Best Elite sprey boya olarak listeliyoruz."
+        ],
+        "ralAileleri": true
+      },
+      {
+        "id": "stoktaki-renkler",
+        "baslik": "Listemizdeki Best Elite RAL renkleri",
+        "paragraflar": [
+          "Best Elite, 400 ml sprey boya serisidir ve RAL kodlarıyla satılır. Aşağıdaki tablo listemizdeki renkleri gösterir. Her satır ürün sayfasına bağlanır. Stok günlük değişir, bu yüzden toplu alımdan önce arayarak veya WhatsApp'tan sorarak güncel stoğu öğrenin. Renk kutuları üretici kartelasından alınan yaklaşık ekran renkleridir, kesin renk için kartelaya veya ürüne bakın."
+        ],
+        "ralTablosu": true
+      },
+      {
+        "id": "dogru-renk",
+        "baslik": "Doğru rengi seçmek için beş ipucu",
+        "liste": [
+          "Eski boyada RAL kodu varsa onu kullanın. Kod ürün etiketinde, teknik şartnamede veya eski kutuda yazar.",
+          "Ekrandaki renge güvenmeyin. Ekran ayarları ve ışık rengi tonu değiştirir. Kesin sonuç için RAL kartelasına veya boyalı bir örneğe bakın.",
+          "Mat ve parlak yüzey aynı kodda bile farklı algılanır. Yüzey bitişi ürün sayfasında ve etikette belirtilir.",
+          "Küçük görünmeyen bir yüzeyde deneme yapın, boya tamamen kuruduktan sonra rengi değerlendirin.",
+          "Büyük bir işi birkaç kutuyla yapacaksanız kutuları aynı anda alın. Farklı zamanlarda üretilen partilerde ton farkı çıkabilir."
+        ]
+      },
+      {
+        "id": "uygulama",
+        "baslik": "Sprey boyayı uygularken nelere dikkat edilir?",
+        "paragraflar": [
+          "Aşağıdakiler genel uygulama önerileridir. Kutunun üzerindeki talimat her zaman önceliklidir."
+        ],
+        "liste": [
+          "Yüzeyi yağdan, tozdan ve pastan arındırın. Gevşek boyayı zımparayla alın.",
+          "Kutuyu kullanmadan önce iyice çalkalayın.",
+          "Boyayı tek kalın katla değil, ince ve birbirine yakın 2-3 katla uygulayın. Katlar arasında kısa süre bekleyin.",
+          "Havalandırması iyi bir ortamda çalışın. Gerektiğinde maske ve eldiven kullanın.",
+          "Boyanacak olmayan yüzeyleri maskeleme bandıyla kapatın."
+        ]
+      },
+      {
+        "id": "kuruma",
+        "baslik": "Best Elite kuruma süreleri",
+        "paragraflar": [
+          "Best Elite akrilik esaslı bir sprey boyadır. Üreticinin kartelasında belirtilen kuruma süreleri aşağıdadır. Sıcaklık, nem ve kat kalınlığı süreyi değiştirebilir."
+        ],
+        "tablo": {
+          "basliklar": [
+            "Aşama",
+            "Süre"
+          ],
+          "satirlar": [
+            [
+              "Dokunma kuruması",
+              "10 dakika"
+            ],
+            [
+              "Sert kuruma",
+              "2 saat"
+            ],
+            [
+              "Tam kuruma (montaj kuruması)",
+              "12 saat içinde"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "yuzey",
+        "baslik": "Hangi yüzeylerde kullanılır?",
+        "paragraflar": [
+          "Best Elite sprey boya metal, ahşap, sert plastik ve alüminyum yüzeylerde dekoratif ve koruyucu boyama için kullanılır. Kapı ve pencere doğrama, korkuluk, raf ve makine parçalarında rötuş ve komple boyamada tercih edilir. Zorlu koşullarda kullanılacak parçalar için üretici talimatına ve gerekirse astar önerisine bakın."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "RAL kodu nasıl okunur?",
+        "c": "RAL kodu dört hanelidir. İlk hane renk ailesini gösterir: 1 sarı ve bej, 2 turuncu, 3 kırmızı, 4 mor, 5 mavi, 6 yeşil, 7 gri, 8 kahverengi, 9 beyaz ve siyah. Kodun tamamı o ailedeki belirli bir tonu tanımlar."
+      },
+      {
+        "s": "Ekranda gördüğüm renk sprey boyayla aynı çıkar mı?",
+        "c": "Ekranlar rengi birebir göstermez. Kesin renk için RAL kartelasına bakın veya küçük bir yüzeyde deneme yapın."
+      },
+      {
+        "s": "Aynı RAL kodunu sonradan tekrar bulabilir miyim?",
+        "c": "Evet. RAL standart bir sistem olduğu için aynı kodla aynı tonu hedefleyen ürünü tekrar sipariş edebilirsiniz. Büyük işlerde kutuları aynı anda almanız ton farkını azaltır."
+      },
+      {
+        "s": "Best Elite sprey boya ne kadar sürede kurur?",
+        "c": "Üreticinin kartelasına göre dokunma kuruması 10 dakika, sert kuruma 2 saat, tam kuruma (montaj kuruması) 12 saat içindedir. Sıcaklık ve nem süreyi değiştirebilir."
+      },
+      {
+        "s": "Hangi RAL renkleri var?",
+        "c": "Listemizde Best Elite markasının 50'den fazla RAL rengi bulunur. Güncel liste bu sayfadaki tabloda yer alır. Stok için 0232 458 30 12 numarasını arayabilir veya WhatsApp'tan yazabilirsiniz."
+      },
+      {
+        "s": "Toplu veya bayi olarak alabilir miyim?",
+        "c": "Evet. Bayi olmak için Bayi Başvuru Formu'nu doldurmanız yeterlidir, temsilcimiz sizi arar."
+      }
+    ],
+    "ilgili": [
+      {
+        "ad": "Best sprey boyalar",
+        "href": "urunlerimiz.html?marka=Best&grup=Sprey%20Boya"
+      },
+      {
+        "ad": "Boya malzemeleri grubu",
+        "href": "urun-boya-malzemeleri.html"
+      },
+      {
+        "ad": "Bayi başvuru formu",
+        "href": "bayi-basvuru.html"
+      }
+    ]
+  },
+  {
+    "slug": "silikon-mastik-turleri",
+    "baslik": "Silikon, mastik ve köpük: hangisi nerede kullanılır?",
+    "seoBaslik": "Silikon ve Mastik Türleri: Hangisi Nerede Kullanılır? | Yolhan Endüstri",
+    "seoAciklama": "Asetik ve nötr silikon, PU mastik, akrilik mastik, ısı silikonu ve PU köpük arasındaki farklar. Hangi iş için hangisi seçilir? İzmir toptan tedarik.",
+    "ozet": "Banyo, cam ve seramik işlerinde silikon, hareketli yapı ek yerlerinde ve boyanacak derzlerde mastik, boşluk doldurmada PU köpük kullanılır. Yüzeye uyum, boyanabilirlik ve sıcaklık dayanımı üründen ürüne değişir, bu yüzden etikette yazan türe ve kullanım alanına bakın.",
+    "tarih": "2026-11-25",
+    "gorsel": {
+      "src": "medya/depo-ic.webp",
+      "alt": "Merkez depo içi"
+    },
+    "bolumler": [
+      {
+        "id": "karsilastirma",
+        "baslik": "Hangi ürün hangi iş için?",
+        "paragraflar": [
+          "Aşağıdaki tablo genel kullanım alanlarını özetler. Her ürünün uyumlu olduğu yüzeyler ve dayanım değerleri farklı olabilir, kesin bilgi için ürün etiketine ve teknik föye bakın."
+        ],
+        "tablo": {
+          "basliklar": [
+            "Ürün türü",
+            "Genel kullanım",
+            "Dikkat edilecekler"
+          ],
+          "satirlar": [
+            [
+              "Asetik silikon",
+              "Banyo, mutfak, cam ve seramik sızdırmazlığı",
+              "Kuruma sırasında sirke kokusu çıkar. Metal ve bazı doğal taş yüzeylerde uygun olmayabilir."
+            ],
+            [
+              "Nötr silikon",
+              "Metal, ayna, doğal taş ve hassas yüzeyler",
+              "Kokusuzdur. Uyumlu yüzeyler ürün etiketinde yazar."
+            ],
+            [
+              "Yüksek ısı silikonu (RTV)",
+              "Fırın, baca, egzoz gibi sıcak yüzeylerde conta ve sızdırmazlık",
+              "Dayanım sıcaklığı üründen ürüne değişir, etikette yazan değeri geçmeyin."
+            ],
+            [
+              "PU (poliüretan) mastik",
+              "Yapı derzleri, dış cephe ve hareketli ek yerleri",
+              "Esnektir. Çoğu ürün boyanabilir, ürün etiketini kontrol edin."
+            ],
+            [
+              "Silikonize ve akrilik mastik",
+              "İç mekânda derz ve çatlak dolgusu",
+              "Genellikle boyanabilir. Sürekli su altında kalacak yerler için uygun olmayabilir."
+            ],
+            [
+              "PU köpük",
+              "Boşluk doldurma, kapı ve pencere kasası montajı, ısı ve ses yalıtımı",
+              "Tabancalı ve manuel tipleri vardır. Köpük sertleşince boyutu değişir, boşluğu tamamen doldurmayın."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "nasil-secilir",
+        "baslik": "Doğru ürünü seçmek için dört soru",
+        "liste": [
+          "Yüzey ne? Cam, seramik, metal, taş, beton veya ahşap için uyumlu tür farklıdır.",
+          "Yer nerede? Banyo ve mutfak gibi ıslak alanlarda silikon, iç mekân derzlerinde mastik, dış cephede PU mastik tercih edilir.",
+          "Üzeri boyanacak mı? Silikon genellikle boyanmaz, PU ve akrilik mastik çoğunlukla boyanabilir.",
+          "Sıcaklık ve hareket var mı? Sıcak yüzeyler için ısı silikonu, genleşip büzülen ek yerleri için esnek mastik seçin."
+        ]
+      },
+      {
+        "id": "uygulama",
+        "baslik": "Uygulamada dikkat edilecekler",
+        "paragraflar": [
+          "Genel öneriler aşağıdadır. Kartuşun üzerindeki talimat önceliklidir."
+        ],
+        "liste": [
+          "Yüzeyi temizleyin, yağdan ve tozdan arındırın, kuru olsun.",
+          "Eski silikonu tamamen sökün. Yeni silikon eski silikonun üstüne iyi tutunmaz.",
+          "Nozulu kullanacağınız derz genişliğine göre kesin ve tabancayla düzgün ilerleyin.",
+          "Yüzeyi kuruma süresi dolmadan ıslatmayın veya yük bindirmeyin. Süre ürün etiketinde yazar."
+        ]
+      },
+      {
+        "id": "stokumuz",
+        "baslik": "Listemizdeki ürünler",
+        "paragraflar": [
+          "Listemizde Selsil ve Stern markalarının silikon, silikonize mastik, PU mastik, akrilik mastik ve PU köpük ürünleri ile Best RTV ısı silikonu bulunur. Güncel stok ve silikonun türü için arayın veya WhatsApp'tan sorun."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "Asetik ve nötr silikon arasındaki fark nedir?",
+        "c": "Asetik silikon kururken sirke kokusu çıkarır ve cam, seramik gibi yüzeylerde yaygın kullanılır. Nötr silikon kokusuzdur ve metal, ayna, doğal taş gibi hassas yüzeylerde tercih edilir. Hangi tür olduğu ürün etiketinde yazar."
+      },
+      {
+        "s": "Silikonun üzerine boya sürülür mü?",
+        "c": "Silikon genellikle boyanmaz, boya tutunmaz. Boyanacak derzlerde boyanabilir mastik seçmek daha uygundur. Ürün etiketini kontrol edin."
+      },
+      {
+        "s": "PU mastik ile silikon arasında ne fark var?",
+        "c": "PU mastik esnek yapı derzleri ve dış cephe ek yerleri için, silikon banyo ve cam gibi sızdırmazlık işleri için yaygın kullanılır. PU mastik çoğunlukla boyanabilir."
+      },
+      {
+        "s": "Yüksek ısı silikonu nerede kullanılır?",
+        "c": "Fırın, baca, egzoz gibi sıcak yüzeylerde conta ve sızdırmazlık için kullanılır. Dayanım sıcaklığı ürüne göre değişir, etikette yazan değere uyun."
+      },
+      {
+        "s": "Toptan silikon alabilir miyim?",
+        "c": "Evet. Ürün ve stok bilgisi için 0232 458 30 12 numarasını arayın, bayi olmak için Bayi Başvuru Formu'nu doldurun."
+      }
+    ],
+    "ilgili": [
+      {
+        "ad": "Silikon ürünleri",
+        "href": "urunlerimiz.html?q=silikon"
+      },
+      {
+        "ad": "Mastik ürünleri",
+        "href": "urunlerimiz.html?q=mastik"
+      },
+      {
+        "ad": "Yapı kimyasalları grubu",
+        "href": "urun-yapi-kimyasallari.html"
+      }
+    ]
+  },
+  {
+    "slug": "dubel-secimi",
+    "baslik": "Dübel nasıl seçilir? Duvar tipine göre rehber",
+    "seoBaslik": "Dübel Seçimi: Duvar Tipine Göre Hangi Dübel? | Yolhan Endüstri",
+    "seoAciklama": "Tuğla, beton, gazbeton, alçıpan ve boşluklu duvara hangi dübel takılır? Plastik, çelik ve kimyasal dübel seçimi ile delik çapı ve vida boyu ipuçları.",
+    "ozet": "Dübel, duvarın cinsine göre seçilir: dolu tuğla ve betonda plastik dübel, gazbetonda gazbeton dübeli, boşluklu tuğlada boşluk dübeli, alçıpanda kanatlı dübel, ağır yükte çelik veya kimyasal dübel. Matkap ucu dübelin çapıyla aynı olmalıdır.",
+    "tarih": "2026-11-25",
+    "gorsel": {
+      "src": "medya/merkez-depo-cephe.webp",
+      "alt": "Merkez depo binası"
+    },
+    "bolumler": [
+      {
+        "id": "duvar-tipi",
+        "baslik": "Duvar tipine göre dübel",
+        "paragraflar": [
+          "Tablo genel eşleşmeleri gösterir. Taşıyacağı yük ve duvar kalitesi farklıysa üretici yük değerlerine ve teknik föye bakın."
+        ],
+        "tablo": {
+          "basliklar": [
+            "Duvar / yüzey",
+            "Uygun dübel türü",
+            "Not"
+          ],
+          "satirlar": [
+            [
+              "Dolu tuğla, beton",
+              "Plastik dübel, çelik dübel",
+              "Hafif ve orta yükler için plastik dübel yaygındır."
+            ],
+            [
+              "Boşluklu (delikli) tuğla",
+              "Tuğla boşluk dübeli",
+              "Boşluğun içinde açılarak tutunur."
+            ],
+            [
+              "Gazbeton",
+              "Gazbeton dübeli",
+              "Yumuşak malzeme olduğu için kalın dişli özel dübel gerekir."
+            ],
+            [
+              "Alçıpan",
+              "Kanatlı alçıpan dübeli, alçıpan askı dübeli",
+              "Yük kapasitesi sınırlıdır, ağır eşyalarda profile veya duvara tespit edin."
+            ],
+            [
+              "Ağır yük (korkuluk, raf, ekipman)",
+              "Çelik dübel, ağır yük dübeli, kimyasal dübel",
+              "Yük değerleri üreticinin teknik föyünde yazar."
+            ],
+            [
+              "Yalıtım levhası (mantolama)",
+              "İzolasyon dübeli",
+              "Levhayı duvara sabitler."
+            ]
+          ]
+        }
+      },
+      {
+        "id": "olcu",
+        "baslik": "Delik çapı ve vida boyu",
+        "liste": [
+          "Matkap ucunu dübelin çapıyla aynı seçin. Örneğin 8 mm dübel için 8 mm uç.",
+          "Deliği dübel boyundan biraz derin açın ve tozu temizleyin.",
+          "Vida, dübeli genişletecek kalınlıkta olmalıdır. Vida boyu, dübel boyu ile takılacak malzemenin kalınlığının toplamından uzun seçilir.",
+          "Betonda darbeli matkap, gazbeton ve alçıpanda darbesiz veya düşük devirle çalışmak delik kenarının dökülmesini azaltır."
+        ]
+      },
+      {
+        "id": "hata",
+        "baslik": "Sık yapılan hatalar",
+        "liste": [
+          "Her duvara aynı plastik dübeli takmak. Boşluklu tuğlada ve gazbetonda tutunmaz.",
+          "Gevşek veya geniş açılmış deliğe dübel takmak. Böyle bir delik dübeli tutmaz.",
+          "Ağır yükü alçıpan dübeline asmak. Yük için taşıyıcı duvara veya profile tespit gerekir.",
+          "Dübel yük değerini hesaba katmadan seçmek."
+        ]
+      },
+      {
+        "id": "stokumuz",
+        "baslik": "Listemizdeki dübel çeşitleri",
+        "paragraflar": [
+          "Listemizde Made markasının plastik, gazbeton, tuğla boşluk, kanatlı alçıpan, çelik, ağır yük ve izolasyon dübelleri, Tekno ve Selsil markalarının kimyasal dübelleri ile matkap uçları bulunur. Güncel stok için arayın veya WhatsApp'tan sorun."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "Gazbetona hangi dübel takılır?",
+        "c": "Gazbeton yumuşak bir malzeme olduğu için kalın dişli gazbeton dübeli kullanılır. Düz plastik dübel gazbetonda yeterince tutunmayabilir."
+      },
+      {
+        "s": "Boşluklu tuğlaya dübel nasıl takılır?",
+        "c": "Boşluklu tuğlada boşluğun içinde açılarak tutunan tuğla boşluk dübeli kullanılır. Ağır yüklerde kimyasal dübel de seçenektir."
+      },
+      {
+        "s": "Alçıpana ne kadar ağırlık asılır?",
+        "c": "Alçıpan dübelinin taşıyabileceği yük sınırlıdır ve ürüne göre değişir. Teknik föydeki yük değerine bakın. Ağır eşyaları profile veya taşıyıcı duvara tespit edin."
+      },
+      {
+        "s": "Kimyasal dübel ne zaman gerekir?",
+        "c": "Ağır yüklerde, boşluklu malzemede veya çatlağa yakın bölgelerde kimyasal dübel tercih edilir. Uygulama ve kürlenme süresi için ürün talimatına uyun."
+      },
+      {
+        "s": "Dübelin çapı vidayla aynı mı olur?",
+        "c": "Hayır. Dübel çapı matkap ucu çapıyla aynıdır. Vida dübelin içine girip onu genişletecek kalınlıkta seçilir."
+      }
+    ],
+    "ilgili": [
+      {
+        "ad": "Dübel ürünleri",
+        "href": "urunlerimiz.html?q=d%C3%BCbel"
+      },
+      {
+        "ad": "Bağlantı ekipmanları grubu",
+        "href": "urun-baglanti-ekipmanlari.html"
+      },
+      {
+        "ad": "Matkap uçları",
+        "href": "urunlerimiz.html?q=matkap+ucu"
+      }
+    ]
+  },
+  {
+    "slug": "bant-cesitleri",
+    "baslik": "Bant çeşitleri ve kullanım alanları",
+    "seoBaslik": "Bant Çeşitleri ve Kullanım Alanları: Hangi Bant Nerede? | Yolhan Endüstri",
+    "seoAciklama": "Koli, maskeleme, çift taraflı köpük, izole, folyo, duck, teflon ve yer işaretleme bandı arasındaki farklar. İşinize uygun bantı seçmek için rehber.",
+    "ozet": "Her bant farklı iş için üretilir: koli bandı paketleme, maskeleme bandı boya, çift taraflı köpük bant sabitleme, izole bant elektrik yalıtımı, teflon bant diş sızdırmazlığı için kullanılır. Doğru seçim yüzeye, sıcaklığa ve taşıyacağı yüke bağlıdır.",
+    "tarih": "2026-11-25",
+    "gorsel": {
+      "src": "medya/depo-koliler.webp",
+      "alt": "Depoda sevkiyata hazır koliler"
+    },
+    "bolumler": [
+      {
+        "id": "karsilastirma",
+        "baslik": "Bant türleri ve kullanım alanları",
+        "paragraflar": [
+          "Aşağıdaki tablo genel kullanımları özetler. Sıcaklık ve yük değerleri ürüne göre değişir, kesin bilgi ürün etiketinde yazar."
+        ],
+        "tablo": {
+          "basliklar": [
+            "Bant",
+            "Ne için kullanılır?"
+          ],
+          "satirlar": [
+            [
+              "Koli bandı",
+              "Paketleme ve kolilerin kapatılması"
+            ],
+            [
+              "Maskeleme bandı",
+              "Boya ve sprey işlerinde boyanmayacak yüzeyleri korumak"
+            ],
+            [
+              "Çift taraflı köpük bant",
+              "Ayna, pano, profil gibi hafif parçaların sabitlenmesi"
+            ],
+            [
+              "İzole bant",
+              "Elektrik bağlantılarının yalıtımı"
+            ],
+            [
+              "Folyo bant",
+              "Isı ve klima kanallarının ek yerlerinin kapatılması"
+            ],
+            [
+              "Duck (tamir) bant",
+              "Genel tamir, sabitleme ve sarma işleri"
+            ],
+            [
+              "Teflon bant",
+              "Dişli tesisat bağlantılarında sızdırmazlık"
+            ],
+            [
+              "Yer işaretleme ve ikaz bandı",
+              "Zemin ve depo alanlarında yol ve bölge işaretleme"
+            ],
+            [
+              "Merdiven kaydırmaz bant",
+              "Basamak ve eğimli yüzeylerde kaymayı azaltmak"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "secim",
+        "baslik": "Doğru bandı seçmek için ipuçları",
+        "liste": [
+          "Yüzeyi önce temizleyin, kuru ve yağsız olsun. Bant yüzeye yapışırken yüzey temizliği sonucu belirler.",
+          "Maskeleme bandının sıcaklık değeri ürün adında veya etikette yazar. Boyadan sonra mümkün olan en kısa sürede çıkarın.",
+          "Çift taraflı bandı taşıyacağı ağırlığa göre seçin. Genişlik ve kalınlık arttıkça taşıma kapasitesi artar.",
+          "Pürüzlü ve tozlu yüzeylerde köpük bant daha iyi sonuç verir.",
+          "Dış ortamda kullanım için ürünün dış mekân uyumuna bakın."
+        ]
+      },
+      {
+        "id": "stokumuz",
+        "baslik": "Listemizdeki bantlar",
+        "paragraflar": [
+          "Listemizde Bantex, Astel, Made ve Era Tool markalarının koli, maskeleme, çift taraflı, izole, folyo, duck, teflon, yer işaretleme ve merdiven kaydırmaz bantları bulunur. Ölçü ve renk seçenekleri için ürün sayfalarına bakın, güncel stok için arayın."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "Maskeleme bandı boyadan sonra ne zaman çıkarılır?",
+        "c": "Genellikle boya tamamen kurumadan, yüzey dokunulabilir hale geldiğinde çıkarılır. Kesin süre için ürün ve boya etiketine bakın."
+      },
+      {
+        "s": "Çift taraflı bant ne kadar ağırlık taşır?",
+        "c": "Taşıma kapasitesi bant genişliğine, kalınlığına ve yüzeye bağlıdır. Ürünün etiketindeki değeri aşmayın ve emin değilseniz küçük bir denemeyle başlayın."
+      },
+      {
+        "s": "İzole bant ile PVC bant aynı mı?",
+        "c": "Elektrik yalıtımında kullanılan izole bantlar genellikle PVC esaslıdır. Kullanım alanı ve yanma dayanımı ürüne göre değişir, etikete bakın."
+      },
+      {
+        "s": "Teflon bant nerede kullanılır?",
+        "c": "Dişli tesisat bağlantılarında dişin üzerine sarılarak sızdırmazlığı artırır."
+      },
+      {
+        "s": "Toptan bant alabilir miyim?",
+        "c": "Evet. Bayi olmak için Bayi Başvuru Formu'nu doldurun, ürün ve stok için 0232 458 30 12 numarasını arayın."
+      }
+    ],
+    "ilgili": [
+      {
+        "ad": "Bant ürünleri",
+        "href": "urunlerimiz.html?q=bant"
+      },
+      {
+        "ad": "Bant grubu",
+        "href": "urun-bant-grubu.html"
+      },
+      {
+        "ad": "Bayi başvuru formu",
+        "href": "bayi-basvuru.html"
+      }
+    ]
+  },
+  {
+    "slug": "is-guvenligi-ekipmani-secimi",
+    "baslik": "İş güvenliği ekipmanı: eldiven, baret, maske ve kulak koruyucu nasıl seçilir?",
+    "seoBaslik": "İş Güvenliği Ekipmanı Seçimi: Eldiven, Baret, Maske | Yolhan Endüstri",
+    "seoAciklama": "Nitril eldiven, baret, FFP2 toz maskesi, kulak tıkacı ve kaynak maskesi nasıl seçilir? Kişisel koruyucu ekipman seçiminde dikkat edilecekler.",
+    "ozet": "Kişisel koruyucu ekipman (KKD) yapılan işin riskine göre seçilir: kayma ve kesik için eldiven, düşen cisim için baret, toz için FFP2 gibi filtreli maske, gürültü için kulak koruyucu, kaynak için koyuluk dereceli cam. İşyerinizdeki risk değerlendirmesi ve mevzuat hangi ekipmanın gerektiğini belirler.",
+    "tarih": "2026-11-25",
+    "gorsel": {
+      "src": "medya/depo-ic.webp",
+      "alt": "Merkez depo içi"
+    },
+    "bolumler": [
+      {
+        "id": "karsilastirma",
+        "baslik": "Risk ve ekipman eşleşmesi",
+        "paragraflar": [
+          "Aşağıdaki tablo genel eşleşmeleri gösterir. Hangi ekipmanın zorunlu olduğu işyerinizin risk değerlendirmesine ve ilgili mevzuata göre belirlenir."
+        ],
+        "tablo": {
+          "basliklar": [
+            "Risk",
+            "Ekipman",
+            "Seçerken bakılacak"
+          ],
+          "satirlar": [
+            [
+              "El yaralanması, yağ ve kimyasal teması",
+              "Nitril eldiven",
+              "Beden ölçüsü, pudrasız veya pudralı olması, dokulu yüzey (daha iyi tutuş)"
+            ],
+            [
+              "Düşen cisim, çarpma",
+              "Baret",
+              "Baş ölçüsü ayarı, üretici talimatındaki kullanım ömrü"
+            ],
+            [
+              "Toz ve partikül",
+              "Filtreli toz maskesi (FFP2 gibi)",
+              "FFP sınıfı, burun telini kalıba oturtma"
+            ],
+            [
+              "Gürültü",
+              "Kulak tıkacı veya kulaklık",
+              "Etiketteki SNR (gürültü azaltma) değeri"
+            ],
+            [
+              "Kaynak ışığı ve kıvılcım",
+              "Kaynak maskesi ve koyuluk dereceli cam",
+              "Camın DIN koyuluk derecesi kaynak yöntemine ve akıma göre seçilir"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "eldiven",
+        "baslik": "Eldiven seçimi",
+        "paragraflar": [
+          "Nitril eldivenler yağ ve birçok kimyasala karşı dayanıklıdır ve pudrasız tipleri lateks alerjisi olan çalışanlar için tercih edilir. Beden eldivene tam oturmalıdır. Büyük eldiven tutuşu zayıflatır, küçük eldiven hızla yırtılır. Kimyasalla çalışıyorsanız ürünün hangi maddeye dayandığı üretici bilgisinde yazar."
+        ]
+      },
+      {
+        "id": "maske",
+        "baslik": "Toz maskesi seçimi",
+        "paragraflar": [
+          "Filtreli maskeler FFP1, FFP2 ve FFP3 sınıflarına ayrılır. Sınıf yükseldikçe filtreleme oranı artar. Maske yüze iyi oturmalı, sakal veya boşluk filtreleme verimini düşürür. Tek kullanımlık maskeler tek vardiyada kullanılır, nemlenince veya kirlenince değiştirilir."
+        ]
+      },
+      {
+        "id": "baret",
+        "baslik": "Baret ve kulak koruyucu",
+        "paragraflar": [
+          "Baret çatlak, darbe izi veya renk bozulması gösterdiğinde değiştirilir. Kullanım ömrü ve saklama koşulları üreticinin talimatında yazar. Kulak koruyucuda etiketteki gürültü azaltma değeri ortam gürültüsüne uygun olmalıdır, aşırı yalıtım da riskli olabilir."
+        ]
+      },
+      {
+        "id": "stokumuz",
+        "baslik": "Listemizdeki ekipmanlar",
+        "paragraflar": [
+          "Listemizde nitril eldivenler, ayarlanabilir baretler, FFP2 toz maskesi, kulak tıkacı, kaynak maskesi ve kaynak camları bulunur. Beden, renk ve güncel stok için ürün sayfalarına bakın veya arayın."
+        ]
+      }
+    ],
+    "sss": [
+      {
+        "s": "FFP2 maske ne demek?",
+        "c": "FFP, filtreli yarım yüz maskelerin sınıfıdır. FFP2, FFP1'den daha yüksek filtreleme oranı sağlar. Hangi sınıfın gerektiği ortamdaki toz ve partikül riskine göre belirlenir."
+      },
+      {
+        "s": "Nitril eldiven ile lateks eldiven arasındaki fark nedir?",
+        "c": "Nitril, yağ ve birçok kimyasala karşı dayanıklıdır ve lateks alerjisi riski taşımaz. Lateks daha esnektir ama bazı kişilerde alerji yapabilir."
+      },
+      {
+        "s": "Baret ne zaman değiştirilir?",
+        "c": "Çatlak, darbe izi veya renk bozulması varsa ve üreticinin belirttiği kullanım ömrü dolduğunda değiştirilir."
+      },
+      {
+        "s": "Kaynak camı koyuluk derecesi nasıl seçilir?",
+        "c": "DIN koyuluk derecesi kaynak yöntemine ve akım şiddetine göre seçilir. Üreticinin tablosuna bakın."
+      },
+      {
+        "s": "Hangi KKD'nin zorunlu olduğunu kim belirler?",
+        "c": "İşyerinin risk değerlendirmesi ve ilgili iş sağlığı ve güvenliği mevzuatı belirler. İş güvenliği uzmanınıza danışın."
+      }
+    ],
+    "ilgili": [
+      {
+        "ad": "İş güvenliği grubu",
+        "href": "urun-is-guvenligi.html"
+      },
+      {
+        "ad": "Eldiven ürünleri",
+        "href": "urunlerimiz.html?q=eldiven"
+      },
+      {
+        "ad": "Bayi başvuru formu",
+        "href": "bayi-basvuru.html"
+      }
+    ]
+  }
+]

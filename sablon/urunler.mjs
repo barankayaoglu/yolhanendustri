@@ -146,7 +146,8 @@ ${hakkinda}
               <a class="dugme dugme--cizgi-koyu dugme--b" href="${telHref(f.telefon)}">${ikon("phone", "i--k")}${esc(f.telefon)}</a>
             </div>
           </div>
-        </div>${kardesHtml}${benzerHtml}
+        </div>${u.ral ? `
+        <p class="urn-ipucu">RAL renk seçimi hakkında: <a href="rehber/ral-sprey-boya-secimi.html">RAL sprey boya nasıl seçilir?</a></p>` : ""}${kardesHtml}${benzerHtml}
       </div>
     </section>`;
   const urunLd = {

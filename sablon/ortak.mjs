@@ -41,6 +41,7 @@ export function menuVeri(c) {
     duz: [
       ["urunlerimiz.html", M.urunlerimiz || "Ürünlerimiz"],
       ["markalarimiz.html", M.markalarimiz || "Markalarımız"],
+      ["rehberler.html", M.rehberler || "Rehberler"],
       ["medya.html", M.medya || "Medya"],
       ["iletisim.html", M.iletisim || "İletişim"],
       ["e-katalog.html", M.ekatalog || "E-Katalog"],
@@ -55,7 +56,8 @@ function aktifOge(dosya) {
   if (dosya === "index.html") return "ana";
   if (["hakkimizda.html", "vizyon-misyon.html"].includes(dosya)) return "kurumsal";
   if (dosya.startsWith("urun") && dosya !== "urun-gruplari.html" || dosya === "urun-gruplari.html" || dosya.startsWith("urun/")) return "urunlerimiz.html";
-  if (["markalarimiz.html", "medya.html", "iletisim.html", "e-katalog.html"].includes(dosya)) return dosya;
+  if (dosya.startsWith("rehber/")) return "rehberler.html";
+  if (["markalarimiz.html", "rehberler.html", "medya.html", "iletisim.html", "e-katalog.html"].includes(dosya)) return dosya;
   return "";
 }
 
