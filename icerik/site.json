@@ -25,8 +25,8 @@
     "seoBaslik": "Yolhan Endüstri — İzmir'de hırdavat ve endüstriyel malzeme tedariki",
     "seoAciklama": "2019'dan beri İzmir'de yapı kimyasalları, iş güvenliği, el aletleri, bant, boya ve bağlantı ekipmanları tedariki. Bornova merkez depo ve Konak gıda şube.",
     "giris": {
-      "ustSatir": "İzmir'de 2019'dan beri",
-      "baslik": "Hırdavatın\nkısa yolu.",
+      "ustSatir": "",
+      "baslik": "Türkiye'nin\nhırdavat toptancısı",
       "doneneOnEk": "Ürün grupları:",
       "donenler": [
         "Yapı Kimyasalları",
@@ -36,7 +36,7 @@
         "Boya Malzemeleri",
         "Bağlantı Ekipmanları"
       ],
-      "aciklama": "Bornova'daki merkez depomuzdan ve Konak'taki şubemizden ustalara, nalburlara ve sanayiye hırdavat tedarik ediyoruz.",
+      "aciklama": "",
       "buton1": "Ürün gruplarını görün",
       "buton2": "B2B'ye giriş yapın",
       "gorseller": [
@@ -104,6 +104,11 @@
         "src": "medya/depo-koliler.webp",
         "alt": "Depoda sevkiyata hazır koliler"
       }
+    },
+    "film": {
+      "baslik": "Tanıtım filmimiz",
+      "src": "medya/tanitim-filmi.mp4",
+      "poster": "medya/tanitim-filmi.jpg"
     }
   },
   "hakkimizda": {
