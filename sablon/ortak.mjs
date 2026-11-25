@@ -174,6 +174,15 @@ function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], 
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("az-hareket");
     })(document.documentElement);
   </script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="ad15344c-53fa-4fd6-8ce1-bd40785354ca"></script>
+  <script>
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (!a || !window.umami) return;
+      var h = a.getAttribute("href"), o = h.indexOf("tel:") === 0 ? "telefon-tikla" : h.indexOf("wa.me/") > -1 ? "whatsapp-tikla" : h.indexOf("b2b.yolhanendustri.com") > -1 || h.indexOf("uygulama/") === 0 ? "b2b-tikla" : "";
+      if (o) umami.track(o, { sayfa: location.pathname });
+    });
+  </script>
 ${js.map((h) => `  <script defer src="${h}"></script>`).join("\n")}${jsonLd}
 </head>
 <body data-sayfa="${dosya.replace(".html", "")}">
