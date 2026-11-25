@@ -26,85 +26,86 @@ export function gorsel(g, { sinif = "", yukle = "lazy", boyutlar = "100vw" } = {
   return `<img class="${sinif}" src="${esc(g.src)}" alt="${esc(g.alt)}" loading="${yukle}" decoding="async" sizes="${boyutlar}">`;
 }
 
-const SAYFALAR = [
-  ["index.html", "anaSayfa"],
-  ["hakkimizda.html", "hakkimizda"],
-  ["vizyon-misyon.html", "vizyon"],
-  ["urunlerimiz.html", "urunlerimiz"],
-  ["markalarimiz.html", "markalarimiz"],
-  ["medya.html", "medya"],
-  ["iletisim.html", "iletisim"],
-  ["e-katalog.html", "ekatalog"],
-];
+/* ---------- Ortak kabuk: üst menü, mobil menü, alt bilgi, yukarı çık (tüm sayfalarda aynı) ---------- */
 
-const ETIKET_YEDEK = { ekatalog: "E-Katalog", urunlerimiz: "Ürünlerimiz", markalarimiz: "Markalarımız", vizyon: "Vizyonumuz ve Misyonumuz", medya: "Medya" }; // site.json'da menü adı yoksa
-
-function ustBolum(c, aktif) {
-  const m = c.menu, f = c.firma;
-  const linkler = SAYFALAR.map(([href, anahtar]) =>
-    `<a href="${href}"${href === aktif ? ' aria-current="page"' : ""}>${esc(m[anahtar] || ETIKET_YEDEK[anahtar])}</a>`).join("");
-  return `
-  <header class="ust" data-ust>
-    <div class="ust__ic">
-      <a class="ust__logo" href="index.html" aria-label="${esc(f.ad)} ana sayfa">
-        <img class="logo-acik" src="img/logo-negatif.png" alt="" width="640" height="150">
-        <img class="logo-koyu" src="img/logo.png" alt="" width="640" height="150">
-      </a>
-      <nav class="menu" id="menu" aria-label="Ana menü">
-        <div class="menu__linkler">${linkler}</div>
-        <div class="menu__eylem">
-          <a class="dugme dugme--cizgi" href="iletisim.html#bayilik">${esc(m.bayiOl)}</a>
-          <a class="dugme dugme--sari" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2bGiris)}${ikon("external", "i--k")}</a>
-        </div>
-        <div class="menu__alt">
-          <a href="${telHref(f.telefon)}">${esc(f.telefon)}</a>
-          <a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a>
-        </div>
-      </nav>
-      <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="menu">
-        <span class="gizli">Menü</span><span class="menu-dugme__cizgi"></span><span class="menu-dugme__cizgi"></span>
-      </button>
-    </div>
-  </header>`;
+/** Menü verisi: Ana Sayfa, Kurumsal (açılır), Ürünlerimiz, Markalarımız, Medya, İletişim, E-Katalog */
+export function menuVeri(c) {
+  const M = c.menu || {};
+  return {
+    anaSayfa: ["index.html", M.anaSayfa || "Ana Sayfa"],
+    kurumsalAd: M.kurumsal || "Kurumsal",
+    kurumsal: [
+      ["hakkimizda.html", M.hakkimizda || "Hakkımızda"],
+      ["vizyon-misyon.html", M.vizyon || "Vizyonumuz ve Misyonumuz"],
+      ["iletisim.html#bayilik", M.bayimizOlun || "Bayimiz Olun"],
+    ],
+    duz: [
+      ["urunlerimiz.html", M.urunlerimiz || "Ürünlerimiz"],
+      ["markalarimiz.html", M.markalarimiz || "Markalarımız"],
+      ["medya.html", M.medya || "Medya"],
+      ["iletisim.html", M.iletisim || "İletişim"],
+      ["e-katalog.html", M.ekatalog || "E-Katalog"],
+    ],
+    b2b: M.b2bGiris || "B2B Giriş",
+    bayi: M.bayiBasvuru || "Bayi Başvuru Formu",
+  };
 }
 
-function altBolum(c) {
-  const f = c.firma, m = c.menu;
-  const subeler = (c.subeler || []).map((s) =>
-    `<address><b>${esc(s.ad)}</b>${br(s.adres)}</address>`).join("");
+/** Hangi menü öğesi aktif: sayfa dosya adından */
+function aktifOge(dosya) {
+  if (dosya === "index.html") return "ana";
+  if (["hakkimizda.html", "vizyon-misyon.html"].includes(dosya)) return "kurumsal";
+  if (dosya.startsWith("urun") && dosya !== "urun-gruplari.html" || dosya === "urun-gruplari.html" || dosya.startsWith("urun/")) return "urunlerimiz.html";
+  if (["markalarimiz.html", "medya.html", "iletisim.html", "e-katalog.html"].includes(dosya)) return dosya;
+  return "";
+}
+
+export function ustHtml(c, dosya = "index.html", tema = "koyu") {
+  const m = menuVeri(c), f = c.firma, aktif = aktifOge(dosya);
+  const pi = ([href, ad]) => `<a class="pi" href="${href}"${aktif === href ? ' aria-current="page"' : ""}>${esc(ad)}</a>`;
   return `
-  <footer class="alt">
-    <div class="kap">
-      <div class="alt__son-durak" data-durak="son" aria-hidden="true"><img src="img/isaret-512.png" alt="" width="96" height="96" loading="lazy"></div>
-      <div class="alt__izgara">
-        <div class="alt__marka">
-          <img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy">
-          <p>${esc(f.unvan)}</p>
-        </div>
-        <div><h2>${esc(c.iletisim.subelerBaslik)}</h2>${subeler}</div>
-        <div>
-          <h2>${esc(m.iletisim)}</h2>
-          <ul>
-            <li><a href="${telHref(f.telefon)}">${esc(f.telefon)}</a></li>
-            <li><a href="${waHref(f.whatsapp)}" target="_blank" rel="noopener">WhatsApp ${esc(f.whatsapp)}</a></li>
-            <li><a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a></li>
-            <li>${esc(f.calismaSaatleri)}</li>
-          </ul>
-        </div>
-        <div>
-          <h2>Sayfalar</h2>
-          <ul>${SAYFALAR.slice(1).map(([h, a]) => `<li><a href="${h}">${esc(m[a] || ETIKET_YEDEK[a])}</a></li>`).join("")}
-            <li><a href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2bGiris)}</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="alt__telif">
-        <p>© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)}</p>
-        <p class="alt__yasal"><a href="kvkk-aydinlatma-metni.html">${esc(m.kvkk || "KVKK Aydınlatma Metni")}</a><a href="gizlilik-politikasi.html">${esc(m.gizlilik || "Gizlilik Politikası")}</a></p>
-      </div>
+<header class="nav" id="nav" data-tema="${tema}">
+  <a class="logo" href="index.html" aria-label="${esc(f.ad)} ana sayfa"><img class="neg" src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150"><img class="org" src="img/logo.png" alt="" width="640" height="150"></a>
+  <nav class="pill" aria-label="Ana menü">
+    <span class="hap" aria-hidden="true"></span>
+    <a class="pi" href="${m.anaSayfa[0]}"${aktif === "ana" ? ' aria-current="page"' : ""}>${esc(m.anaSayfa[1])}</a>
+    <div class="dd">
+      <button class="pi dd__btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dd-kurumsal"${aktif === "kurumsal" ? ' data-aktif="1"' : ""}>${esc(m.kurumsalAd)}<svg viewBox="0 0 10 6" width="9" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="dd__list" id="dd-kurumsal" hidden>${m.kurumsal.map(([href, ad]) => `<a href="${href}"${dosya === href ? ' aria-current="page"' : ""}>${esc(ad)}</a>`).join("")}</div>
     </div>
-  </footer>
-  <a class="wa" href="${waHref(f.whatsapp)}" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın">${ikon("chat")}</a>`;
+    ${m.duz.map(pi).join("")}
+  </nav>
+  <div class="right">
+    <a class="btn btn--b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener"><span>${esc(m.b2b)}</span></a>
+    <a class="btn chip btn--bayi" href="iletisim.html#bayilik">${esc(m.bayi)}</a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç">Menü</button>
+  </div>
+</header>
+<div id="menu" class="menu" role="dialog" aria-modal="true" aria-label="Menü" hidden>
+  <a href="${m.anaSayfa[0]}">${esc(m.anaSayfa[1])}</a>
+  <span class="menu__bas">${esc(m.kurumsalAd)}</span>
+  ${m.kurumsal.map(([href, ad]) => `<a class="menu__alt" href="${href}">${esc(ad)}</a>`).join("")}
+  ${m.duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}
+  <a class="menu__b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2b)}</a>
+  <a href="iletisim.html#bayilik">${esc(m.bayi)}</a>
+</div>`;
+}
+
+export function altHtml(c) {
+  const m = menuVeri(c), f = c.firma, M = c.menu || {};
+  const harfler = "YOLHAN".split("").map((x) => `<span>${x}</span>`).join("");
+  return `
+<footer data-tema="koyu">
+  <div class="mega" aria-hidden="true">${harfler}</div>
+  <div class="fcols">
+    <div><a class="flogo" href="index.html"><img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy"></a><p class="copy" style="text-align:left;margin-top:12px">${esc(f.unvan)}</p></div>
+    <div><h3>${esc(m.kurumsalAd)}</h3>${m.kurumsal.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
+    <div><h3>Sayfalar</h3>${m.duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
+    <div><h3>${esc(M.iletisim || "İletişim")}</h3><a href="${telHref(f.telefon)}">${esc(f.telefon)}</a><a href="${waHref(f.whatsapp)}" target="_blank" rel="noopener">WhatsApp ${esc(f.whatsapp)}</a><a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a><span class="copy" style="text-align:left;display:block">${esc(f.calismaSaatleri)}</span></div>
+  </div>
+  <p class="copy">© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)} · <a href="kvkk-aydinlatma-metni.html">${esc(M.kvkk || "KVKK Aydınlatma Metni")}</a> · <a href="gizlilik-politikasi.html">${esc(M.gizlilik || "Gizlilik Politikası")}</a></p>
+</footer>
+<button class="top" id="top-btn" type="button" aria-label="En üste çık" hidden><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`;
 }
 
 /** Tam sayfa iskeleti */
@@ -115,6 +116,9 @@ export function iskelet(c, o) {
 }
 
 function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [], sade = false }) {
+  // iç sayfalar: ortak kabuk + sayfa stilleri; ana sayfa (sade) kendi stilini getirir
+  css = sade ? ["css/temel.css", ...css] : ["css/temel.css", "css/sayfa.css", ...css];
+  js = sade ? js : ["js/sayfa.js", ...js];
   const url = SITE + (dosya === "index.html" ? "" : dosya);
   return `<!doctype html>
 <html lang="tr">
@@ -139,28 +143,20 @@ function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], 
   <link rel="icon" href="favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" href="img/isaret-512.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="preload" href="fonts/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fontlar.css">
-${sade ? "" : `  <link rel="stylesheet" href="css/site.css">`}${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
+  <link rel="preload" href="fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
   <script>
     (function (d) {
       d.classList.add("js");
-      try { if (sessionStorage.getItem("yh-perde")) { d.classList.add("perde-gelis"); sessionStorage.removeItem("yh-perde"); } } catch (e) {}
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("az-hareket");
     })(document.documentElement);
   </script>
-${sade ? "" : `  <script defer src="js/site.js"></script>`}${js.map((h) => `\n  <script defer src="${h}"></script>`).join("")}${jsonLd}
+${js.map((h) => `  <script defer src="${h}"></script>`).join("\n")}${jsonLd}
 </head>
 <body data-sayfa="${dosya.replace(".html", "")}">
-${sade ? govde : `  <a class="atla" href="#ana">İçeriğe geç</a>
-  <div class="perde" aria-hidden="true"><div class="perde__serit"></div><img class="perde__isaret" src="img/isaret-512.png" alt="" width="96" height="96"></div>
-  ${ustBolum(c, dosya.startsWith("urun/") || /^urunlerimiz-\d+\.html$/.test(dosya) ? "urunlerimiz.html" : dosya.startsWith("urun-") ? "urunlerimiz.html" : dosya)}
+${sade ? govde : `  <a class="atla" href="#ana">İçeriğe geç</a>${ustHtml(c, dosya)}
   <main id="ana">
-    <div class="yol" aria-hidden="true"></div>
 ${govde}
-  </main>
-  ${altBolum(c)}`}
+  </main>${altHtml(c)}`}
 </body>
 </html>
 `;
@@ -193,7 +189,7 @@ export function yasalMetin(metin, c) {
 /** Sayfa üstü (alt sayfalar için fotoğraflı giriş) */
 export function sayfaGiris({ baslik, aciklama, gorsel: g }) {
   return `
-    <section class="sayfa-giris" data-durak>
+    <section class="sayfa-giris">
       <div class="sayfa-giris__gorsel">${gorsel(g, { yukle: "eager" })}</div>
       <div class="kap sayfa-giris__ic">
         <h1 class="sayfa-giris__baslik">${satirlar(baslik)}</h1>
@@ -206,7 +202,7 @@ export function sayfaGiris({ baslik, aciklama, gorsel: g }) {
 export function bayiBandi(c) {
   const b = c.anaSayfa.bayi, f = c.firma;
   return `
-    <section class="bayi" data-durak>
+    <section class="bayi">
       <div class="bayi__gorsel">${gorsel(b.gorsel)}</div>
       <div class="kap bayi__ic">
         <h2 class="baslik-2">${br(b.baslik)}</h2>

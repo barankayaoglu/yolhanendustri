@@ -1,7 +1,7 @@
 /* Yeni ana sayfa. İçerik icerik/site.json'dan gelir (panelden düzenlenir). Kendi (sade) iskeletini kullanır.
    Animasyonlar: statik/js/yeni.js  (kaynak: yolhan-site/src/scripts, `npm run paketle`).
    Türkiye şekli: sablon/turkiye-harita.mjs (Natural Earth, kamu malı; yolhan-site/scripts/harita-uret.mjs). */
-import { esc, br, waHref, telHref, haritaHref, iskelet } from "./ortak.mjs";
+import { esc, br, waHref, haritaHref, iskelet, ustHtml, altHtml } from "./ortak.mjs";
 import { anaSayfaLd } from "./sayfalar.mjs";
 import { TR } from "./turkiye-harita.mjs";
 
@@ -21,7 +21,7 @@ function markaSerit(c) {
 }
 
 export function anaSayfaYeni(c) {
-  const a = c.anaSayfa, g = a.giris, f = c.firma, h = c.hakkimizda, M = c.menu, film = { ...FILM, ...(a.film || {}) };
+  const a = c.anaSayfa, g = a.giris, f = c.firma, h = c.hakkimizda, film = { ...FILM, ...(a.film || {}) };
   const sayac = [
     { v: new Date().getFullYear() - Number(f.kurulus), ek: "", e: "Yıllık tecrübe" },
     { v: (c.gruplar || []).length, ek: "", e: "Ana ürün grubu" },
@@ -29,53 +29,12 @@ export function anaSayfaYeni(c) {
     ...(c._urunSayisi ? [{ v: c._urunSayisi, ek: "+", e: "Ürün çeşidi" }] : []),
   ];
 
-  // Menü: Ana Sayfa, Kurumsal (açılır), Ürünlerimiz, Markalarımız, Medya, İletişim, E-Katalog
-  const kurumsal = [
-    ["hakkimizda.html", M.hakkimizda || "Hakkımızda"],
-    ["vizyon-misyon.html", M.vizyon || "Vizyonumuz ve Misyonumuz"],
-    ["iletisim.html#bayilik", M.bayimizOlun || "Bayimiz Olun"],
-  ];
-  const duz = [
-    ["urunlerimiz.html", M.urunlerimiz || "Ürünlerimiz"],
-    ["markalarimiz.html", M.markalarimiz || "Markalarımız"],
-    ["medya.html", M.medya || "Medya"],
-    ["iletisim.html", M.iletisim || "İletişim"],
-    ["e-katalog.html", M.ekatalog || "E-Katalog"],
-  ];
-  const pi = ([href, ad]) => `<a class="pi" href="${href}">${esc(ad)}</a>`;
-  const b2bAd = M.b2bGiris || "B2B Giriş", bayiAd = M.bayiBasvuru || "Bayi Başvuru Formu";
   const izmir = { x: (TR.izmir[0] / TR.w) * 100, y: (TR.izmir[1] / TR.h) * 100 };
   const mk = markaSerit(c);
   const fotolar = (a.profil.gorseller || []).slice(0, 3);
-  const tel = telHref(f.telefon);
-  const harfler = "YOLHAN".split("").map((x) => `<span>${x}</span>`).join("");
 
   const govde = `
-<header class="nav" id="nav" data-tema="ilk">
-  <a class="logo" href="index.html" aria-label="${esc(f.ad)} ana sayfa"><img class="neg" src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150"><img class="org" src="img/logo.png" alt="" width="640" height="150"></a>
-  <nav class="pill" aria-label="Ana menü">
-    <span class="hap" aria-hidden="true"></span>
-    <a class="pi on" href="index.html" aria-current="page">${esc(M.anaSayfa || "Ana Sayfa")}</a>
-    <div class="dd">
-      <button class="pi dd__btn" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="dd-kurumsal">${esc(M.kurumsal || "Kurumsal")}<svg viewBox="0 0 10 6" width="9" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <div class="dd__list" id="dd-kurumsal" hidden>${kurumsal.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
-    </div>
-    ${duz.map(pi).join("")}
-  </nav>
-  <div class="right">
-    <a class="btn btn--b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener"><span>${esc(b2bAd)}</span></a>
-    <a class="btn chip btn--bayi" href="iletisim.html#bayilik">${esc(bayiAd)}</a>
-    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menüyü aç">Menü</button>
-  </div>
-</header>
-<div id="menu" class="menu" role="dialog" aria-modal="true" aria-label="Menü" hidden>
-  <a href="index.html">${esc(M.anaSayfa || "Ana Sayfa")}</a>
-  <span class="menu__bas">${esc(M.kurumsal || "Kurumsal")}</span>
-  ${kurumsal.map(([href, ad]) => `<a class="menu__alt" href="${href}">${esc(ad)}</a>`).join("")}
-  ${duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}
-  <a class="menu__b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(b2bAd)}</a>
-  <a href="iletisim.html#bayilik">${esc(bayiAd)}</a>
-</div>
+${ustHtml(c, "index.html", "ilk")}
 <main id="top">
   <section class="hero" id="hero" data-tema="koyu">
     <div class="hero__fotolar">
@@ -157,20 +116,10 @@ export function anaSayfaYeni(c) {
     <div class="cta" data-reveal><a class="btn" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(a.bayi.buton1)}</a><a class="btn chip" href="${waHref(f.whatsapp, f.bayilikMesaji)}" target="_blank" rel="noopener">${esc(a.bayi.buton2)}</a></div>
   </div></section>
 </main>
-<footer data-tema="koyu">
-  <div class="mega" aria-hidden="true">${harfler}</div>
-  <div class="fcols">
-    <div><a class="flogo" href="index.html"><img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy"></a><p class="copy" style="text-align:left;margin-top:12px">${esc(f.unvan)}</p></div>
-    <div><h3>${esc(M.kurumsal || "Kurumsal")}</h3>${kurumsal.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
-    <div><h3>Sayfalar</h3>${duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}</div>
-    <div><h3>${esc(M.iletisim || "İletişim")}</h3><a href="${tel}">${esc(f.telefon)}</a><a href="${waHref(f.whatsapp)}" target="_blank" rel="noopener">WhatsApp ${esc(f.whatsapp)}</a><a href="mailto:${esc(f.eposta)}">${esc(f.eposta)}</a><span class="copy" style="text-align:left;display:block">${esc(f.calismaSaatleri)}</span></div>
-  </div>
-  <p class="copy">© ${new Date().getFullYear()} ${esc(f.unvan)} · <a href="kvkk-aydinlatma-metni.html">${esc(M.kvkk || "KVKK Aydınlatma Metni")}</a> · <a href="gizlilik-politikasi.html">${esc(M.gizlilik || "Gizlilik Politikası")}</a></p>
-</footer>
-<button class="top" id="top-btn" type="button" aria-label="En üste çık" hidden><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`;
+${altHtml(c)}`;
 
   return iskelet(c, {
     dosya: "index.html", baslik: a.seoBaslik, aciklama: a.seoAciklama, govde, jsonLd: anaSayfaLd(c),
-    css: ["css/yeni.css"], js: ["js/yeni.js"], sade: true,
+    css: ["css/anasayfa.css"], js: ["js/yeni.js"], sade: true,
   });
 }

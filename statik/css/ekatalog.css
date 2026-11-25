@@ -8,17 +8,11 @@
   --kat-kagit: #fff;
   position: relative; isolation: isolate; overflow: hidden; color: #fff;
   min-height: 100svh; display: flex; flex-direction: column;
-  padding: calc(var(--ust-y) + 14px) 0 clamp(14px, 2vw, 24px) var(--serit);
+  padding: calc(var(--ust-y) + 36px) 0 clamp(14px, 2vw, 24px) var(--serit);
   background:
     radial-gradient(70% 55% at 50% 42%, rgba(60, 100, 190, 0.38), transparent 70%),
     radial-gradient(120% 90% at 50% 100%, #0a1530 0%, transparent 60%),
     linear-gradient(180deg, #14284f 0%, var(--gece) 55%, #0b1630 100%);
-}
-/* sahne zemini: kesik çizgili yol */
-.ekat::before {
-  content: ""; position: absolute; left: -5%; right: -5%; bottom: clamp(36px, 7svh, 84px); height: 10px; z-index: -1;
-  background: repeating-linear-gradient(90deg, rgba(242, 183, 5, 0.55) 0 56px, transparent 56px 92px);
-  transform: rotate(-1.4deg); opacity: 0.55;
 }
 .ekat::after {
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
@@ -27,8 +21,8 @@
 
 /* ---------- Başlık ---------- */
 .ekat__ust { display: grid; gap: 4px 48px; padding-bottom: clamp(10px, 1.6vw, 20px); }
-.ekat__ustsatir { font: 700 0.8125rem/1 var(--f-metin); letter-spacing: 0.18em; text-transform: uppercase; color: var(--sari); }
-.ekat__baslik { font: 900 clamp(2rem, 1.2rem + 2.6vw, 3.6rem)/0.92 var(--f-baslik); text-transform: uppercase; }
+.ekat__ustsatir { margin-bottom: 10px; font: 700 0.8125rem/1 var(--f-metin); letter-spacing: 0.18em; text-transform: uppercase; color: var(--sari); }
+.ekat__baslik { font: 800 clamp(1.9rem, 1.1rem + 2.4vw, 3.3rem)/1 var(--f-baslik); letter-spacing: -0.02em; text-transform: uppercase; }
 .ekat__baslik .satir { display: inline; }
 .ekat__baslik .satir:not(:last-child)::after { content: " "; }
 .ekat__aciklama { max-width: 60ch; color: var(--acik-2); font-size: 0.9375rem; line-height: 1.5; }

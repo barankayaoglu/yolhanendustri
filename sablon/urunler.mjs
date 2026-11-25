@@ -63,7 +63,7 @@ export function urunlerimizSayfasi(c, v, n) {
   const dilim = v.urunler.slice((n - 1) * SAYFA_BOYUTU, n * SAYFA_BOYUTU);
   const govde = `${sayfaGiris({ baslik: "Ürünlerimiz", aciklama: `${v.urunler.length.toLocaleString("tr")} ürün, ${v.markalar.length} marka.\nFiyat ve stok için B2B'ye giriş yapın.`, gorsel: GIRIS_GORSEL })}
 
-    <section class="bolum urn-liste" data-durak>
+    <section class="bolum urn-liste">
       <div class="kap">
         ${filtreFormu(v)}
         <p class="urn-sonuc" data-urun-sonuc aria-live="polite">${v.urunler.length.toLocaleString("tr")} ürün · Sayfa ${n}/${toplam}</p>
@@ -88,7 +88,7 @@ export function markalarimizSayfasi(c, v) {
   const f = c.firma;
   const govde = `${sayfaGiris({ baslik: "Markalarımız", aciklama: `${v.markalar.length} markanın ürünlerini İzmir'de tedarik ediyoruz.`, gorsel: GIRIS_GORSEL })}
 
-    <section class="bolum" data-durak>
+    <section class="bolum">
       <div class="kap">
         <ul class="urn-markalar">${v.markalar.map((m) => `
           <li><a href="urunlerimiz.html?marka=${encodeURIComponent(m.ad)}">
@@ -134,7 +134,7 @@ export function urunSayfasi(c, v, u, kardesler, benzerler) {
   const benzerHtml = benzerler.length ? `
       <section class="urn-ek"><h2 class="baslik-3">Benzer ürünler</h2><ul class="urn-izgara">${benzerler.map(kart).join("")}</ul></section>` : "";
   const govde = `
-    <section class="bolum urn-detay" data-durak>
+    <section class="bolum urn-detay">
       <div class="kap">
         <nav class="urn-ekmek" aria-label="Sayfa yolu"><a href="index.html">Ana sayfa</a><span>/</span><a href="urunlerimiz.html">Ürünlerimiz</a><span>/</span><a href="urunlerimiz.html?marka=${encodeURIComponent(u.m)}">${esc(u.m)}</a></nav>
         <div class="urn-detay__izgara">
