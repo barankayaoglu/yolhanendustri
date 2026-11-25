@@ -38,7 +38,7 @@ export const BOLUMLER = [
         ],
       },
       {
-        id: "menu", baslik: "Menü yazıları", sayfa: "index.html", hedef: ".ust",
+        id: "menu", baslik: "Menü yazıları", sayfa: "index.html", hedef: ".nav",
         alanlar: [
           { yol: "menu.anaSayfa", ad: "Ana Sayfa", tip: "metin" },
           { yol: "menu.hakkimizda", ad: "Hakkımızda", tip: "metin" },
@@ -57,7 +57,7 @@ export const BOLUMLER = [
     grup: "Ana sayfa",
     bolumler: [
       {
-        id: "giris", baslik: "Giriş (en üst bölüm)", sayfa: "index.html", hedef: ".giris",
+        id: "giris", baslik: "Giriş (en üst bölüm)", sayfa: "index.html", hedef: ".hero",
         alanlar: [
           { yol: "anaSayfa.giris.ustSatir", ad: "Üst satır", tip: "metin" },
           { yol: "anaSayfa.giris.baslik", ad: "Büyük başlık", tip: "uzun", ipucu: "Yeni satıra geçmek için Enter'a basın. Kısa tutun; her satır ekranı boydan boya kaplar." },
@@ -70,7 +70,7 @@ export const BOLUMLER = [
         ],
       },
       {
-        id: "profil", baslik: "Firma profili", sayfa: "index.html", hedef: ".profil",
+        id: "profil", baslik: "Firma profili", sayfa: "index.html", hedef: "#hakkimizda",
         alanlar: [
           { yol: "anaSayfa.profil.baslik", ad: "Başlık", tip: "uzun" },
           { yol: "anaSayfa.profil.metin", ad: "Metin", tip: "uzun" },
@@ -80,7 +80,7 @@ export const BOLUMLER = [
         ],
       },
       {
-        id: "anaGruplar", baslik: "Ürün grupları bölümü", sayfa: "index.html", hedef: ".gruplar",
+        id: "anaGruplar", baslik: "Ürün grupları bölümü", sayfa: "index.html", hedef: "#urunler",
         aciklama: "Karolardaki grup adları, açıklamaları ve fotoğrafları 'Ürün grupları' listesinden gelir.",
         alanlar: [
           { yol: "anaSayfa.gruplar.baslik", ad: "Başlık", tip: "uzun" },
@@ -89,14 +89,14 @@ export const BOLUMLER = [
         ],
       },
       {
-        id: "anaMarkalar", baslik: "Markalar bölümü", sayfa: "index.html", hedef: ".markalar",
+        id: "anaMarkalar", baslik: "Markalar bölümü", sayfa: "index.html", hedef: "#markalar",
         alanlar: [
           { yol: "anaSayfa.markalar.baslik", ad: "Başlık", tip: "uzun" },
           { yol: "anaSayfa.markalar.aciklama", ad: "Açıklama", tip: "uzun" },
         ],
       },
       {
-        id: "anaSubeler", baslik: "Şubeler bölümü", sayfa: "index.html", hedef: ".subeler",
+        id: "anaSubeler", baslik: "Şubeler bölümü", sayfa: "index.html", hedef: "#subeler",
         alanlar: [
           { yol: "anaSayfa.subeler.baslik", ad: "Başlık", tip: "uzun" },
           { yol: "anaSayfa.subeler.aciklama", ad: "Açıklama", tip: "uzun" },
@@ -113,7 +113,7 @@ export const BOLUMLER = [
           { yol: "anaSayfa.bayi.gorsel", ad: "Arka plan fotoğrafı", tip: "gorsel" },
         ],
       },
-      { id: "anaSeo", baslik: "Google ayarları", sayfa: "index.html", hedef: ".giris", alanlar: seo("anaSayfa") },
+      { id: "anaSeo", baslik: "Google ayarları", sayfa: "index.html", hedef: ".hero", alanlar: seo("anaSayfa") },
     ],
   },
   {

@@ -20,6 +20,11 @@ try { urunVerisi = JSON.parse(await readFile(path.join(KOK, "icerik/urunler.json
 
 if (urunVerisi) { try { urunVerisi.acik = JSON.parse(await readFile(path.join(KOK, "icerik/aciklamalar.json"), "utf8")); } catch (e) { if (e.code !== "ENOENT") throw e; } }
 
+if (urunVerisi) { // yeni ana sayfa: marka logoları ve ürün sayısı
+  icerik._urunSayisi = urunVerisi.urunler.length;
+  icerik._markaLogo = Object.fromEntries(urunVerisi.markalar.filter((m) => m.logo).map((m) => [m.ad, m.logo]));
+}
+
 const TUM = [...SAYFALAR, ...grupSayfalari(icerik), ...(urunVerisi ? urunSayfalari(urunVerisi) : [])];
 for (const { dosya, olustur } of TUM) {
   await mkdir(path.dirname(path.join(DIST, dosya)), { recursive: true });

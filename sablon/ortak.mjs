@@ -113,7 +113,7 @@ export function iskelet(c, o) {
   return o.dosya.includes("/") ? html.replace(/(href|src)="(?!https?:|\/\/|mailto:|tel:|data:|#|\/|\.\.\/)/g, '$1="../') : html;
 }
 
-function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [] }) {
+function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], js = [], sade = false }) {
   const url = SITE + (dosya === "index.html" ? "" : dosya);
   return `<!doctype html>
 <html lang="tr">
@@ -141,7 +141,7 @@ function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], 
   <link rel="preload" href="fonts/big-shoulders-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fontlar.css">
-  <link rel="stylesheet" href="css/site.css">${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
+${sade ? "" : `  <link rel="stylesheet" href="css/site.css">`}${css.map((h) => `\n  <link rel="stylesheet" href="${h}">`).join("")}
   <script>
     (function (d) {
       d.classList.add("js");
@@ -149,17 +149,17 @@ function iskeletHam(c, { dosya, baslik, aciklama, govde, jsonLd = "", css = [], 
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) d.classList.add("az-hareket");
     })(document.documentElement);
   </script>
-  <script defer src="js/site.js"></script>${js.map((h) => `\n  <script defer src="${h}"></script>`).join("")}${jsonLd}
+${sade ? "" : `  <script defer src="js/site.js"></script>`}${js.map((h) => `\n  <script defer src="${h}"></script>`).join("")}${jsonLd}
 </head>
 <body data-sayfa="${dosya.replace(".html", "")}">
-  <a class="atla" href="#ana">İçeriğe geç</a>
+${sade ? govde : `  <a class="atla" href="#ana">İçeriğe geç</a>
   <div class="perde" aria-hidden="true"><div class="perde__serit"></div><img class="perde__isaret" src="img/isaret-512.png" alt="" width="96" height="96"></div>
   ${ustBolum(c, dosya.startsWith("urun/") || /^urunlerimiz-\d+\.html$/.test(dosya) ? "urunlerimiz.html" : dosya.startsWith("urun-") ? "urun-gruplari.html" : dosya)}
   <main id="ana">
     <div class="yol" aria-hidden="true"></div>
 ${govde}
   </main>
-  ${altBolum(c)}
+  ${altBolum(c)}`}
 </body>
 </html>
 `;

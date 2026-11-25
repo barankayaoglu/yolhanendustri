@@ -4,6 +4,7 @@ import {
   esc, br, satirlar, ikon, gorsel, telHref, waHref, haritaHref,
   iskelet, sayfaGiris, bayiBandi, yasalMetin, SITE,
 } from "./ortak.mjs";
+import { anaSayfaYeni } from "./ana-yeni.mjs";
 
 const grupMarkalari = (c, id) => (c.markalar || []).filter((m) => (m.gruplar || []).includes(id));
 const grupAdi = (c, id) => ((c.gruplar || []).find((g) => g.id === id) || {}).ad || id;
@@ -68,13 +69,9 @@ function subeKartlari(c, { harita = false } = {}) {
 
 /* ---------- Ana sayfa ---------- */
 
-export function anaSayfa(c) {
-  const a = c.anaSayfa, g = a.giris, p = a.profil, f = c.firma;
-  const gorseller = (g.gorseller || []).map((x, i) =>
-    gorsel(x, { sinif: "giris__gorsel" + (i === 0 ? " aktif" : ""), yukle: i === 0 ? "eager" : "lazy" })).join("");
-  const imler = (g.gorseller || []).map(() => `<span class="giris__im"><span></span></span>`).join("");
-
-  const jsonLd = ldBlok({
+export function anaSayfaLd(c) {
+  const f = c.firma;
+  return ldBlok({
     "@context": "https://schema.org", "@graph": [
       {
         "@type": "Organization", "@id": SITE + "#firma",
@@ -90,6 +87,16 @@ export function anaSayfa(c) {
       { "@type": "WebSite", "@id": SITE + "#site", url: SITE, name: f.ad, inLanguage: "tr", publisher: { "@id": SITE + "#firma" } },
     ],
   });
+}
+
+
+export function anaSayfa(c) {
+  const a = c.anaSayfa, g = a.giris, p = a.profil, f = c.firma;
+  const gorseller = (g.gorseller || []).map((x, i) =>
+    gorsel(x, { sinif: "giris__gorsel" + (i === 0 ? " aktif" : ""), yukle: i === 0 ? "eager" : "lazy" })).join("");
+  const imler = (g.gorseller || []).map(() => `<span class="giris__im"><span></span></span>`).join("");
+
+  const jsonLd = anaSayfaLd(c);
 
   const govde = `
     <section class="giris" data-durak>
@@ -438,7 +445,7 @@ export const kvkk = (c) => yasalSayfa(c, "kvkk", "kvkk-aydinlatma-metni.html");
 export const gizlilik = (c) => yasalSayfa(c, "gizlilik", "gizlilik-politikasi.html");
 
 export const SAYFALAR = [
-  { dosya: "index.html", olustur: anaSayfa },
+  { dosya: "index.html", olustur: anaSayfaYeni },
   { dosya: "hakkimizda.html", olustur: hakkimizda },
   { dosya: "urun-gruplari.html", olustur: urunGruplari },
   { dosya: "e-katalog.html", olustur: eKatalog },
