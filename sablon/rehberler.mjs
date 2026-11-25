@@ -94,7 +94,7 @@ export function rehberListesi(c) {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [["Ana sayfa", ""], ["Rehberler", "rehberler.html"]].map(([ad, y], i) => ({ "@type": "ListItem", position: i + 1, name: ad, item: SITE + y })),
   };
-  return iskelet(c, { dosya: "rehberler.html", baslik: "Rehberler — Yolhan Endüstri", aciklama: "RAL sprey boya seçimi ve diğer ürün seçim rehberleri. Yolhan Endüstri, İzmir.", govde, jsonLd: ldBlok(ekmek) });
+  return iskelet(c, { dosya: "rehberler.html", baslik: "Rehberler — Yolhan Endüstri", aciklama: "RAL sprey boya seçimi ve diğer ürün seçim rehberleri. Yolhan Endüstri, İzmir.", govde, js: ["js/rehber-liste.js"], jsonLd: ldBlok(ekmek) });
 }
 
 /** [{dosya, olustur}] — rehberler.json yüklüyse */

@@ -756,5 +756,158 @@
     "href": "rehber/dubel-secimi.html"
    }
   ]
+ },
+ {
+  "slug": "flap-disk-zimpara-secimi",
+  "baslik": "Flap disk ve zımpara nasıl seçilir? Kum numarasına göre rehber",
+  "seoBaslik": "Flap Disk Seçimi: Zirkonyum mu Alüminyum mu, Kaç Kum? | Yolhan Endüstri",
+  "seoAciklama": "Flap disk, cırtlı disk ve taşlama diski nasıl seçilir? Zirkonyum ve alüminyum oksit farkı, 40-120 kum numaralarının kullanım alanı ve zımparalama ipuçları.",
+  "ozet": "Kum numarası küçüldükçe zımpara kaba, büyüdükçe ince olur: 40 kum kaba temizlik ve pas alma, 60-80 kum düzeltme, 100-120 kum yüzey bitirme içindir. Zirkonyum flap disk çelik ve paslanmaz çelikte, alüminyum oksit flap disk genel metal ve ahşapta yaygın kullanılır.",
+  "tarih": "2026-11-25",
+  "gorsel": {
+   "src": "medya/grup-kesme-delme.webp",
+   "alt": "Kesme ve delme grubu ürünleri"
+  },
+  "bolumler": [
+   {
+    "id": "kum",
+    "baslik": "Kum numarası ne anlama gelir?",
+    "paragraflar": [
+     "Kum numarası, zımparadaki aşındırıcı tanelerin inceliğini gösterir. Numara küçüldükçe taneler iri ve zımpara kaba, büyüdükçe ince olur. Tabloda genel kullanım alanları var. Tam kullanım için ürün ambalajına bakın."
+    ],
+    "tablo": {
+     "basliklar": [
+      "Kum",
+      "Kabalık",
+      "Kullanım"
+     ],
+     "satirlar": [
+      [
+       "40",
+       "Kaba",
+       "Pas, boya ve kaynak izi alma, yüzey açma."
+      ],
+      [
+       "60",
+       "Orta kaba",
+       "Kaynak dikişini düzeltme, genel düzeltme."
+      ],
+      [
+       "80",
+       "Orta",
+       "Düzeltmeden sonra pürüzü azaltma."
+      ],
+      [
+       "100",
+       "İnce",
+       "Boya öncesi yüzey hazırlığı."
+      ],
+      [
+       "120",
+       "Çok ince",
+       "Yüzey bitirme, parlatma öncesi hazırlık."
+      ]
+     ]
+    }
+   },
+   {
+    "id": "malzeme",
+    "baslik": "Zirkonyum mu, alüminyum oksit mi?",
+    "paragraflar": [
+     "İki flap disk türü de aynı 115 mm ölçüde, farklı aşındırıcıyla gelir."
+    ],
+    "tablo": {
+     "basliklar": [
+      "Tür",
+      "Daha uygun olduğu iş",
+      "Not"
+     ],
+     "satirlar": [
+      [
+       "Zirkonyum (ZK)",
+       "Çelik, paslanmaz çelik, sert metal",
+       "Daha dayanıklıdır, daha uzun ömürlü çalışır."
+      ],
+      [
+       "Alüminyum oksit (NK)",
+       "Yumuşak çelik, genel metal, ahşap",
+       "Genel amaçlı ve ekonomik seçimdir."
+      ]
+     ]
+    }
+   },
+   {
+    "id": "disk-turu",
+    "baslik": "Flap disk, cırtlı disk ve taşlama diski farkı",
+    "liste": [
+     "Flap disk: taşlama makinesine takılan, üst üste binmiş zımpara yapraklarından oluşan disk. Hem aşındırır hem yüzeyi bitirir.",
+     "Cırtlı zımpara disk: orbital veya eksantrik zımpara makinesinin cırtlı tabanına takılır. Daha geniş yüzeyde ince işlem içindir.",
+     "Elmaslı taşlama diski: beton, taş ve sert yüzeyler için kullanılır. Metal zımparası değildir.",
+     "Taban ve disk ölçüsü uyumlu olmalıdır. Makinenizin disk çapına ve devir sınırına uygun disk seçin."
+    ]
+   },
+   {
+    "id": "ipuclari",
+    "baslik": "Zımparalarken dikkat edilecekler",
+    "liste": [
+     "Kabadan inceye sırayla gidin. 40 kumdan doğrudan 120 kuma atlamayın, arada 60 ve 80 kum kullanın.",
+     "Flap diski yüzeye hafif eğik tutun ve fazla bastırmayın. Fazla baskı ısıtır ve diski çabuk bitirir.",
+     "Gözlük, eldiven ve toz maskesi kullanın. Kıvılcım ve toz uzaklaşırken yönü kontrol edin.",
+     "Diskin üzerindeki maksimum devir değerini makinenin devrinden yüksek tutun."
+    ]
+   },
+   {
+    "id": "hata",
+    "baslik": "Sık yapılan hatalar",
+    "liste": [
+     "Paslanmaz çeliği, daha önce karbon çeliğinde kullanılmış diskle zımparalamak. Paslanma lekesi bırakabilir.",
+     "Metal diskle betonu veya taşı zımparalamaya çalışmak.",
+     "Körelmiş diski bastırarak kullanmak. Disk değiştirin."
+    ]
+   },
+   {
+    "id": "stokumuz",
+    "baslik": "Listemizdeki zımpara ve diskler",
+    "paragraflar": [
+     "Listemizde GFB markasının zirkonyum ve alüminyum flap diskleri (115 mm, 40-120 kum), cırtlı zımpara diskleri, cırt tabanları ve elmaslı taşlama diskleri bulunur. Güncel stok için arayın veya WhatsApp'tan sorun."
+    ]
+   }
+  ],
+  "sss": [
+   {
+    "s": "Flap diskte kaç kum seçmeliyim?",
+    "c": "Pas ve boya almak için 40 kum, düzeltme için 60-80 kum, yüzey bitirme için 100-120 kum yaygın seçimdir. Kabadan inceye sırayla gitmek en iyi sonucu verir."
+   },
+   {
+    "s": "Zirkonyum flap disk neden daha pahalıdır?",
+    "c": "Zirkonyum aşındırıcı genelde daha dayanıklıdır ve özellikle çelikte daha uzun ömürlü çalışır. Fiyat farkı için güncel liste fiyatlarına bakın."
+   },
+   {
+    "s": "Flap disk hangi makineyle kullanılır?",
+    "c": "Flap diskler avuç taşlama (spiral) makinesine takılır. Diskin çapı ve maksimum devri makineye uygun olmalıdır."
+   },
+   {
+    "s": "Cırtlı zımpara disk ne işe yarar?",
+    "c": "Cırtlı disk, cırt tabanlı orbital veya eksantrik zımpara makinesine takılır. Geniş yüzeylerde ince zımparalama içindir."
+   },
+   {
+    "s": "Paslanmaz çelikte hangi disk kullanılır?",
+    "c": "Paslanmaz çelikte genellikle zirkonyum flap disk tercih edilir. Aynı diski karbon çeliğinde kullandıysanız paslanmaz çelikte kullanmayın."
+   }
+  ],
+  "ilgili": [
+   {
+    "ad": "Flap diskler",
+    "href": "urunlerimiz.html?q=flap+disk"
+   },
+   {
+    "ad": "Taşlama diskleri",
+    "href": "urunlerimiz.html?q=ta%C5%9Flama+diski"
+   },
+   {
+    "ad": "Kesme ve delme grubu",
+    "href": "urun-kesme-delme.html"
+   }
+  ]
  }
 ]

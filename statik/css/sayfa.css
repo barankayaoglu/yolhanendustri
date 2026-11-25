@@ -345,8 +345,14 @@ h1,h2,h3,.baslik-2,.baslik-3,.sayfa-giris__baslik{font-weight:800;letter-spacing
 .rehber__ilgili { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; list-style: none; padding: 0; }
 .rehber__ilgili a { text-decoration: underline; }
 .rehber__liste { display: grid; gap: 16px; list-style: none; padding: 0; }
-.rehber__liste a { display: grid; gap: 8px; background: var(--beton-acik); border-radius: 12px; padding: 22px 26px; }
+.rehber__liste a { position: relative; display: grid; gap: 8px; background: var(--beton-acik); border-radius: 12px; border-left: 6px solid transparent; padding: 22px 56px 22px 26px; transition: background .25s, color .25s, border-color .25s, transform .25s, box-shadow .25s; }
+.rehber__liste a::after { content: "→"; position: absolute; right: 22px; top: 50%; transform: translateY(-50%); font-size: 1.5rem; color: var(--sari); opacity: 0; transition: opacity .25s, right .25s; }
 .rehber__liste b { font-size: 1.25rem; }
-.rehber__liste span { color: var(--metin-2); }
+.rehber__liste span { color: var(--metin-2); transition: color .25s; }
+/* fare üstünde, klavye odağında ve (dokunmatikte) ekranın ortasındayken belirgin */
+.rehber__liste a:hover, .rehber__liste a:focus-visible, .rehber__liste a.aktif { background: var(--gece); border-left-color: var(--sari); color: #fff; transform: translateX(6px); box-shadow: 0 10px 28px rgba(16, 32, 63, .28), 0 0 0 2px var(--sari); }
+.rehber__liste a:hover span, .rehber__liste a:focus-visible span, .rehber__liste a.aktif span { color: rgba(255, 255, 255, .85); }
+.rehber__liste a:hover::after, .rehber__liste a:focus-visible::after, .rehber__liste a.aktif::after { opacity: 1; right: 16px; }
+@media (prefers-reduced-motion: reduce) { .rehber__liste a, .rehber__liste a::after { transition: none; } .rehber__liste a:hover, .rehber__liste a.aktif { transform: none; } }
 @media (max-width: 640px) { .rehber-tablo { font-size: .85rem; } .rehber-tablo th, .rehber-tablo td { padding: 8px 6px; } }
 .rehber-renk { display: block; width: 28px; height: 28px; border-radius: 6px; border: 1px solid rgba(16,32,63,.25); }
