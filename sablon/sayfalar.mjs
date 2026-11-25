@@ -39,11 +39,16 @@ function subeKartlari(c, { harita = false } = {}) {
         </article>`).join("");
 }
 
+export const sssLd = (c) => (c.sss ? ldBlok({
+  "@context": "https://schema.org", "@type": "FAQPage",
+  mainEntity: c.sss.sorular.map((q) => ({ "@type": "Question", name: q.s, acceptedAnswer: { "@type": "Answer", text: q.c } })),
+}) : "");
+
 /* ---------- Ana sayfa ---------- */
 
 export function anaSayfaLd(c) {
   const f = c.firma;
-  return ldBlok({
+  return sssLd(c) + ldBlok({
     "@context": "https://schema.org", "@graph": [
       {
         "@type": "Organization", "@id": SITE + "#firma",
@@ -345,10 +350,7 @@ export function iletisim(c) {
         <div class="sss">${sss.sorular.map((q) => `<details><summary>${esc(q.s)}</summary><p>${esc(q.c)}</p></details>`).join("")}</div>
       </div>
     </section>` : ""}`;
-  const jsonLd = sss ? ldBlok({
-    "@context": "https://schema.org", "@type": "FAQPage",
-    mainEntity: sss.sorular.map((q) => ({ "@type": "Question", name: q.s, acceptedAnswer: { "@type": "Answer", text: q.c } })),
-  }) : "";
+  const jsonLd = sssLd(c);
   return iskelet(c, { dosya: "iletisim.html", baslik: i.seoBaslik, aciklama: i.seoAciklama, govde, jsonLd });
 }
 

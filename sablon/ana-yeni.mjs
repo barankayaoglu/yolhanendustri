@@ -90,7 +90,12 @@ ${ustHtml(c, "index.html", "ilk")}
     <div class="team">
       ${(h.ilkeler || []).map((t) => `<div class="ilke" data-reveal><h3>${esc(t.ad)}</h3><p>${esc(t.metin)}</p></div>`).join("")}
     </div>
-  </div></section>
+  </div></section>${c.sss ? `
+
+  <section id="sss" data-tema="acik"><div class="wrap">
+    <h2 class="center" data-reveal>${esc(c.sss.baslik)}</h2>
+    <div class="sss">${c.sss.sorular.map((q) => `<details><summary>${esc(q.s)}</summary><p>${esc(q.c)}</p></details>`).join("")}</div>
+  </div></section>` : ""}
 </main>
 ${altHtml(c)}`;
 
