@@ -29,14 +29,15 @@ export function gorsel(g, { sinif = "", yukle = "lazy", boyutlar = "100vw" } = {
 const SAYFALAR = [
   ["index.html", "anaSayfa"],
   ["hakkimizda.html", "hakkimizda"],
-  ["urun-gruplari.html", "urunGruplari"],
+  ["vizyon-misyon.html", "vizyon"],
   ["urunlerimiz.html", "urunlerimiz"],
   ["markalarimiz.html", "markalarimiz"],
-  ["e-katalog.html", "ekatalog"],
+  ["medya.html", "medya"],
   ["iletisim.html", "iletisim"],
+  ["e-katalog.html", "ekatalog"],
 ];
 
-const ETIKET_YEDEK = { ekatalog: "E-Katalog", urunlerimiz: "Ürünlerimiz", markalarimiz: "Markalarımız" }; // site.json'da menü adı yoksa
+const ETIKET_YEDEK = { ekatalog: "E-Katalog", urunlerimiz: "Ürünlerimiz", markalarimiz: "Markalarımız", vizyon: "Vizyonumuz ve Misyonumuz", medya: "Medya" }; // site.json'da menü adı yoksa
 
 function ustBolum(c, aktif) {
   const m = c.menu, f = c.firma;
@@ -154,7 +155,7 @@ ${sade ? "" : `  <script defer src="js/site.js"></script>`}${js.map((h) => `\n  
 <body data-sayfa="${dosya.replace(".html", "")}">
 ${sade ? govde : `  <a class="atla" href="#ana">İçeriğe geç</a>
   <div class="perde" aria-hidden="true"><div class="perde__serit"></div><img class="perde__isaret" src="img/isaret-512.png" alt="" width="96" height="96"></div>
-  ${ustBolum(c, dosya.startsWith("urun/") || /^urunlerimiz-\d+\.html$/.test(dosya) ? "urunlerimiz.html" : dosya.startsWith("urun-") ? "urun-gruplari.html" : dosya)}
+  ${ustBolum(c, dosya.startsWith("urun/") || /^urunlerimiz-\d+\.html$/.test(dosya) ? "urunlerimiz.html" : dosya.startsWith("urun-") ? "urunlerimiz.html" : dosya)}
   <main id="ana">
     <div class="yol" aria-hidden="true"></div>
 ${govde}

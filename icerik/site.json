@@ -19,7 +19,14 @@
     "bayiOl": "Bayi olun",
     "b2bGiris": "B2B Giriş",
     "kvkk": "KVKK Aydınlatma Metni",
-    "gizlilik": "Gizlilik Politikası"
+    "gizlilik": "Gizlilik Politikası",
+    "kurumsal": "Kurumsal",
+    "vizyon": "Vizyonumuz ve Misyonumuz",
+    "bayimizOlun": "Bayimiz Olun",
+    "urunlerimiz": "Ürünlerimiz",
+    "markalarimiz": "Markalarımız",
+    "medya": "Medya",
+    "bayiBasvuru": "Bayi Başvuru Formu"
   },
   "anaSayfa": {
     "seoBaslik": "Yolhan Endüstri — İzmir'de hırdavat ve endüstriyel malzeme tedariki",
@@ -201,8 +208,8 @@
       "ozet": "Silikon, köpük, mastik, yapıştırıcı ve su yalıtımı",
       "aciklama": "Profesyonel uygulamalar için formüle edilmiş yapı kimyasalları. Şantiye, tadilat ve endüstriyel bakım işlerinde iç ve dış mekânda güvenle kullanılır.",
       "gorsel": {
-        "src": "medya/grup-yapi-kimyasallari.webp",
-        "alt": "Reyonda silikon ve mastik tüpleri"
+        "src": "medya/b2b-grup-yapi-kimyasallari.jpg",
+        "alt": "Yapı Kimyasalları ürün grubu"
       }
     },
     {
@@ -211,8 +218,8 @@
       "ozet": "Menteşe, kulp, kilit, ray ve mobilya aksesuarı",
       "aciklama": "Mobilya, kapı ve dolap uygulamaları için dayanıklı nalburiye ürünleri. Yoğun kullanıma uygun malzeme ve yüzey kalitesi.",
       "gorsel": {
-        "src": "medya/grup-hirdavat-nalburiye.webp",
-        "alt": "Rafta nalburiye ürünleri"
+        "src": "medya/b2b-grup-hirdavat-nalburiye.jpg",
+        "alt": "Hırdavat Nalburiye ürün grubu"
       }
     },
     {
@@ -221,8 +228,8 @@
       "ozet": "Kesme ve taşlama diskleri, matkap uçları, panç",
       "aciklama": "Metal, beton, ahşap ve seramik işleme için yüksek performanslı kesme ve delme ürünleri. Uzun ömür ve temiz kesim için tasarlandı.",
       "gorsel": {
-        "src": "medya/grup-kesme-delme.webp",
-        "alt": "Duvarda matkaplar ve kesme aletleri"
+        "src": "medya/b2b-grup-kesme-delme.jpg",
+        "alt": "Kesme ve Delme Araçları ürün grubu"
       }
     },
     {
@@ -231,8 +238,8 @@
       "ozet": "Koli, maskeleme, izole, köpük ve ikaz bantları",
       "aciklama": "Paketleme, boya, elektrik ve montaj işleri için güçlü yapışma sağlayan bantlar. Kolay açılır, iz bırakmadan çalışır.",
       "gorsel": {
-        "src": "medya/grup-bant-grubu.webp",
-        "alt": "Reyonda bant çeşitleri"
+        "src": "medya/b2b-grup-bant-grubu.jpg",
+        "alt": "Bant Grubu ürün grubu"
       }
     },
     {
@@ -241,8 +248,8 @@
       "ozet": "Rulo, fırça, tekne, spatula ve sprey boya",
       "aciklama": "Boya ve badana işlerinde düzgün ve hızlı uygulama sağlayan profesyonel ekipman. Ustaların günlük kullanımına uygun.",
       "gorsel": {
-        "src": "medya/grup-boya-malzemeleri.webp",
-        "alt": "Fırça ve rulo standı"
+        "src": "medya/b2b-grup-boya-malzemeleri.jpg",
+        "alt": "Boya Malzemeleri ürün grubu"
       }
     },
     {
@@ -251,8 +258,8 @@
       "ozet": "Çekiç, pense, tornavida, anahtar ve elektrikli aletler",
       "aciklama": "Ergonomik tutuşlu, sertleştirilmiş çelikten el aletleri. Atölye ve saha kullanımında uzun ömürlü.",
       "gorsel": {
-        "src": "medya/grup-el-aletleri.webp",
-        "alt": "Elektrikli el aletleri duvarı"
+        "src": "medya/b2b-grup-el-aletleri.jpg",
+        "alt": "El Aletleri ürün grubu"
       }
     },
     {
@@ -261,8 +268,8 @@
       "ozet": "Eldiven, baret, gözlük, maske ve ikaz yeleği",
       "aciklama": "İlgili EN standartlarına uygun kişisel koruyucu donanım. Şantiye ve sanayi ortamında çalışan güvenliği için.",
       "gorsel": {
-        "src": "medya/grup-is-guvenligi.webp",
-        "alt": "İş eldivenleri ve ikaz yelekleri"
+        "src": "medya/b2b-grup-is-guvenligi.jpg",
+        "alt": "İş Güvenliği ürün grubu"
       }
     },
     {
@@ -271,8 +278,8 @@
       "ozet": "Vida, dübel, cıvata, somun, pul ve kimyasal dübel",
       "aciklama": "Ahşap, metal ve beton uygulamalarında güvenli sabitleme sağlayan bağlantı elemanları. Korozyona karşı yüzey işlemli.",
       "gorsel": {
-        "src": "medya/grup-baglanti-ekipmanlari.webp",
-        "alt": "Depoda koliler"
+        "src": "medya/b2b-grup-baglanti-ekipmanlari.jpg",
+        "alt": "Bağlantı Ekipmanları ürün grubu"
       }
     }
   ],
@@ -557,5 +564,31 @@
         }
       ]
     }
+  },
+  "vizyonMisyon": {
+    "seoBaslik": "Vizyonumuz ve Misyonumuz — Yolhan Endüstri",
+    "seoAciklama": "Yolhan Endüstri'nin vizyonu ve misyonu: müşteri odaklı, güvenilir ve yenilikçi hırdavat tedariki.",
+    "baslik": "Vizyonumuz ve\nmisyonumuz.",
+    "aciklama": "Müşteri odaklı, güvenilir ve yenilikçi olmak için çalışıyoruz.",
+    "gorsel": {
+      "src": "medya/depo-ic.webp",
+      "alt": "Merkez depo içi"
+    },
+    "vizyonBaslik": "Vizyonumuz",
+    "vizyon": "Türkiye'nin hırdavat toptancısı olmak: ustasından sanayisine her işletmenin ihtiyaç duyduğu malzemeyi tek adresten, hızlı ve güvenilir şekilde sunmak.",
+    "misyonBaslik": "Misyonumuz",
+    "misyon": "Müşteri odaklı, güvenilir ve yenilikçi anlayışımızla geniş ürün gamımızı doğru zamanda müşterilerimize ulaştırmak; her işe uygun ürünü ve çözümü birlikte bulmak."
+  },
+  "medya": {
+    "seoBaslik": "Medya — Yolhan Endüstri",
+    "seoAciklama": "Yolhan Endüstri tanıtım filmi ve depo, mağaza fotoğrafları.",
+    "baslik": "Medya",
+    "aciklama": "Tanıtım filmimiz ve depo, mağaza fotoğraflarımız.",
+    "gorsel": {
+      "src": "medya/depo-ic.webp",
+      "alt": "Merkez depo içi"
+    },
+    "filmBaslik": "Tanıtım filmimiz",
+    "galeriBaslik": "Fotoğraflar"
   }
 }

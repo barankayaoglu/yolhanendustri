@@ -135,6 +135,30 @@ export const BOLUMLER = [
         ],
       },
       {
+        id: "vizyonMisyon", baslik: "Vizyon ve misyon sayfası", sayfa: "vizyon-misyon.html", hedef: ".sayfa-giris",
+        alanlar: [
+          { yol: "vizyonMisyon.baslik", ad: "Sayfa başlığı", tip: "uzun" },
+          { yol: "vizyonMisyon.aciklama", ad: "Başlık altı açıklama", tip: "uzun" },
+          { yol: "vizyonMisyon.gorsel", ad: "Üst fotoğraf", tip: "gorsel" },
+          { yol: "vizyonMisyon.vizyonBaslik", ad: "Vizyon başlığı", tip: "metin" },
+          { yol: "vizyonMisyon.vizyon", ad: "Vizyon metni", tip: "uzun" },
+          { yol: "vizyonMisyon.misyonBaslik", ad: "Misyon başlığı", tip: "metin" },
+          { yol: "vizyonMisyon.misyon", ad: "Misyon metni", tip: "uzun" },
+          ...seo("vizyonMisyon"),
+        ],
+      },
+      {
+        id: "medyaSayfa", baslik: "Medya sayfası", sayfa: "medya.html", hedef: ".sayfa-giris",
+        alanlar: [
+          { yol: "medya.baslik", ad: "Sayfa başlığı", tip: "uzun" },
+          { yol: "medya.aciklama", ad: "Başlık altı açıklama", tip: "uzun" },
+          { yol: "medya.gorsel", ad: "Üst fotoğraf", tip: "gorsel" },
+          { yol: "medya.filmBaslik", ad: "Film başlığı", tip: "metin" },
+          { yol: "medya.galeriBaslik", ad: "Fotoğraflar başlığı", tip: "metin" },
+          ...seo("medya"),
+        ],
+      },
+      {
         id: "urunGruplariSayfa", baslik: "Ürün Grupları sayfası", sayfa: "urun-gruplari.html", hedef: ".sayfa-giris",
         alanlar: [
           { yol: "urunGruplari.baslik", ad: "Sayfa başlığı", tip: "uzun" },

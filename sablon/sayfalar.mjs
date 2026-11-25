@@ -201,6 +201,46 @@ ${bayiBandi(c)}`;
   return iskelet(c, { dosya: "hakkimizda.html", baslik: h.seoBaslik, aciklama: h.seoAciklama, govde });
 }
 
+
+/* ---------- Vizyon ve misyon ---------- */
+
+export function vizyonMisyon(c) {
+  const v = c.vizyonMisyon;
+  const blok = (b, m) => `
+    <section class="hikaye bolum" data-durak>
+      <div class="kap hikaye__izgara">
+        <div class="hikaye__yan"><h2 class="baslik-3">${esc(b)}</h2></div>
+        <div class="hikaye__metin"><p class="buyuk">${br(m)}</p></div>
+      </div>
+    </section>`;
+  const govde = `${sayfaGiris(v)}${blok(v.vizyonBaslik, v.vizyon)}${blok(v.misyonBaslik, v.misyon)}
+${bayiBandi(c)}`;
+  return iskelet(c, { dosya: "vizyon-misyon.html", baslik: v.seoBaslik, aciklama: v.seoAciklama, govde });
+}
+
+/* ---------- Medya ---------- */
+
+export function medya(c) {
+  const m = c.medya, film = { src: "medya/tanitim-filmi.mp4", poster: "medya/tanitim-filmi.jpg", ...(c.anaSayfa.film || {}) };
+  const gorseller = [...(c.hakkimizda.galeri || []), ...(c.anaSayfa.profil.gorseller || []), ...(c.anaSayfa.giris.gorseller || [])]
+    .filter((x, i, a) => x && x.src && a.findIndex((y) => y.src === x.src) === i);
+  const govde = `${sayfaGiris(m)}
+    <section class="bolum" data-durak>
+      <div class="kap">
+        <h2 class="baslik-2">${esc(m.filmBaslik)}</h2>
+        <video class="medya-film" controls preload="none" playsinline poster="${esc(film.poster)}" aria-label="${esc(m.filmBaslik)}"><source src="${esc(film.src)}" type="video/mp4"></video>
+      </div>
+    </section>
+    <section class="bolum bolum--beton" data-durak>
+      <div class="kap">
+        <h2 class="baslik-2">${esc(m.galeriBaslik)}</h2>
+        <div class="medya-galeri">${gorseller.map((x) => `<figure>${gorsel(x, { boyutlar: "(min-width: 900px) 30vw, 90vw" })}</figure>`).join("")}</div>
+      </div>
+    </section>
+${bayiBandi(c)}`;
+  return iskelet(c, { dosya: "medya.html", baslik: m.seoBaslik, aciklama: m.seoAciklama, govde });
+}
+
 /* ---------- Ürün grupları ---------- */
 
 export function urunGruplari(c) {
@@ -447,6 +487,8 @@ export const gizlilik = (c) => yasalSayfa(c, "gizlilik", "gizlilik-politikasi.ht
 export const SAYFALAR = [
   { dosya: "index.html", olustur: anaSayfaYeni },
   { dosya: "hakkimizda.html", olustur: hakkimizda },
+  { dosya: "vizyon-misyon.html", olustur: vizyonMisyon },
+  { dosya: "medya.html", olustur: medya },
   { dosya: "urun-gruplari.html", olustur: urunGruplari },
   { dosya: "e-katalog.html", olustur: eKatalog },
   { dosya: "iletisim.html", olustur: iletisim },
