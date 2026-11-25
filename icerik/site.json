@@ -443,8 +443,8 @@
     {
       "ad": "Merkez Depo",
       "ilce": "Bornova",
-      "adres": "Bornova İş Merkezi, Ümit, 1411/7 Sk.\nBornova / İzmir",
-      "haritaSorgu": "Yolhan Endüstri - Merkez Depo, Bornova İş Merkezi, Ümit, 1411/7 Sk, Bornova/İzmir",
+      "adres": "Doğanlar Mh. 1411/7 Sk. B Blok, 4/A\nBornova İş Merkezi, 35030 Bornova / İzmir",
+      "haritaSorgu": "Yolhan Endüstri - Merkez Depo, Doğanlar Mh. 1411/7 Sk. B Blok, 4/A Bornova İş Merkezi, 35030 Bornova/İzmir",
       "gorsel": {
         "src": "medya/merkez-depo-cephe.webp",
         "alt": "Merkez depo binası"
@@ -453,8 +453,8 @@
     {
       "ad": "Gıda Şube",
       "ilce": "Konak",
-      "adres": "Yenişehir, 1201/4. Sk.\nKonak / İzmir",
-      "haritaSorgu": "Yolhan Endüstri - Gıda Şube, Yenişehir, 1201/4. Sokak, Konak/İzmir",
+      "adres": "Halkapınar Mh. 1201/4 Sk. No:1\nYenişehir, 35040 Konak / İzmir",
+      "haritaSorgu": "Yolhan Endüstri - Gıda Şube, Halkapınar Mh. 1201/4 Sk. No:1 Yenişehir, 35040 Konak/İzmir",
       "gorsel": {
         "src": "medya/magaza-cephe.webp",
         "alt": "Gıda şube mağaza cephesi"
