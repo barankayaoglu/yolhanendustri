@@ -69,8 +69,6 @@ footer{padding:0 0 48px;overflow:hidden;background:var(--bg);color:#fff}
 .mega svg{display:block;width:100%;height:auto}
 .mega text{font-family:"Anton","Impact",var(--font);font-size:400px;text-transform:uppercase}
 .fmark{display:flex;flex-direction:column;align-items:center;gap:22px;margin:40px 24px 0}
-.flogo{display:inline-block}
-.flogo img{display:block;height:64px;width:auto}
 .sosyal{display:flex;gap:12px;list-style:none;padding:0}
 .sosyal a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--border-in);color:#fff;transition:background .25s,color .25s,border-color .25s}
 .sosyal a:hover,.sosyal a:focus-visible{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
@@ -93,7 +91,13 @@ footer{padding:0 0 48px;overflow:hidden;background:var(--bg);color:#fff}
 
 body.menu-open .nav{z-index:65}
 .menu{text-align:center}
-@media(max-width:900px){.pill{display:none}.burger{display:block}.nav{padding:0 16px}.logo{height:26px}.nav.scrolled .logo{height:22px}.right .btn{padding:10px 14px;font-size:12px}.btn--bayi{display:none}.menu{gap:14px;padding:88px 24px 40px;overflow:auto;justify-content:flex-start}.top{right:14px;bottom:84px}.fcols{gap:40px}}
+@media(max-width:900px){.pill{display:none}.burger{display:block}.nav{padding:0 16px}.logo{height:26px}.nav.scrolled .logo{height:22px}.right .btn{padding:10px 14px;font-size:12px}.btn--bayi{display:none}.menu{gap:14px;padding:88px 24px 40px;overflow:auto;justify-content:flex-start}.top{right:14px;bottom:84px}.fcols{gap:40px}
+  /* mobil üst çubuk: solda menü, ortada logo, sağda B2B; logo yalnızca açılış (ilk) ekranında beyaz yazı, diğer yerlerde orijinal (açık kapak üzerinde) */
+  .nav{display:grid;grid-template-columns:1fr auto 1fr}.right{display:contents}
+  .burger{grid-column:1;grid-row:1;justify-self:start}.logo{grid-column:2;grid-row:1}.btn--b2b{grid-column:3;grid-row:1;justify-self:end}
+  .logo::before{content:"";position:absolute;inset:-5px -10px;border-radius:12px;background:rgba(255,255,255,.94);transition:opacity .35s}
+  .logo .org{opacity:1}.logo .neg{opacity:0}
+  .nav[data-tema=ilk] .logo .neg{opacity:1}.nav[data-tema=ilk] .logo .org{opacity:0}.nav[data-tema=ilk] .logo::before{opacity:0}}
 .az-hareket .btn--b2b,.az-hareket .btn--b2b::after{animation:none}
 
 
@@ -105,6 +109,6 @@ body.menu-open .nav{z-index:65}
 .wa-bot__yaz b{font-size:14px;font-weight:800}
 .wa-bot__yaz small{font-size:11px;font-weight:600;color:#e3f5ea}
 .wa-bot__ai{font-style:normal;font-size:11px;font-weight:900;letter-spacing:.06em;padding:3px 7px;border-radius:999px;background:#fff;color:#0d6b38}
-@media(max-width:600px){.wa-bot{right:14px;bottom:14px;padding:10px 12px}.wa-bot__yaz small{display:none}.wa-bot__yaz b{font-size:13px}}
+@media(max-width:600px){.wa-bot{right:14px;bottom:14px;padding:12px}.wa-bot__yaz,.wa-bot__ai{display:none}}
 .wa-bot--satir{position:static;display:inline-flex;min-height:52px}
 body[data-sayfa=e-katalog] .wa-bot,body[data-sayfa=e-katalog] .top,body[data-sayfa=e-katalog] footer{display:none}

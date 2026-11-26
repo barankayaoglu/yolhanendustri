@@ -84,8 +84,6 @@ export function ustHtml(c, dosya = "index.html", tema = "koyu") {
 </header>
 <div id="menu" class="menu" role="dialog" aria-modal="true" aria-label="Menü" hidden>
   <a href="${m.anaSayfa[0]}">${esc(m.anaSayfa[1])}</a>
-  <span class="menu__bas">${esc(m.kurumsalAd)}</span>
-  ${m.kurumsal.map(([href, ad]) => `<a class="menu__alt" href="${href}">${esc(ad)}</a>`).join("")}
   ${m.duz.map(([href, ad]) => `<a href="${href}">${esc(ad)}</a>`).join("")}
   <a class="menu__b2b" href="${esc(f.b2bAdres)}" target="_blank" rel="noopener">${esc(m.b2b)}</a>
   <a href="bayi-basvuru.html">${esc(m.bayi)}</a>
@@ -116,7 +114,6 @@ export function altHtml(c) {
 <footer data-tema="koyu">
   <div class="mega" aria-hidden="true"><svg viewBox="0 0 1000 352" preserveAspectRatio="xMidYMid meet" focusable="false"><defs><linearGradient id="mega-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff6d6"/><stop offset=".55" stop-color="#f9d65a"/><stop offset="1" stop-color="#f2a900"/></linearGradient></defs><text x="0" y="349" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="url(#mega-g)">YOLHAN</text></svg></div>
   <div class="fmark">
-    <a class="flogo" href="index.html" aria-label="${esc(f.ad)} ana sayfa"><img src="img/logo-negatif.png" alt="${esc(f.ad)}" width="640" height="150" loading="lazy"></a>
     <ul class="sosyal" aria-label="Sosyal medya">${sosyal.map(([k, ad, href]) => `<li><a href="${esc(href)}" target="_blank" rel="noopener" aria-label="${ad}"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">${SOSYAL_IKON[k]}</svg></a></li>`).join("")}</ul>
   </div>
   <div class="fcols">
@@ -127,7 +124,7 @@ export function altHtml(c) {
   </div>
   <p class="copy">© <span data-yil>${new Date().getFullYear()}</span> ${esc(f.unvan)} · <a href="kvkk-aydinlatma-metni.html">${esc(M.kvkk || "KVKK Aydınlatma Metni")}</a> · <a href="gizlilik-politikasi.html">${esc(M.gizlilik || "Gizlilik Politikası")}</a></p>
 </footer>
-<aside aria-label="WhatsApp yapay zekâ asistanı"><a class="wa-bot" href="${waHref(f.whatsapp, WA_MESAJ)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">${SOSYAL_IKON.whatsapp}</svg><span class="wa-bot__yaz"><b>WhatsApp botumuza sorun</b><small>Yapay zekâ asistanı · 7/24</small></span><i class="wa-bot__ai" aria-hidden="true">AI</i></a></aside>
+<aside aria-label="WhatsApp yapay zekâ asistanı"><a class="wa-bot" href="${waHref(f.whatsapp, WA_MESAJ)}" target="_blank" rel="noopener" aria-label="WhatsApp yapay zekâ asistanına yazın"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">${SOSYAL_IKON.whatsapp}</svg><span class="wa-bot__yaz"><b>WhatsApp botumuza sorun</b><small>Yapay zekâ asistanı · 7/24</small></span><i class="wa-bot__ai" aria-hidden="true">AI</i></a></aside>
 <button class="top" id="top-btn" type="button" aria-label="En üste çık" hidden><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path d="M3 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>`;
 }
 
