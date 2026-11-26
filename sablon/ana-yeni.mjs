@@ -40,7 +40,6 @@ ${ustHtml(c, "index.html", "ilk")}
       <script>(function(){var v=document.currentScript.previousElementSibling;if(matchMedia("(max-width:768px)").matches){v.querySelector("source").src=v.dataset.mobil;v.load()}})()</script>
       <div class="hero__golge"></div>
     </div>
-    <svg class="kapak" aria-hidden="true" focusable="false"><path fill-rule="evenodd" d=""/></svg>
     <h1 class="gizli">${esc(String(g.baslik).replace(/\n/g, " "))}</h1>
   </section>
 
