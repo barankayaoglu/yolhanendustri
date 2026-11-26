@@ -64,6 +64,7 @@ body.menu-open{overflow:hidden}
 .gizli{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 /* ---- footer ---- */
 footer{padding:0 0 48px;overflow:hidden;background:var(--bg);color:#fff}
+@media(max-width:768px){footer{padding-bottom:112px}} /* WhatsApp ve yukarı butonu son satırı örtmesin */
 .mega{padding:40px 0 0;line-height:0}
 .mega svg{display:block;width:100%;height:auto}
 .mega text{font-family:"Anton","Impact",var(--font);font-size:400px;text-transform:uppercase}
@@ -92,7 +93,7 @@ footer{padding:0 0 48px;overflow:hidden;background:var(--bg);color:#fff}
 
 body.menu-open .nav{z-index:65}
 .menu{text-align:center}
-@media(max-width:900px){.pill{display:none}.burger{display:block}.nav{padding:0 16px}.logo{height:34px}.nav.scrolled .logo{height:28px}.right .btn{padding:10px 14px;font-size:12px}.btn--bayi{display:none}.menu{gap:14px;padding:88px 24px 40px;overflow:auto;justify-content:flex-start}.top{right:14px;bottom:84px}.fcols{gap:40px}}
+@media(max-width:900px){.pill{display:none}.burger{display:block}.nav{padding:0 16px}.logo{height:26px}.nav.scrolled .logo{height:22px}.right .btn{padding:10px 14px;font-size:12px}.btn--bayi{display:none}.menu{gap:14px;padding:88px 24px 40px;overflow:auto;justify-content:flex-start}.top{right:14px;bottom:84px}.fcols{gap:40px}}
 .az-hareket .btn--b2b,.az-hareket .btn--b2b::after{animation:none}
 
 

@@ -4,7 +4,7 @@
 import { esc, br, iskelet, ustHtml, altHtml } from "./ortak.mjs";
 import { anaSayfaLd } from "./sayfalar.mjs";
 
-const FILM = { baslik: "Tanıtım filmimiz", src: "medya/tanitim-filmi.mp4", poster: "medya/tanitim-filmi.jpg", mobil: "medya/tanitim-filmi-mobil.mp4" };
+const FILM = { baslik: "Tanıtım filmimiz", src: "medya/tanitim-filmi.mp4", poster: "medya/tanitim-filmi.jpg", mobil: "medya/tanitim-filmi-dikey.mp4" };
 
 const img = (g, o = {}) => (g && g.src
   ? `<img ${o.sinif ? `class="${o.sinif}" ` : ""}src="${esc(g.src)}" alt="${esc(o.bos ? "" : g.alt)}"${o.bos ? ' aria-hidden="true"' : ""} loading="${o.yukle || "lazy"}" decoding="async"${o.oncelik ? ' fetchpriority="high"' : ""}>`
